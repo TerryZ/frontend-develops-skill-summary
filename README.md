@@ -41,6 +41,7 @@ Dom handle - 元素处理
 - 图片效果与处理
   - [Gallery](https://github.com/blueimp/Gallery)  
   相册查看，跑马灯效果（滚动图片）
+  
   - [elevatezoom](https://github.com/elevateweb/elevatezoom)  
   购物商城类图片预览放大
 
