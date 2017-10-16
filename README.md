@@ -1,12 +1,13 @@
 # 个人经验总结
 
+> 文档编写逐步更新
+
 # Javascript 
 
 Array - 数组处理
 
 # jQuery 仅1.x版本，未使用jquery2,3进行开发过
 
-> 文档编写逐步更新
 
 Selector - 选择器
 
