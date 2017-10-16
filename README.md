@@ -6,8 +6,13 @@
 
 Array - 数组处理
 
-# jQuery 仅1.x版本，未使用jquery2,3进行开发过
 
+
+# jQuery
+
+> jQuery仅为1.x版本的内容，未使用jquery2,3进行开发项目
+
+Base - 基础使用
 
 Selector - 选择器
 
