@@ -36,8 +36,8 @@ Dom handle - 元素处理
   - [My97DatePicker](http://www.my97.net/)
   - [bootstrap-datetimepicker](https://github.com/smalot/bootstrap-datetimepicker)
   - [bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker)
-- 文件上传
-  - [FineUploader](https://github.com/FineUploader/fine-uploader)
+- 文件上传  
+  - [FineUploader](https://github.com/FineUploader/fine-uploader)
 
 
 ## 其它类型推荐
