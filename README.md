@@ -54,6 +54,10 @@ Dom handle - 元素处理
   - [bPage](https://github.com/TerryZ/bPage)
 - 树
   - [zTree](http://www.treejs.cn)
+- 动画与效果
+  - [animate.css](https://github.com/daneden/animate.css)
+  - [anime](https://github.com/juliangarnier/anime)
+  - [Effeckt](https://github.com/h5bp/Effeckt.css)
 - 图片效果与处理
   - [Gallery](https://github.com/blueimp/Gallery)  相册查看，跑马灯效果（滚动图片）
   - [elevatezoom](https://github.com/elevateweb/elevatezoom)  购物商城类图片预览放大
@@ -63,6 +67,11 @@ Dom handle - 元素处理
 - UI框架
   - [Bootstrap](http://getbootstrap.com/) 也许是全世界最流行的UI框架了
   - [Semantic UI](https://semantic-ui.com/)
+- 工具类
+  - [clipboard.js](https://github.com/zenorocha/clipboard.js)
+  - [中国行政区划代码](https://github.com/mumuy/data_location)
+  - [infinite-scroll](https://github.com/metafizzy/infinite-scroll) 滚动加载
+  - [masonry](https://github.com/desandro/masonry) 瀑布流
 
 ## Interesting
 
