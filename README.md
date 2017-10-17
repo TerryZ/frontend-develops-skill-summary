@@ -69,9 +69,9 @@ Dom handle - 元素处理
   - [Semantic UI](https://semantic-ui.com/)
 - 工具类
   - [clipboard.js](https://github.com/zenorocha/clipboard.js)
-  - [中国行政区划代码](https://github.com/mumuy/data_location)
-  - [infinite-scroll](https://github.com/metafizzy/infinite-scroll) 滚动加载
-  - [masonry](https://github.com/desandro/masonry) 瀑布流
+  - [中国行政区划代码](https://github.com/mumuy/data_location)
+  - [infinite-scroll](https://github.com/metafizzy/infinite-scroll) 滚动加载
+  - [masonry](https://github.com/desandro/masonry) 瀑布流
 
 ## Interesting
 
