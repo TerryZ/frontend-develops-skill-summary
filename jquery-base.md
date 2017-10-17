@@ -4,6 +4,28 @@
 
 - [Javascript对象复制引用机制及$.extend复制特点](#)
 
+### Json数据的相关操作
+
+其实使用 `$.each` 也可以操作object对象
+```js
+var data = {a:11,b:22,c:33};
+$.each(data,function(i,n){
+	console.log(i + ' - ' + n);
+});
+//a - 11
+//b - 22
+//c - 33
+```
+在操作数组时，callback的第一个参数是数组下标，在操作对象是就是Key；第二参数是数组的具体元素，操作对象时，是属性的值内容
+
+### 数组的相关操作
+
+数组数据反转操作
+```js
+$(selector).reverse().each(...);
+```
+这里的 `reverse()` 函数是Javascript数组(Array)原生的方法，功能是将数组的内容进行倒置
+
 
 ### Javascript对象复制引用机制及$.extend复制特点
 
