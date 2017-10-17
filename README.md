@@ -65,7 +65,7 @@ Dom handle - 元素处理
   - [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
   - [IconFont](http://www.iconfont.cn/)
 - UI框架
-  - [Bootstrap](http://getbootstrap.com/) 也许是全世界最流行的UI框架了
+  - [Bootstrap](http://getbootstrap.com/) 也许是全世界最流行的UI框架了
   - [Semantic UI](https://semantic-ui.com/)
 - 工具类
   - [clipboard.js](https://github.com/zenorocha/clipboard.js)
