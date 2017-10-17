@@ -4,9 +4,9 @@
 
 ## Javascript 
 
-[Javascript - 基本使用](javascript-base.md)
+[Base - 基本使用](javascript-base.md)
 
-[Javascript - DOM操作](javascript-dom.md)
+[Dom - DOM操作](javascript-dom.md)
 
 Array - 数组处理
 
