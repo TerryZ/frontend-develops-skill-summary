@@ -4,6 +4,10 @@
 
 ## Javascript 
 
+[Javascript - 基本使用](javascript-base.md)
+
+[Javascript - DOM操作](javascript-dom.md)
+
 Array - 数组处理
 
 
@@ -12,7 +16,7 @@ Array - 数组处理
 
 > jQuery仅为1.x版本的内容，未使用jquery2,3进行开发项目
 
-[Base - 基础使用](jquery-base.md)
+[Base - 基本使用](jquery-base.md)
 
 Selector - 选择器
 
