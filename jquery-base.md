@@ -4,7 +4,7 @@
 
 - [Json数据的相关操作](#Json数据的相关操作)
 - [数组的相关操作](#数组的相关操作)
-- [Javascript对象复制引用机制及$.extend复制特点](#Javascript对象复制引用机制及$.extend复制特点)
+- [Javascript对象复制引用机制及$.extend复制特点](#user-content-javascript对象复制引用机制及extend复制特点)
 
 ### Json数据的相关操作
 
