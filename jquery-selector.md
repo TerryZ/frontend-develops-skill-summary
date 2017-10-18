@@ -18,7 +18,11 @@
 4. **tag.className** - `$('input.myInput')` 指定标签类型再指定子元素的查找表达式
 5. **.className** - `$('.myInput')` 样式选择器，性能最强，建议只在小范围中使用，例如已经获得了父容器的对象，在父容器的基础上再使用样式选择器，查找的范围可以被尽可能的缩小
   ```js
-  kdjfsjfkljsklf
+  <div id="myDiv">
+  <input type="text" class="inputBox">
+  </div>
+  var parent = $('#myDiv');
+  var input = $('.inputBox',parent);
   ```
 6. 基本原则地基本原则地
 
