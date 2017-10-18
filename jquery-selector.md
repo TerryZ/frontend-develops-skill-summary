@@ -20,7 +20,7 @@
   <div id="myDiv">
   <input type="text" class="inputBox">
   </div>
-  ```
+  ```  
   js
   ```js
   var parent = $('#myDiv');
