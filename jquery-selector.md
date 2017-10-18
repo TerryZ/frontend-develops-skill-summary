@@ -26,7 +26,7 @@
     var parent = $('#myDiv');
     var input = $('.inputBox',parent);
     ```
-6. 基本原则地基本原则地
+
 
 
 ### 尝试使用子集查找
