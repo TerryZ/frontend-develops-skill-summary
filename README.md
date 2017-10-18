@@ -18,7 +18,7 @@ Array - 数组处理
 
 [Base - 基本使用](jquery-base.md)
 
-Selector - 选择器
+[Selector - 选择器](jquery-selector.md)
 
 Events - 事件
 
