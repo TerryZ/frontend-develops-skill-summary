@@ -53,6 +53,8 @@ Dom handle - 元素处理
   - [FineUploader](https://github.com/FineUploader/fine-uploader)
 - 独立分页
   - [bPage](https://github.com/TerryZ/bPage)
+- 菜单
+  - [SelectMenu](https://github.com/TerryZ/SelectMenu)
 - 树
   - [zTree](http://www.treejs.cn)
 - 动画与效果
