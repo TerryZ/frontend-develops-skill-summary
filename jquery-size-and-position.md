@@ -13,7 +13,7 @@
 
 ### 浏览器区域的宽度高度
 
-页面完整高度、宽度
+页面完整高度、宽度，即文档高度和宽度
 ```js
 $(document).width();
 $(document).height();
@@ -24,6 +24,12 @@ $(document).height();
 $(window).width();
 $(window).height();
 ```
+
+屏幕当前位置距离文档顶端的距离
+```js
+$(window).scrollTop();
+```
+
 
 ### 判断当前页面是否存在滚动条
 ```js
