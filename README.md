@@ -38,6 +38,7 @@ Dom handle - 元素处理
 - 消息弹出层
   - [Layer](http://layer.layui.com/)
   - [bDialog](https://github.com/TerryZ/bDialog) 对Bootstrap Modal 功能增加扩展弹窗解决方案
+  - [SweetAlert](https://github.com/t4t5/sweetalert)
   - [qTip2](https://github.com/qTip2/qTip2)
 - 图表
   - [echarts](http://echarts.baidu.com/)
