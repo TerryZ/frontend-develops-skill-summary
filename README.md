@@ -20,7 +20,7 @@ Array - 数组处理
 
 [Selector - 选择器](jquery-selector.md)
 
-Events - 事件
+[Events - 事件](jquery-event.md)
 
 [Size and position - 尺寸与定位](jquery-size-and-position.md)
 
