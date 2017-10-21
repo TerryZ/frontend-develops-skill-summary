@@ -1,4 +1,4 @@
-jQuery - event 事件处理
+<center>jQuery - event 事件处理</center>
 ========================================
 
 ## 目录
