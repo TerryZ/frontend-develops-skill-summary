@@ -38,13 +38,13 @@
 
 html
 ```html
-<ul>
+<ul id='myUl'>
 </ul>
 ```
 
 jquery
 ```js
-$(ul).on('click','li',function(){
+$('#myUl').on('click','li',function(){
   //do something
 });
 ```
