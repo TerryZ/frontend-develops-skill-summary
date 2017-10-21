@@ -1,4 +1,4 @@
-# jQuery - Size and position 尺寸和定位
+# <div align="center">jQuery - Size and position 尺寸和定位</div>
 
 ## 目录
 
@@ -11,7 +11,7 @@
 <br><br><br><br><br><br><br>
 
 
-### 浏览器区域的宽度高度
+## 浏览器区域的宽度高度
 
 页面完整高度、宽度，即文档高度和宽度
 ```js
@@ -30,10 +30,12 @@ $(window).height();
 $(window).scrollTop();
 ```
 
+<br><br>
 
-### 判断当前页面是否存在滚动条
+## 判断当前页面是否存在滚动条
 ```js
 if($(document).height() > $(window).height()){
   //do something
 }
 ```
+<br><br>
