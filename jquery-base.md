@@ -1,4 +1,4 @@
-# jQuery - base 基本使用
+# <div align="center">jQuery - base 基本使用</div>
 
 ## 目录
 
@@ -6,7 +6,7 @@
 - [数组的相关操作](#数组的相关操作)
 - [Javascript对象复制引用机制及$.extend复制特点](#user-content-javascript对象复制引用机制及extend复制特点)
 
-### Json数据的相关操作
+## Json数据的相关操作
 
 其实使用 `$.each` 也可以操作object对象
 ```js
@@ -20,7 +20,9 @@ $.each(data,function(i,n){
 ```
 在操作数组时，callback的第一个参数是数组下标，在操作对象是就是Key；第二参数是数组的具体元素，操作对象时，是属性的值内容
 
-### 数组的相关操作
+<br><br>
+
+## 数组的相关操作
 
 数组数据反转操作
 ```js
@@ -28,8 +30,9 @@ $(selector).reverse().each(...);
 ```
 这里的 `reverse()` 函数是Javascript数组(Array)原生的方法，功能是将数组的内容进行倒置
 
+<br><br>
 
-### Javascript对象复制引用机制及$.extend复制特点
+## Javascript对象复制引用机制及$.extend复制特点
 
 首先复习一下javascript中的变量类型
 
@@ -144,4 +147,4 @@ b.c.aa = 33;
 console.log(a);//{a:1,b:2,c:{aa:11,bb:22}}
 console.log(b);//{a:1,b:3,c:{aa:33,bb:22}}
 ```
- 
+<br><br>
