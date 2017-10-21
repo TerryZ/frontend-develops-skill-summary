@@ -4,6 +4,7 @@ jQuery - event 事件处理
 ## 目录
 
 - [一些建议](#一些建议)
+- [鼠标移入移出](#鼠标移入移出)
 - [使用命名空间绑定事件](#使用命名空间绑定事件)
 
 <br><br><br><br><br><br><br>
@@ -38,6 +39,7 @@ $(div).hover(function(){
 
 `mouseover` 对比 `mouseenter` 、 `mouseout` 对比 `mouseleave` 的本质区别就是 `mouseover` 、 `mouseout` 会被子元素的 `mouseover` 、 `mouseout` 冒泡而触发，而 `mouseenter` 和 `mouseleave` 不被子元素事件冒泡而触发
 
+<br><br>
 
 ## 使用命名空间绑定事件
 
