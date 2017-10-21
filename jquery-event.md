@@ -1,4 +1,4 @@
-<center>jQuery - event 事件处理</center>
+<center> jQuery - event 事件处理</center>
 
 
 
