@@ -8,7 +8,7 @@ jQuery - event 事件处理
 
 <br><br><br><br><br><br><br>
 
-### 一些建议
+## 一些建议
 
 - 用.bind()的代价是非常大的，它会把相同的一个事件处理程序hook到所有匹配的DOM元素上
 - 不要再用.live()了，它已经不再被推荐了，而且还有许多问题
@@ -39,7 +39,7 @@ $(div).hover(function(){
 `mouseover` 对比 `mouseenter` 、 `mouseout` 对比 `mouseleave` 的本质区别就是 `mouseover` 、 `mouseout` 会被子元素的 `mouseover` 、 `mouseout` 冒泡而触发，而 `mouseenter` 和 `mouseleave` 不被子元素事件冒泡而触发
 
 
-### 使用命名空间绑定事件
+## 使用命名空间绑定事件
 
 在早期的jQuery版本中，命名空间是使用 `namespace.event` 的格式，而现在应该使用 `event.namesapce` 的格式
 
