@@ -1,4 +1,4 @@
-<center> jQuery - event 事件处理</center>
+<p style="text-align: center;"> jQuery - event 事件处理</p>
 
 
 
