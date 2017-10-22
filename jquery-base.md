@@ -34,6 +34,13 @@ $(selector).reverse().each(...);
 
 <br><br>
 
+## $.each 遍历中的 `continue` 和 `break`
+
+我们知道在原生 javascript 的循环遍历 `for` 中控制循环跳到下一轮和中断循环的语句是 `continue` 和 `break` 。而在使用 jquery 的过程中，`$.each` 可以是说是 `for` 是更简单好用，功能更强大的替代者，但是， `$.each` 是不支持 `continue` 和 `break` 的，想实现循环控制的功能则需要使用 `return` 表达式，这也是很多新人在循环中想在满足一定条件后，直接退出 function 并返回相应的值，却发现结果和期望不一致的原因
+
+- return true     - `continue`
+- return false    - `break`
+
 ## Javascript对象复制引用机制及$.extend复制特点
 
 首先复习一下javascript中的变量类型
