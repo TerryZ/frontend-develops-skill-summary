@@ -2,7 +2,7 @@
 
 ## 目录
 
-- [switch 中容易被忽视的细节](#user-content-switch中容易被忽视的细节)
+- [switch 中容易被忽视的细节](#user-content-switch-中容易被忽视的细节)
 
 <br><br><br><br><br><br>
 
