@@ -1,4 +1,4 @@
-# Javascript - base 基本使用
+# <div align="center">Javascript - base 基本使用</center>
 
 ## 目录
 
