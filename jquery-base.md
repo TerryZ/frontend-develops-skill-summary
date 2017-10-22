@@ -15,7 +15,7 @@
 ```js
 var data = {a:11,b:22,c:33};
 $.each(data,function(i,n){
-	console.log(i + ' - ' + n);
+    console.log(i + ' - ' + n);
 });
 //a - 11
 //b - 22
