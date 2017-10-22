@@ -76,7 +76,6 @@ jQuery对于宽度、高度的结果是同一套规则，这里仅以宽度为�
 在javascript中，对象的函数里有一个getBoundingClientRect()的API函数，返回值是一个 DOMRect 对象，这个对象是由该元素的 getClientRects() 方法返回的一组矩形的集合, 即：是与该元素相关的CSS 边框集合 。
 
 
-
 如图所示，函数返回的内容，包含如下8个属性：
 
 - bottom
