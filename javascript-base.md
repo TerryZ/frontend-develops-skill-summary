@@ -2,20 +2,60 @@
 
 ## 目录
 
-- [Json数据的相关操作](#user-content-json数据的相关操作)
+- [switch 中容易被忽视的细节](#user-content-switch中容易被忽视的细节)
 
-### Json数据的相关操作
+<br><br><br><br><br><br>
 
-其实使用 `$.each` 也可以操作object对象
+## `switch` 中容易被忽视的细节
+
+通常我们使用条件判断是使用 `if` ，但如果需要判断的情况较多，或是对每一个枚举的值都需要做不同处理，就会用到 `switch` 语句，不同条件执行不同代码块，首先来看一段代码
+
 ```js
-var data = {a:11,b:22,c:33};
-$.each(data,function(i,n){
-	console.log(i + ' - ' + n);
-});
-//a - 11
-//b - 22
-//c - 33
+var num = '5';
+switch(num){
+    case 5:
+        console.log('result is ' + num);
+        break;
+    default:
+        console.log('this is default branch');
+}
+//this is default branch
 ```
-在操作数组时，callback的第一个参数是数组下标，在操作对象是就是Key；第二参数是数组的具体元素，操作对象时，是属性的值内容
 
+执行的代码块好像和期待的结果不一样，代码走到了 `default` 分支。使用 `if` 语句来试试
 
+```js
+var num = '5';
+if(num == 5)
+    console.log('match');
+else
+    console.log('no match');
+//match
+```
+
+使用 `if` 判断结果是正确的！那么，使用严格比较
+
+```js
+var num = '5';
+if(num === 5)
+    console.log('match');
+else
+    console.log('no match');
+//no match
+```
+
+这里的结果就和 `switch` 的结果一致了，说明 `switch` 中对于判断是使用的严格判断，那么修改 `switch` 中的判断条件，结果就满足期望了
+
+```js
+var num = '5';
+switch(num){
+    case '5':
+        console.log('result is ' + num);
+        break;
+    default:
+        console.log('this is default branch');
+}
+//result is 5
+```
+
+<br><br>
