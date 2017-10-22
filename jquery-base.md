@@ -41,6 +41,20 @@ $(selector).reverse().each(...);
 - return true     - `continue`
 - return false    - `break`
 
+**example**
+
+```js
+//only need top 5 data in array
+var arr = [1,2,3,4,5,6,7], newarr = [];
+$.each(arr,function(index,row){
+	if(index > 5) return false;
+	newarr.push(row);
+});
+console.log(newarr.toString());
+//1,2,3,4,5
+```
+
+
 ## Javascript对象复制引用机制及$.extend复制特点
 
 首先复习一下javascript中的变量类型
