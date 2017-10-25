@@ -2,12 +2,27 @@
 
 ## 目录
 
+- [判断元素是显示还是隐藏](#判断元素是显示还是隐藏)
 - [Json数据的相关操作](#user-content-json数据的相关操作)
 - [数组的相关操作](#数组的相关操作)
 - [$.each 遍历中的 continue 和 break](#user-content-each-遍历中的-continue-和-break)
 - [Javascript对象复制引用机制及$.extend复制特点](#user-content-javascript对象复制引用机制及extend复制特点)
 
 <br><br><br><br><br><br>
+
+## 判断元素是显示还是隐藏
+
+```js
+//判断元素是否为隐藏状态
+if($(obj).is(':hidden')){
+    //do something
+}
+//判断元素是否为显示状态
+if($(obj).is(':visible')){
+    //do something
+}
+```
+<br><br>
 
 ## Json数据的相关操作
 
