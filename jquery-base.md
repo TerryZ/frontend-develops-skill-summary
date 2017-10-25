@@ -11,7 +11,7 @@
 
 ## Json数据的相关操作
 
-其实使用 `$.each` 也可以操作object对象
+其实使用 `$.each` 也可以操作 object 对象
 ```js
 var data = {a:11,b:22,c:33};
 $.each(data,function(i,n){
