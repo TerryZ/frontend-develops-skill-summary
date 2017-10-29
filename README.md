@@ -8,7 +8,7 @@
 
 [Dom - DOM操作](javascript-dom.md)
 
-Array - 数组处理
+[Array - 数组处理](javascript-array.md)
 
 
 
