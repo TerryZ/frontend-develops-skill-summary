@@ -75,7 +75,8 @@ Dom handle - 元素处理
   - [中国行政区划代码](https://github.com/mumuy/data_location)
   - [infinite-scroll](https://github.com/metafizzy/infinite-scroll) 滚动加载
   - [masonry](https://github.com/desandro/masonry) 瀑布流
-  - [FullPage](https://github.com/alvarotrigo/fullPage.js) 全屏滚动效果
+  - [FullPage](https://github.com/alvarotrigo/fullPage.js) 全屏滚动效果
+
 
 ## Interesting
 
