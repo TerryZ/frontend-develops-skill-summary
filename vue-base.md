@@ -9,7 +9,7 @@
 
 ## Vue2.x 学习顺序建议
 
-`Vue` 的作者尤雨溪建议对于 `Vue2.x` 的学习顺序建议
+`Vue` 作者尤雨溪对于 `Vue2.x` 的学习顺序建议
 
 > 注：2.0 已经有 [中文文档](https://cn.vuejs.org/) 。如果对自己英文有信心，也可以直接阅读 [英文文档](https://vuejs.org/) ，根据自身实际情况灵活调整。
 
@@ -29,11 +29,11 @@
 
 **前端生态/工程化**
 
-1. 了解 JavaScript 背后的规范，ECMAScript 的历史和目前的规范制定方式。学习 ES2015/16 的新特性，理解 ES2015 modules，适当关注 [还未成为标准的提案] (https://github.com/tc39/proposals)。
+1. 了解 JavaScript 背后的规范，ECMAScript 的历史和目前的规范制定方式。学习 ES2015/16 的新特性，理解 ES2015 modules，适当关注 [还未成为标准的提案] (https://github.com/tc39/proposals)  。
 
 2. 学习命令行的使用。建议用 Mac。
 
-3. 学习 Node.js 基础。**建议使用 [nvm](https://github.com/creationix/nvm) 这样的工具来管理机器上的 Node 版本，并且将 npm 的 registry 注册表配置为 [淘宝的镜像源](https://npm.taobao.org/) 。**至少要了解 npm 的常用命令，npm scripts 如何使用，语义化版本号规则，CommonJS 模块规范（了解它和 ES2015 Modules 的异同），Node 包的解析规则，以及 Node 的常用 API。应当做到可以自己写一些基本的命令行程序。注意最新版本的 Node (6+) 已经支持绝大部分 ES2015 的特性，可以借此巩固 ES2015。
+3. 学习 Node.js 基础。**建议使用 [nvm](https://github.com/creationix/nvm) 这样的工具来管理机器上的 Node 版本，并且将 npm 的 registry 注册表配置为 [淘宝的镜像源](https://npm.taobao.org/) 。** 至少要了解 npm 的常用命令，npm scripts 如何使用，语义化版本号规则，CommonJS 模块规范（了解它和 ES2015 Modules 的异同），Node 包的解析规则，以及 Node 的常用 API。应当做到可以自己写一些基本的命令行程序。注意最新版本的 Node (6+) 已经支持绝大部分 ES2015 的特性，可以借此巩固 ES2015。
 
 4. 了解如何使用 / 配置 Babel 来将 ES2015 编译到 ES5 用于浏览器环境。
 
