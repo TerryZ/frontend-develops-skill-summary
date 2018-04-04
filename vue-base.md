@@ -25,21 +25,21 @@
 
 **前端生态/工程化**
 
-1. 了解 JavaScript 背后的规范，ECMAScript 的历史和目前的规范制定方式。学习 ES2015/16 的新特性，理解 ES2015 modules，适当关注还未成为标准的提案。
+1. 了解 JavaScript 背后的规范，ECMAScript 的历史和目前的规范制定方式。学习 ES2015/16 的新特性，理解 ES2015 modules，适当关注 [还未成为标准的提案] (https://github.com/tc39/proposals)。
 
 2. 学习命令行的使用。建议用 Mac。
 
-3. 学习 Node.js 基础。建议使用 nvm 这样的工具来管理机器上的 Node 版本，并且将 npm 的 registry 注册表配置为淘宝的镜像源。至少要了解 npm 的常用命令，npm scripts 如何使用，语义化版本号规则，CommonJS 模块规范（了解它和 ES2015 Modules 的异同），Node 包的解析规则，以及 Node 的常用 API。应当做到可以自己写一些基本的命令行程序。注意最新版本的 Node (6+) 已经支持绝大部分 ES2015 的特性，可以借此巩固 ES2015。
+3. 学习 Node.js 基础。**建议使用 [nvm](https://github.com/creationix/nvm) 这样的工具来管理机器上的 Node 版本，并且将 npm 的 registry 注册表配置为 [淘宝的镜像源](https://npm.taobao.org/) 。**至少要了解 npm 的常用命令，npm scripts 如何使用，语义化版本号规则，CommonJS 模块规范（了解它和 ES2015 Modules 的异同），Node 包的解析规则，以及 Node 的常用 API。应当做到可以自己写一些基本的命令行程序。注意最新版本的 Node (6+) 已经支持绝大部分 ES2015 的特性，可以借此巩固 ES2015。
 
 4. 了解如何使用 / 配置 Babel 来将 ES2015 编译到 ES5 用于浏览器环境。
 
-5. 学习 Webpack。Webpack 是一个极其强大同时也复杂的工具，作为起步，理解它的『一切皆模块』的思想，并基本了解其常用配置选项和 loader 的概念/使用方法即可，比如如何搭配 Webpack 使用 Babel。学习 Webpack 的一个挑战在于其本身文档的混乱，建议多搜索搜索，应该还是有质量不错的第三方教程的。英文好的建议阅读 Webpack 2.0 的文档，比起 1.0 有极大的改善，但需要注意和 1.0 的不兼容之处。
+5. 学习 Webpack。Webpack 是一个极其强大同时也复杂的工具，作为起步，理解它的『一切皆模块』的思想，并基本了解其常用配置选项和 loader 的概念/使用方法即可，比如如何搭配 Webpack 使用 Babel。学习 Webpack 的一个挑战在于其本身文档的混乱，建议多搜索搜索，应该还是有质量不错的第三方教程的。英文好的建议阅读 [Webpack 2.0 的文档](https://webpack.js.org/guides/getting-started/) ，比起 1.0 有极大的改善，但需要注意和 1.0 的不兼容之处。
 
 **Vue 进阶**
 
-1. 有了 Node 和 Webpack 的基础，可以通过 vue-cli 来搭建基于 Webpack ，并且支持单文件组件的项目了。建议用 webpack-simple 这个模板开始，并阅读官方教程进阶篇剩余的内容以及 vue-loader 的文档，了解一些进阶配置。有兴趣的可以自己亲手从零开始搭一个项目加深理解。
+1. 有了 Node 和 Webpack 的基础，可以通过 vue-cli 来搭建基于 Webpack ，并且支持单文件组件的项目了。建议用 webpack-simple 这个模板开始，并阅读官方教程进阶篇剩余的内容以及 [vue-loader 的文档](https://vue-loader.vuejs.org/) ，了解一些进阶配置。有兴趣的可以自己亲手从零开始搭一个项目加深理解。
 
-2. 根据 例子 尝试在 Webpack 模板基础上整合 vue-router 和 vuex
+2. 根据 [例子](https://github.com/vuejs/vue-hackernews-2.0) 尝试在 Webpack 模板基础上整合 vue-router 和 vuex
 
 3. 深入理解 Virtual DOM 和『渲染函数 (Render Functions)』这一章节（可选择性使用 JSX)，理解模板和渲染函数之间的对应关系，了解其使用方法和适用场景。
 
@@ -47,7 +47,7 @@
 
 5. 阅读开源的 Vue 应用、组件、插件源码，自己尝试编写开源的 Vue 组件、插件。
 
-6. 参考 贡献指南 阅读 Vue 的源码，理解内部实现细节。（需要了解 Flow）
+6. 参考 [贡献指南](https://github.com/vuejs/vue/blob/dev/.github/CONTRIBUTING.md#development-setup) 阅读 Vue 的源码，理解内部实现细节。（需要了解 Flow）
 
 7. 参与 Vue GitHub issue 的定位 -> 贡献 PR -> 加入核心团队 -> 升任 CTO -> 迎娶白富美...（误
 
