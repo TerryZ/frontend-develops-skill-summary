@@ -29,7 +29,7 @@
 
 **前端生态/工程化**
 
-1. 了解 JavaScript 背后的规范，ECMAScript 的历史和目前的规范制定方式。学习 ES2015/16 的新特性，理解 ES2015 modules，适当关注 [还未成为标准的提案] (https://github.com/tc39/proposals)  。
+1. 了解 JavaScript 背后的规范，ECMAScript 的历史和目前的规范制定方式。学习 ES2015/16 的新特性，理解 ES2015 modules，适当关注 [还未成为标准的提案](https://github.com/tc39/proposals)  。
 
 2. 学习命令行的使用。建议用 Mac。
 
