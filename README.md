@@ -30,6 +30,16 @@ Dom handle - 元素处理
 
 > Vue 从 2.0 开始
 
+[Base - 核心功能](vue-base.md)
+
+[VueRouter - 路由功能](vue-router.md)
+
+[Vuex - 数据状态控制](vuex.md)
+
+[Component - 组件开发](vue-component.md)
+
+[Plugin - 插件开发](vue-plugin.md)
+
 
 ## 插件推荐
 - 数据表格
