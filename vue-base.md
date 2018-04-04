@@ -4,6 +4,9 @@
 
 - [Vue2.x 学习顺序建议](#vue2x-学习顺序建议)
 
+
+<br><br><br><br><br><br>
+
 ## Vue2.x 学习顺序建议
 
 `Vue` 的作者尤雨溪建议对于 `Vue2.x` 的学习顺序建议
@@ -53,3 +56,9 @@
 7. 参与 Vue GitHub issue 的定位 -> 贡献 PR -> 加入核心团队 -> 升任 CTO -> 迎娶白富美...（误
 
 
+
+## Vue2.x 生命周期
+
+`Vue2.x` 的生命周期图例
+
+![Vue2.x生命周期](https://cn.vuejs.org/images/lifecycle.png)
