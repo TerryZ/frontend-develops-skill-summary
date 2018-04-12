@@ -1,4 +1,4 @@
-# <div align="center">Javascript - ES6</center>
+# <div align="center">Javascript - ES6 实用技巧</center>
 
 ## 目录
 
