@@ -66,6 +66,64 @@ a = 2;// Uncaught TypeError: Assignment to constant variable.
 
 ## 对象扩展
 
+**属性的简洁表示**
+```js
+//直接使用变量/常量的名称个为对象属性的名称
+let a = 'abc';
+let b = {a};//{a: 'abc'}
+
+function f(x, y){ return {x, y};}
+//等效于
+function f(x, y){ return {x: x, y: y}}
+
+let o = {
+  f(){ return 1; }
+}
+//等效于
+let o = {
+  f: function(){ return 1; }
+}
+```
+
+**判断对象是否为数组**
+```js
+if(Object.isArray(someobj)){}
+```
+
+**对象内容合并**
+```js
+let a = {a:1,b:2}, b = {b:3}, c = {b:4,c:5};
+let d = Object.assign(a, b, c);
+console.log(d);//{a:1,b:4,c:5}
+console.log(a);//{a:1,b:4} 上面的合并方式会同时更新 a 对象的内容，a 的属性如果有多次合并会被更新数据，但自身没有的属性，其它对象有的属性不会被添加到 a 身上，只会影响第一个，后面的参数对象不会被修改数据
+
+//推荐使用这种方式进行对象数据合并
+let a = {a:1,b:2}, b = {b:3}, c = {b:4,c:5};
+let d = Object.assign({}, a, b, c);//第一个参数增加一个空对象，在合并时让它被更新，不影响实际的对象变量内容
+console.log(d);//{a:1,b:4,c:5}//与上面的方式合并结果一致，使用这种方式, a 对象的内容就不会被影响了
+```
+对象内容合并的方向是从参数顺序的后向前合并
+
+**对象内容集合**
+`Object.keys()` - 获得对象中所有的键名，以数组的形式返回
+```js
+var obj = { a:1,b:2 };
+var names = Object.keys(obj);//['a', 'b']
+```
+
+`Object.values()` - 获得对象中所有的值内容，以数组的形式返回
+```js
+var obj = { a:1,b:2 };
+var values = Object.values(obj);//[1, 2]
+```
+
+`Object.entries()` - 获得对象中所有的成员数据，以数组的形式返回，成员的内容也是数组形式
+```js
+var obj = { a:1,b:2 };
+var values = Object.entries(obj);//[['a',1], ['b',2]]
+```
+
+其实观察可发现，`Object.keys()`, `Object.values()`, `Object.entries()`，与 `Java` 的 `MAP` 中的方法是一致的，不论是方法名还是具体的用法，这也可以帮忙理解这些功能 API
 
 <br><br>
 
