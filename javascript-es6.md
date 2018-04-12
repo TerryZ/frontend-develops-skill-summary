@@ -89,6 +89,49 @@ Number.isNaN(1)//false
 'abcdef'.endsWith('d', 4);//true 前面的4个字符里，是否以 'd' 字符为结尾
 ```
 
+**字符串内容重复输出**
+```js
+'a'.repeat(5);//aaaaa 重复输出5遍
+```
+
+**原生支持模板语言**
+```js
+//es5
+$('#result').append(
+  'There are <b>' + basket.count + '</b> ' +
+  'items in your basket, ' +
+  '<em>' + basket.onSale +
+  '</em> are on sale!'
+);
+//es6
+//在es6中，内容模板，可以定义在 `` 包起来的字符串中，其中的内容会保持原有格式
+//另外可以在字符串中直接使用模板语言进行变量填充
+$('#result').append(`
+  There are <b>${basket.count}</b> items
+   in your basket, <em>${basket.onSale}</em>
+  are on sale!
+`);
+```
+
+**字符串遍历输出**
+```js
+//for ...of 格式为 es6 中的 Iterator 迭代器的输出方式
+for(let c of 'abc'){
+  console.log(c);
+}
+//a
+//b
+//c
+```
+
+**字符串补全**
+```js
+//参数1：[number] 目标字符串长度
+//参数2：[string] 进行补全的字符串
+'12345'.padStart(7, '0')//0012345 - 字符串不足7位，在头部补充不足长度的目标字符串
+'12345'.padEnd(7, '0')//1234500 - 在尾部进行字符串补全
+```
+
 <br><br>
 
 ## 数组扩展
