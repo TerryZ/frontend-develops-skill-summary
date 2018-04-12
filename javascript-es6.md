@@ -105,7 +105,7 @@ $('#result').append(
 );
 //es6
 //在es6中，内容模板，可以定义在 `` 包起来的字符串中，其中的内容会保持原有格式
-//另外可以在字符串中直接使用模板语言进行变量填充
+//另外可以在字符串中直接使用模板语言进行变量填充，优雅而简洁
 $('#result').append(`
   There are <b>${basket.count}</b> items
    in your basket, <em>${basket.onSale}</em>
