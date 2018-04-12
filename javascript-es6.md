@@ -61,6 +61,62 @@ a = 2;// Uncaught TypeError: Assignment to constant variable.
 
 ## 数组扩展
 
+**数据检索**
+
+```js
+[1,2,3].includes(5);//false，检索数据中是否有5
+```
+
+**合并数组**
+
+```js
+var a = [1, 2];
+var b = [3];
+var c = [2, 4];
+var d = [...a, ...b, ...c];//[1, 2, 3, 2, 4] 所有内容合并，但并不会去除重复
+```
+
+**快速转换为数组**
+
+```js
+Array.of(3,4,5)//[3,4,5]
+```
+
+**判断是否数组**
+
+```js
+if(Array.isArray(obj)){...}
+```
+
+**内容实例**
+
+`.keys()` - 获得数组中所有元素的键名（实际上就是下标索引号）
+
+`.values()` - 获得数组中所有元素的数据
+
+`.entries()` - 获得数组中所有数据的键名和数据
+
+```js
+for (let index of ['a', 'b'].keys()) {
+  console.log(index);
+}
+// 0
+// 1
+
+for (let elem of ['a', 'b'].values()) {
+  console.log(elem);
+}
+// 'a'
+// 'b'
+
+for (let [index, elem] of ['a', 'b'].entries()) {
+  console.log(index, elem);
+}
+// 0 "a"
+// 1 "b"
+```
+`.entries()`, `.keys()`, `.values()` 功能与 `Object` 中的几个同名函数功能类似，实际使用中实用性不高，对于数组的操作，直接进行遍历即可
+
 
 <br><br>
 
