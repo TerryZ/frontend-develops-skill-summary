@@ -4,42 +4,47 @@
 
 ## Javascript 
 
-[Base - 基本使用](javascript-base.md)
+- [Base - 基本使用](javascript-base.md)
 
-[Dom - DOM操作](javascript-dom.md)
+- [Dom - DOM操作](javascript-dom.md)
 
-[Array - 数组处理](javascript-array.md)
+- [Array - 数组处理](javascript-array.md)
 
-[ES6](javascript-es6.md)
+- [ES6](javascript-es6.md)
+
+<br><br>
 
 ## jQuery
 
 > jQuery仅为1.x版本的内容，未使用jquery2,3进行开发项目
 
-[Base - 基本使用](jquery-base.md)
+- [Base - 基本使用](jquery-base.md)
 
-[Selector - 选择器](jquery-selector.md)
+- [Selector - 选择器](jquery-selector.md)
 
-[Events - 事件](jquery-event.md)
+- [Events - 事件](jquery-event.md)
 
-[Size and position - 尺寸与定位](jquery-size-and-position.md)
+- [Size and position - 尺寸与定位](jquery-size-and-position.md)
 
-Dom handle - 元素处理
+- Dom handle - 元素处理
+
+<br><br>
 
 ## Vue
 
 > Vue 从 2.0 开始
 
-[Base - 核心功能](vue-base.md)
+- [Base - 核心功能](vue-base.md)
 
-[VueRouter - 路由功能](vue-router.md)
+- [VueRouter - 路由功能](vue-router.md)
 
-[Vuex - 数据状态控制](vuex.md)
+- [Vuex - 数据状态控制](vuex.md)
 
-[Component - 组件开发](vue-component.md)
+- [Component - 组件开发](vue-component.md)
 
-[Plugin - 插件开发](vue-plugin.md)
+- [Plugin - 插件开发](vue-plugin.md)
 
+<br><br>
 
 ## 插件推荐
 - 数据表格
@@ -90,6 +95,7 @@ Dom handle - 元素处理
   - [masonry](https://github.com/desandro/masonry) 瀑布流
   - [FullPage](https://github.com/alvarotrigo/fullPage.js) 全屏滚动效果
 
+<br><br>
 
 ## Interesting
 
