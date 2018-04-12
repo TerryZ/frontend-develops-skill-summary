@@ -67,6 +67,7 @@ a = 2;// Uncaught TypeError: Assignment to constant variable.
 ## 对象扩展
 
 **属性的简洁表示**
+
 ```js
 //直接使用变量/常量的名称个为对象属性的名称
 let a = 'abc';
@@ -86,11 +87,13 @@ let o = {
 ```
 
 **判断对象是否为数组**
+
 ```js
 if(Object.isArray(someobj)){}
 ```
 
 **对象内容合并**
+
 ```js
 let a = {a:1,b:2}, b = {b:3}, c = {b:4,c:5};
 let d = Object.assign(a, b, c);
@@ -108,6 +111,7 @@ console.log(d);//{a:1,b:4,c:5}//与上面的方式合并结果一致，使用这
 对象内容合并的方向是从参数顺序的后向前合并
 
 **对象内容集合**
+
 `Object.keys()` - 获得对象中所有的键名，以数组的形式返回
 ```js
 var obj = { a:1,b:2 };
