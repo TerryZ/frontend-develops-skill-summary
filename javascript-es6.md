@@ -57,11 +57,18 @@ a = 2;// Uncaught TypeError: Assignment to constant variable.
 
 `Number.parseInt`, `Number.parseFloat` 与 `parseInt`, `parseFloat` 功能一致，在ES6中，推荐使用 `Number.` 的方式进行调用，这么做的目的是为了让代码的使用方式尽可能减少全局性方法，使用得语言逐步模块化
 
-**判断是否整数**
+**测试函数**
 ```js
+//测试是否整数
 Number.isInteger(21)//true
-Number.isInteger(1.11)/false
+Number.isInteger(1.11)//false
+
+//测试是否NaN
+Number.isNaN(Nan)//true
+Number.isNaN(1)//false
 ```
+
+
 
 <br><br>
 
