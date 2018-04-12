@@ -61,7 +61,7 @@ a = 2;// Uncaught TypeError: Assignment to constant variable.
 
 ## 数组扩展
 
-**数据检索**
+### 数据检索
 
 ```js
 [1,2,3].includes(5);//false，检索数据中是否有5
