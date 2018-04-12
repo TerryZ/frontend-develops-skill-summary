@@ -10,7 +10,7 @@
 
 [Array - 数组处理](javascript-array.md)
 
-
+[ES6](javascript-es6.md)
 
 ## jQuery
 
