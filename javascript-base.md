@@ -2,10 +2,45 @@
 
 ## 目录
 
+- [赋值](#赋值)
 - [Boolean值](#user-content-boolean值)
 - [switch 中容易被忽视的细节](#user-content-switch-中容易被忽视的细节)
 
 <br><br><br><br><br><br>
+
+## 赋值
+
+或表达式赋值
+
+> 表达式左边的值，若是空或是 `undefined` 等情况，则使用右边的内容进行赋值
+
+```js
+function(p){
+    var param = p || {a:1};
+}
+//等效于
+function(p){
+    var param;
+    if(!p) param = {a:1};
+}
+```
+
+与表达式赋值
+
+> 表达式左边的值非空时，使用右边的值进行赋值
+
+```js
+function(p){
+    var param = p && {a:1};
+}
+//等效于
+function(p){
+    var param;
+    if(p) param = {a:1};
+}
+```
+
+<br><br>
 
 ## Boolean值
 
