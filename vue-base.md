@@ -5,6 +5,7 @@
 - [Vue2.x 学习顺序建议](#vue2x-学习顺序建议)
 - [Vue2.x 生命周期](#vue2x-生命周期)
 - [数据对象监听](#数据对象监听)
+- [Component 数据输入和输出](#component-数据输入和输出)
 
 <br><br><br><br><br><br>
 
@@ -104,3 +105,36 @@ export default {
 ```
 
 根据 `VueJS` 官网的文档说明，监听数组不需要设置 deep，使用方式与普通数据的方式一致
+
+<br><br>
+
+## Component 数据输入和输出
+
+使用 component 做功能模块开发时，一定会需要涉及到数据的输入和输出
+
+- `props` 接收外部传入的参数
+- `$emit` 向外层触发事件并传递数据
+
+```js
+export default {
+  props: ['setting'],
+  data(){
+    
+    return{
+      setting: this.setting //将 props 中接收到的 setting 参数落地到本地的变量
+    }
+  }
+  methods: {
+    callback(){
+      this.$emit('data-change', 1); //触发外层监听的 data-change 事件，并传递数据 1
+    }
+  
+  }
+};
+```
+
+外层标签：
+```html
+<!-- 使用 v-bind 绑定数据到 setting 属性上，并监听 data-change 事件 -->
+<xxx :setting="{a:1,b:2}" @data-change="doSomething">
+```
