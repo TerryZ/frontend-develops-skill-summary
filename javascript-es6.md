@@ -381,4 +381,20 @@ let count = function(num){
 let count = num => num + 1;
 ```
 
-上面的例子给人最直观的感受就是 `function` 关键字 `{}` 和 `return` 等关键字不需要再使用了
+上面的例子在重构后，给人最直观的感受就是 `function` 关键字 `{}`、`()` 和 `return` 等关键字不再需要书写
+
+```js
+let count = num => {
+    let base = 50;
+    let step = 10;
+    return base + step + 1;
+};
+```
+
+在函数体一行代码不能完成时，就不能省略 `{}` 和 `return` 关键字了
+
+```js
+let count = (num, step) => num + step + 1;
+```
+
+当入参不止一个的情况，需使用小括号包裹
