@@ -1,6 +1,6 @@
 # <div align="center">Javascript - ES6 实用技巧</center>
 
-本文只罗列出在开发过程中使用 `ES6` 相对较实用的内容，并非一个高大全的文档，如果希望查阅详细的内容，可购买阮一峰老师所出版的 ES6 相关图书。另外阮一峰老师《ECMAScript 6 入门》一书在网上有对应的网站可访问，地址：[http://es6.ruanyifeng.com](http://es6.ruanyifeng.com)
+本文只罗列出在 `ES6` 开发过程中相对实用的内容，并非一个高大全的文档，如果希望查阅详细的内容，可购买阮一峰老师所出版的 ES6 相关图书。另外阮一峰老师《ECMAScript 6 入门》一书在网上有对应的网站可访问，地址：[http://es6.ruanyifeng.com](http://es6.ruanyifeng.com)
 
 ## 目录
 
