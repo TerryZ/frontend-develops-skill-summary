@@ -239,12 +239,6 @@ let o = {
 }
 ```
 
-**判断对象是否为数组**
-
-```js
-if(Object.isArray(someobj)){}
-```
-
 **对象内容合并**
 
 ```js
@@ -285,6 +279,15 @@ var values = Object.entries(obj);//[['a',1], ['b',2]]
 
 其实观察可发现，`Object.keys()`, `Object.values()`, `Object.entries()`，与 `Java` 的 `MAP` 中的方法是一致的，不论是方法名还是具体的用法，这也可以帮忙理解这些功能 API
 
+**对象内容测试**
+
+```js
+//判断对象是否为数组对象
+if(Object.isArray(someobj)){}
+//判断目标对象是否为空对象
+if(someobj && Object.keys(someobj).length)
+```
+
 <br><br>
 
 ## 解构赋值
@@ -313,8 +316,8 @@ console.log(length);//3
 let arr = [1,2];
 let obj = {a:1,b:2};
 function test ({a = 10, b}){
-	console.log('a:',a);
-	console.log('b:',b);
+    console.log('a:',a);
+    console.log('b:',b);
 }
 test(obj);
 解构赋值的使用实例，作为函数传参，并使用默认值
