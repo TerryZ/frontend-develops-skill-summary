@@ -341,7 +341,7 @@ let a = 0;
 对已存在的 a 进行修改值，并生成新的变量 b
 
 let obj = {
-	arr: ['aaa',{a:1}]
+    arr: ['aaa',{a:1}]
 };
 let {arr:[b, {a}]} = obj;//这里的arr互相映射
 console.log(b);
@@ -374,7 +374,7 @@ console.log(a.a);//1
 先看一个简单的例子
 ```js
 let count = function(num){
-	return num + 1;
+    return num + 1;
 };
 
 //使用箭头函数重构
