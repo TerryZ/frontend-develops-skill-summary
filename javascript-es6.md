@@ -1,5 +1,7 @@
 # <div align="center">Javascript - ES6 实用技巧</center>
 
+本文只罗列出在开发过程中使用 `ES6` 相对较实用的内容，并非一个高大全的文档，如果希望查阅详细的内容，可购买阮一峰老师所出版的 ES6 相关图书。另外阮一峰老师《ECMAScript 6 入门》一书在网上有对应的网站可访问，地址：[http://es6.ruanyifeng.com](http://es6.ruanyifeng.com)
+
 ## 目录
 
 - [定义变量/常量](#定义变量常量)
@@ -377,3 +379,5 @@ let count = function(num){
 //使用箭头函数重构
 let count = num => num + 1;
 ```
+
+上面的例子给人最直观的感受就是 `function` 关键字 `{}` 和 `return` 等关键字不需要再使用了
