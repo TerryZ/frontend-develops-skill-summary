@@ -374,7 +374,23 @@ console.log(a.a);//1
 
 ## 箭头函数
 
-先看一个简单的例子
+*箭头函数的基本语法*
+
+```js
+(参数1, 参数2, …, 参数N) => { 函数声明 }
+(参数1, 参数2, …, 参数N) => 表达式（单一）
+//相当于：(参数1, 参数2, …, 参数N) =>{ return 表达式; }
+
+// 当只有一个参数时，圆括号是可选的：
+(单一参数) => {函数声明}
+单一参数 => {函数声明}
+
+// 没有参数的函数应该写成一对圆括号。
+() => {函数声明}
+//箭头函数的内容不能用于构造函数，即声明的内容，不能通过 new 一个对象来使用
+```
+
+看一个简单的例子
 ```js
 let count = function(num){
     return num + 1;
@@ -384,7 +400,7 @@ let count = function(num){
 let count = num => num + 1;
 ```
 
-上面的例子在重构后，给人最直观的感受就是 `function` 关键字 `{}`、`()` 和 `return` 等关键字不再需要书写
+上面的例子在重构后，给人最直观的感受就是 `function` 关键字 `{}`、`()` 和 `return` 等关键字不再需要书写，对于简单的函数体，可简化不少代码
 
 ```js
 let count = num => {
@@ -394,7 +410,7 @@ let count = num => {
 };
 ```
 
-在函数体一行代码不能完成时，就不能省略 `{}` 和 `return` 关键字了
+在函数体一行代码不能完成时，就不能省略 `{}` 和 `return` 关键字
 
 ```js
 //多个入参
@@ -404,3 +420,43 @@ let count = () => 3.1415926;
 ```
 
 当入参不止一个或是没有入参时，需使用小括号包裹
+
+**返回一个对象**
+
+```js
+//错误，会报 SyntaxError
+let count = num => { base: 50, total: num + 100 };
+//正常返回对象
+let count = num => ({ base: 50, total: num + 100 });
+```
+
+通过上面的例子可以看得出，箭头函数很像匿名函数（`(function(args){...}(val))`），但又不完全一样，主要的区别在于 `this` 的使用结果
+
+```js
+let goods = {
+    price: 5,
+    total: function(quantity){
+        console.log(this.price);//5 - this 指向了 goods 对象
+        let calc = function(){
+            return quantity * this.price;//这里的 this 指向了window
+        }
+        return calc();
+    }
+};
+console.log(goods.total(5));//Nan
+```
+上面的例子当然可以使用传参或在函数外定义一个变量 that 来接收外部的 this(即函数内第一句)，并在函数内部使用 that 来解决问题，但这不在当前话题的讨论范围内
+
+```js
+let goods = {
+    price: 5,
+    total: function(quantity){
+        console.log(this.price);//5 - this 指向了 goods 对象
+        let calc = () => quantity * this.price; //这里的 this 同样指向了goods对象
+        return calc();
+    }
+};
+console.log(goods.total(5));//25
+```
+
+总结箭头函数的特点就是 `更短的函数` 和 `封闭上下文的 this`，也许更短的函数才是我们使用最多的地方
