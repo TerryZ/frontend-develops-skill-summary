@@ -44,6 +44,8 @@
 
 - [Plugin - 插件开发](vue-plugin.md)
 
+- [Http - 网络请求](vue-http.md)
+
 <br><br>
 
 ## 插件推荐
