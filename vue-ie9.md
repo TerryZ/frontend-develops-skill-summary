@@ -1,5 +1,9 @@
 # <div align="center">Vue - ie9 兼容</div>
 
+**背景情况**
+- vue2.5.11
+- vue-cli 使用模板 `webpack-simple`
+
 ## 目录
 
 - [es6](#es6)
@@ -10,6 +14,7 @@
 
 ## es6
 
+在使用 Vue 做项目开发时，
 ```html
 <user v-for="user, index in users"      
       :key="'user-' + user.id"
