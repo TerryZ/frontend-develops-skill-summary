@@ -6,6 +6,7 @@
 - [Vue2.x 生命周期](#vue2x-生命周期)
 - [数据对象监听](#数据对象监听)
 - [Component 数据输入和输出](#component-数据输入和输出)
+- [数据与DOM更新完成后的回调](#数据与DOM更新完成后的回调)
 
 <br><br><br><br><br><br>
 
@@ -135,4 +136,45 @@ export default {
 ```html
 <!-- 使用 v-bind 绑定数据到 setting 属性上，并监听 data-change 事件 -->
 <xxx :setting="{a:1,b:2}" @data-change="doSomething">
+```
+
+## 数据与DOM更新完成后的回调
+
+数据更新回调
+```js
+export default {
+    data(){
+        list: []
+    },
+    mounted(){
+        this.list = [1,2,3];
+        this.nextTick(()=>{
+            console.log('数据更新完成');
+        });
+    }
+};
+```
+
+Dom 更新回调
+*html*
+```html
+<template>
+    <ul>
+        <li v-for="item in list">{{item}}</li>
+    </ul>
+</template>
+```
+*script*
+```js
+export default {
+    data(){
+        list: []
+    },
+    mounted(){
+        this.list = [1,2,3];
+        this.$nextTick(()=>{
+            console.log('dom 更新完成');
+        });
+    }
+};
 ```
