@@ -2,14 +2,101 @@
 
 ## 目录
 
-- [插件打包](#插件打包)
+- [插件打包与发布](#插件打包与发布)
 - [图片资源打包](#图片资源打包)
 
 <br><br><br><br><br><br>
 
-## 插件打包
+## 插件打包与发布
 
+插件功能开发完成后，若需要发布到公共组件库中（例如：npmjs），需要对插件进行打包并发布，简单说明一下这个过程，以插件名 `dialog` 为例
 
+1. 创建 `dialog` 目录，并进入
+2. 运行命令行，初始化项目，生成 `package.json`
+```bash
+npm init -y
+```
+3. 使用 `webpack-simple` 模板构建项目基本结构（前提为已自行安装好 `vue-cli`）
+```bash
+vue init webpack-simple
+```
+根据导航提示，设置好项目后，基本结构生成完成
+4. 删除无用内容  
+删除 `index.html` 和 `src` 目录下的所有文件
+5. 复制插件内容到 `src` 目录中
+6. 修改 `package.json` 配置内容
+```js
+{
+  "name": "dialog",
+  "description": "the dialog plguin",
+  "version": "1.0.0",
+  "author": "TerryZ <terry5@foxmail.com>",
+  "license": "MIT",
+  //删除原有的"priveate": true，发布到公共库的项目，不能设置该参数
+  //增加 main 配置，设置插件在安装后的主入口文件
+  "main": "dist/dialog.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "vue": "^2.5.11"
+  },
+  //增加插件关键字描述，非必须，按需设置
+  "keywords": [
+    "front-end",
+    "javascript",
+    "dialog",
+    "vue",
+    "vuejs"
+  ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
+```
+7. 修改 `webpack.config.js` 的 `output` 部分配置
+```js
+  output: {
+	path: path.resolve(__dirname, './dist'),
+	publicPath: '/dist/',
+    //修改输出打包后的脚本文件名，该文件即是 package.json 中配置的 main 属性的对应文件
+	filename: 'dialog.js',
+    //增加以下库配置信息
+	library: 'Dialog',
+	libraryTarget: 'umd',
+	umdNamedDefine: true
+  }
+```
+8. 安装库，国内环境建议使用 `cnpm` 安装速度会快些
+```bash
+npm install
+```
+9. 编译插件
+```bash
+npm run build
+```
+10. 发布插件，确定你的插件名当前公共库中不存在，否而会发布失败
+```bash
+npm publish
+```
 
 <br><br>
 
