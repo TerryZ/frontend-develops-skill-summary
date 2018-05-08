@@ -121,7 +121,7 @@ export default {
   props: ['setting'],
   data(){
     return{
-      setting: this.setting //将 props 中接收到的 setting 参数落地到本地的变量
+      config: this.setting //将 props 中接收到的 setting 参数落地到本地的变量
     }
   }
   methods: {
