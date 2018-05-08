@@ -23,11 +23,9 @@ vue init webpack-simple
 根据导航提示，设置好项目后，基本结构生成完成
 
 4. 删除无用内容  
-删除 `index.html` 和 `src` 目录下的所有文件
-
-5. 复制插件内容到 `src` 目录中
-
-6. 修改 `package.json` 配置内容
+删除 `index.html` 和 `src` 目录下的所有文件  
+5. 复制插件内容到 `src` 目录中  
+6. 修改 `package.json` 配置内容  
 ```js
 {
   "name": "dialog",
