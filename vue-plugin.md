@@ -75,16 +75,16 @@ vue init webpack-simple
 ```
 7. 修改 `webpack.config.js` 的 `output` 部分配置
 ```js
-  output: {
-	path: path.resolve(__dirname, './dist'),
-	publicPath: '/dist/',
-    //修改输出打包后的脚本文件名，该文件即是 package.json 中配置的 main 属性的对应文件
-	filename: 'dialog.js',
-    //增加以下库配置信息
-	library: 'Dialog',
-	libraryTarget: 'umd',
-	umdNamedDefine: true
-  }
+output: {
+    path: path.resolve(__dirname, './dist'),
+    publicPath: '/dist/',
+    //修改输出打包后的脚本文件名，该文件即是 package.json 中配置的 main 属性的对应文件
+    filename: 'dialog.js',
+    //增加以下库配置信息
+    library: 'Dialog',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
+}
 ```
 8. 安装库，国内环境建议使用 `cnpm` 安装速度会快些
 ```bash
