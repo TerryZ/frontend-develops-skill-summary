@@ -49,7 +49,7 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'url-loader',
         options: {
-		  limit: 30000,
+          limit: 30000,
           name: '[name].[ext]?[hash]'
         }
       }
@@ -59,3 +59,11 @@ module.exports = {
 }
 ```
 上面的配置中，将原 `file-loader` 更换了 `url-loader`，并增加 `limit` 参数，该参数设置了图片容量在小于指定容量(上例设置为30kb)时，不会转换成 `base64`
+
+如此调整配置后，再运行编译
+
+```bash
+npm run build
+```
+
+会发现编译到 `dist` 目录中的内容已经没有图片文件，只有编译完成的 `build.js` 和对应的 map 文件，所以在插件开发时，尽可能使用 CSS 处理样式，需要使用到图片或图标资源，尽可能也使用图片尺寸小的图片，方便打包处理
