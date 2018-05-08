@@ -17,11 +17,11 @@
 
 插件中使用到的图片资源，在打包后，根据模板的默认配置，会将图片资源输出到 `dist` 目录中，此时就有图片引用路径问题。在样式内容中会发现原来设置的
 
-`background-image:url('../image/aa.jpg')` 
+`background-image:url('../image/a.jpg')` 
 
 会转换成
 
-`background-image:url('/dist/aa.jpg')`
+`background-image:url('/dist/a.jpg')`
 
 实际的完整路径即是
 
