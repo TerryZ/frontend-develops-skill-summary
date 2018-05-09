@@ -8,6 +8,7 @@
 - [Component 数据输入和输出](#component-数据输入和输出)
 - [数据与DOM更新完成后的回调](#数据与dom更新完成后的回调)
 
+
 <br><br><br><br><br><br>
 
 ## Vue2.x 学习顺序建议
@@ -138,6 +139,8 @@ export default {
 <xxx :setting="{a:1,b:2}" @data-change="doSomething">
 ```
 
+<br><br>
+
 ## 数据与DOM更新完成后的回调
 
 数据更新回调
@@ -178,3 +181,33 @@ export default {
     }
 };
 ```
+
+<br><br>
+
+## <img>动态地址
+
+首先，在使用 `<img>` 图片标签时，若图片的地址是绝对地址，不会有任何问题；但通常在项目中，我们需要在加载页面时，使用动态内容构建图片地址
+
+```vue
+<img :src="'../../assets/' + img.name + '.png'" v-for="img in list" >
+```
+
+上面的代码运行后，页面的图片全是读取不到路径的图片；实际上，在 `src` 目录下的图片资源，`webpack` 会编译打包在 `dist` 目录中，使用这种方式， `webpack` 无法识别并将图片地址转换为 '/dist/xxx.png'
+
+为了解决路径问题，我们需要使用到 `require` 函数，那么定义一个 `method`
+
+```js
+methods:{
+    getImg(name){
+        return require('../../assets/' + name + '.png');
+    }
+}
+```
+
+并将 HTML 修改为
+
+```vue
+<img :src="getImg(img.name)" v-for="img in list" >
+```
+
+如此，则路径正常转换为 `/dist/xxx.png`
