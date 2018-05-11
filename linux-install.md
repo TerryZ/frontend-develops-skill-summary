@@ -4,8 +4,6 @@
 ## 目录
 
 - [NodeJS安装](#es6)
-- [Number对象](#Number对象)
-- [http网络请求(跨域)](#http网络请求(跨域))
 
 <br><br><br><br><br><br>
 
@@ -60,8 +58,4 @@ cnpm -v
 
 <br><br>
 
-## Number对象
 
-## http网络请求(跨域)
-
-<br><br>
