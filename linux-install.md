@@ -3,7 +3,7 @@
 
 ## 目录
 
-- [NodeJS安装](#es6)
+- [NodeJS安装](#nodejs安装)
 
 <br><br><br><br><br><br>
 
