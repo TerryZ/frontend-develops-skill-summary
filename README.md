@@ -50,6 +50,14 @@
 
 <br><br>
 
+## Linux
+
+> Linux 操作、安装经验
+
+- [Install - 软件安装](linux-install.md)
+
+<br><br>
+
 ## 插件推荐
 - 数据表格
   - [Datatables](https://www.datatables.net/)
