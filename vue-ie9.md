@@ -7,7 +7,7 @@
 ## 目录
 
 - [ES6兼容](#es6兼容)
-- [Number对象](#Number对象)
+- [Number对象](#number对象)
 - [requestAnimationFrame对象](#requestanimationframe对象)
 - [http网络请求(跨域)](#http网络请求(跨域))
 
