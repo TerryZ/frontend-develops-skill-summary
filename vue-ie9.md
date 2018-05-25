@@ -37,6 +37,11 @@ import 'babel-polyfill';
 
 ## Number对象
 
+即使在使用 `babel-polyfill` 做代码翻译后，发现还是有一些 es6 的新特性并没有解决，比如说 `Number` 对象的 `parseInt` 和 `parseFloat` 方法
+
+> ES6 将全局方法parseInt()和parseFloat()，移植到Number对象上面，行为完全保持不变。
+> 这样做的目的，是逐步减少全局性方法，使得语言逐步模块化。
+
 ## requestAnimationFrame对象
 
 ## http网络请求(跨域)
