@@ -29,7 +29,32 @@ npm i babel-polyfill --save-dev
 import 'babel-polyfill';
 ```
 
-加入该代码后，工程里的所有内容都可以完全兼容到 ie9 的浏览器上
+在项目使用 `vue-cli` 生成的代码中，根目录有一个 `.babelrc` 文件，这是项目使用 babel 的配置文件。在默认生成的模板内容中，增加 `"useBuiltIns": "entry"` 的设置内容，这是一个指定哪些内容需要被 polyfill(兼容) 的设置
+
+useBuiltIns 有三个设置选项
+
+- `false` - 不做任何操作
+- `entry` - 根据浏览器版本的支持，将 polyfill 需求拆分引入，仅引入有浏览器不支持的polyfill
+- `usage` - 检测代码中 `ES6/7/8` 等的使用情况，仅仅加载代码中用到的 polyfill
+
+这里推荐设置为 `entry` ，完整的 `.babelrc` 内容如下：
+```js
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        "useBuiltIns": "entry"
+      }
+    ],
+    "stage-3"
+  ]
+}
+
+```
+
+加入这些代码后，工程里的所有内容都可以完全兼容到 ie9 的浏览器上
 
 
 
