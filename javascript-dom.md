@@ -33,7 +33,7 @@ element.focus(focusOption); // Object parameter
 ```
 设置参数内容
 preventScroll `Boolean`
-- `false` (default) - 会将屏幕滚动到元素的位置the method will scroll the element into the visible area of the browser window
+- `false` (默认) - 会将屏幕滚动到元素的位置
 - `true` - 保持当前屏幕位置不动
 
 ```js
