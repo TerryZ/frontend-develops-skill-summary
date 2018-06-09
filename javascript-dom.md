@@ -29,7 +29,7 @@ document.getElemeentById('myinput').focus();
 
 实际上 `focus` 方法是可以带有设置参数的（ie9+兼容）
 ```js
-element.focus(focusOption); // Object parameter
+element.focus(focusOption); // Object 类型的参数
 ```
 设置参数内容
 preventScroll `Boolean`
