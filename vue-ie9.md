@@ -73,7 +73,45 @@ if (Number.parseInt === undefined) Number.parseInt = window.parseInt;
 if (Number.parseFloat === undefined) Number.parseFloat = window.parseFloat;
 ```
 
-## requestAnimationFrame对象
+## requestAnimationFrame方法
+
+`window.requestAnimationFrame()` 方法告诉浏览器您希望执行动画并请求浏览器在下一次重绘之前调用指定的函数来更新动画。该方法使用一个回调函数作为参数，这个回调函数会在浏览器重绘之前调用。
+
+有部分第三方组件就使用了这个方法，例如部分文件上传、图片处理类的组件；那么在这类型的组件在 ie9 下使用时，会报出
+
+```
+SCRIPT5007: Expected object.
+```
+
+`window.requestAnimationFrame()` 的最低兼容 ie 版本为 10，那么在 ie9 上做兼容就需要制作 requestAnimationFrame polyfill
+
+```js
+(function() {
+    var lastTime = 0;
+    var vendors = ['ms', 'moz', 'webkit', 'o'];
+    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+        window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
+                                   || window[vendors[x]+'CancelRequestAnimationFrame'];
+    }
+ 
+    if (!window.requestAnimationFrame)
+        window.requestAnimationFrame = function(callback, element) {
+            var currTime = new Date().getTime();
+            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+            var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+              timeToCall);
+            lastTime = currTime + timeToCall;
+            return id;
+        };
+ 
+    if (!window.cancelAnimationFrame)
+        window.cancelAnimationFrame = function(id) {
+            clearTimeout(id);
+        };
+}());
+```
+Gist：[requestAnimationFrame polyfill](https://gist.github.com/paulirish/1579671)
 
 ## http网络请求(跨域)
 
