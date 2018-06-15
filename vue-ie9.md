@@ -146,6 +146,7 @@ Gist：[requestAnimationFrame polyfill](https://gist.github.com/paulirish/157967
 
 - 服务端已完整开启 CROS 跨域支持
 - http 组件使用 axios
+- axios 设置 `withCredentials` 为 true 开启跨域访问时携带 cookie 数据
 
 ie9 中的 `XMLHttpRequest` 对象，并不支持跨域访问，该对象在 ie10 后才原生支持跨域访问
 
