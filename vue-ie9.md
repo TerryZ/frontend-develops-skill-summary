@@ -15,6 +15,7 @@
 **背景情况**
 - vue - 2.5.11
 - vue-cli 使用模板 `webpack-simple`
+- http请求：axios
 
 Vue 官方对于 ie 浏览器版本兼容情况的描述是 ie9+，即是 ie9 及更高的版本。经过测试，Vue 的核心框架 `vuejs` 本身，以及生态的官方核心插件（VueRouter、Vuex等）均可以在 ie9 上正常使用。
 
@@ -137,5 +138,26 @@ Gist：[requestAnimationFrame polyfill](https://gist.github.com/paulirish/157967
 <br><br>
 
 ## http网络请求(跨域)
+
+在大多数的 Web 项目中（以 JavaWeb 为例），网站的页面和服务（至少是 controller 层）在同一个工程进行开发和部署，在大前端的新型模式下，我们建议尽可能对网站的前端和后端进行完全分离，前后端分离的好处和意义这里不再赘述。
+
+既然是前后端分离，那么部署也必然是各自独立部署，不同的访问路径，就会产生跨域访问的问题（同一站点，不同端口号也是跨域）
+在此设定背景资料：
+
+- 服务端已完整开启 CROS 跨域支持
+- http 组件使用 axios
+
+ie9 中的 `XMLHttpRequest` 对象，并不支持跨域访问，该对象在 ie10 后才原生支持跨域访问
+
+axios 在 ie9 的环境中，会自动判断对象是否支持跨域，不支持则使用 
+
+微软在 ie8 和 ie9 中提供了 [XDomainRequest](https://msdn.microsoft.com/zh-cn/library/dd573303)(XDR) 来进行解决跨域问题，虽然使用该对象可以跨域访问成功，并返回数据，但它却依然是一个功能不完整的半成品，它的使用有诸多限制：
+
+- XDR 仅支持 GET 与 POST 两种请求方式
+- XDR 不支持自定义的请求头，若服务端使用 `header` 的自定义参数进行做身份验证，则不可用
+- 请求头的 `Content-Type` 只允许设置为 `text/plain`
+- XDR 不允许跨协议的请求，如果网页在 HTTP 协议下，就只能请求 HTTP 协议下的接口，不能访问 HTTPS 接口
+- XDR只接受HTTP/HTTPS 的请求
+- 发起请求的时候，不会携带 `authentication` 或 `cookies`
 
 <br><br>
