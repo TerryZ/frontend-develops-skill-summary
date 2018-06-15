@@ -16,6 +16,10 @@
 - vue - 2.5.11
 - vue-cli 使用模板 `webpack-simple`
 
+Vue 官方对于 ie 浏览器版本兼容情况的描述是 ie9+，即是 ie9 及更高的版本。
+
+经过测试，Vue 的核心框架 `vuejs` 本身，以及 Vue 生态的官方核心插件（VueRouter、Vuex等）均可以在 ie9 上正常使用。Vue 的作者尤雨溪对于 [Vue 的学习建议](https://github.com/TerryZ/js-develop-skill-summary/blob/master/vue-base.md#vue2x-%E5%AD%A6%E4%B9%A0%E9%A1%BA%E5%BA%8F%E5%BB%BA%E8%AE%AE) 中有提及为了将项目更好的生态化/工程化，要尽可能学习及使用新的 ECMAScript 规范
+
 <br><br>
 
 ## ES6兼容
