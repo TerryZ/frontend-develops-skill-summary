@@ -162,4 +162,28 @@ axios 在 ie9 的环境中，会自动判断对象是否支持跨域，不支持
 - XDR只接受HTTP/HTTPS 的请求
 - 发起请求的时候，不会携带 `authentication` 或 `cookies`
 
+```js
+devServer: {
+    historyApiFallback: true,
+    noInfo: true,
+    overlay: true,
+    proxy: {
+        '/api': {
+            target: config.baseUrl,
+            pathRewrite: {
+                '^/api': ''
+            }
+        }
+    }
+}
+```
+
+nginx 配置
+
+```
+location /api/ {
+    proxy_pass http://xxx:port/;
+}
+```
+
 <br><br>
