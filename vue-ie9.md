@@ -16,6 +16,8 @@
 - vue - 2.5.11
 - vue-cli 使用模板 `webpack-simple`
 
+<br><br>
+
 ## ES6兼容
 
 在使用 Vue 做项目开发时，使用的 JS 规范就尽可使用新版本，而 ES6/ES2015 算是目前可以使用较新且较稳定的规范，文档比较全，国内还有 [阮一峰 《ECMAScript 6 入门》](http://es6.ruanyifeng.com/) 做了大量的文档翻译，开发环境可谓相当完善
