@@ -132,6 +132,8 @@ SCRIPT5007: Expected object.
 ```
 Gist：[requestAnimationFrame polyfill](https://gist.github.com/paulirish/1579671)
 
+这部分代码同样是尽可能在网站入口处就执行
+
 <br><br>
 
 ## http网络请求(跨域)
