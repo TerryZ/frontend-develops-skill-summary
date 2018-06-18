@@ -1,4 +1,4 @@
-# <div align="center">Vue - ie9 兼容</div>
+# <div align="center">Vue - ie9 全面兼容方案</div>
 
 ## 目录
 
