@@ -159,7 +159,7 @@ ie8 / ie9 的 `XMLHttpRequest` 对象，不支持跨域访问，该对象在 ie1
 - XDR 不支持自定义的请求头，若服务端使用 `header` 的自定义参数进行做身份验证，则不可用
 - 请求头的 `Content-Type` 只允许设置为 `text/plain`
 - XDR 不允许跨协议的请求，如果网页在 HTTP 协议下，就只能请求 HTTP 协议下的接口，不能访问 HTTPS 接口
-- XDR只接受HTTP/HTTPS 的请求
+- XDR 只接受HTTP/HTTPS 的请求
 - 发起请求的时候，不会携带 `authentication` 或 `cookies`
 
 微软虽然提供了解决方案，但却是不折不扣的鸡肋，根本无法胜任系统中各种场景的数据请求需求，至此，axios 对 ie9 的跨域数据请求已无能为力。
@@ -170,9 +170,7 @@ ie8 / ie9 的 `XMLHttpRequest` 对象，不支持跨域访问，该对象在 ie1
 
 [devServer.proxy](https://webpack.js.org/configuration/dev-server/#devserver-proxy)
 
-而 webpack 的 `devServer.proxy` 的功能是由 [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware) 项目来实现的
-
-webpack.config.js 配置
+**webpack.config.js 配置**
 
 ```js
 devServer: {
@@ -190,7 +188,13 @@ devServer: {
 }
 ```
 
-nginx 配置
+webpack 的 `devServer.proxy` 的功能是由 [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware) 项目来实现的
+
+实现原理是将目标位置的请求代理为前端服务本地的请求，既然是代理成本地的请求，就不存在跨域的问题，axios 就会用回 `XMLHttpRequest` 对象进行数据请求，一切都恢复正常了，header、cookies、content-type、authentication 等内容都被正确传递到服务端。
+
+不过，webpack 的 `devServer.proxy` 仅在开发模式下可用，生产模式下无法使用。开发模式下，调试服务可以读取 `webpack.config.js` 中的配置内容进行实时代理，而项目在部署到生产环境前，需要将工程进行编译转换成静态的 js 文件，没有调试服务的支撑自然是无法进行请求代理的。
+
+**nginx 配置**
 
 ```
 location /api/ {
