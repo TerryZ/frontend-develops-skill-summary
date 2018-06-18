@@ -143,17 +143,16 @@ Gist：[requestAnimationFrame polyfill](https://gist.github.com/paulirish/157967
 
 既然是前后端分离，那么部署也必然是各自独立部署，不同的访问路径，就会产生跨域访问的问题（同一站点，不同端口号也是跨域）
 
-在此设定背景资料：
+在此设定背景情况：
 
 - 服务端已完整开启 CROS 跨域支持
 - http 组件使用 axios
 - axios 设置 `withCredentials` 为 true 开启跨域访问时携带 cookie 数据
 
-ie9 中的 `XMLHttpRequest` 对象，并不支持跨域访问，该对象在 ie10 后才原生支持跨域访问
 
-axios 在 ie9 的环境中，会自动判断对象是否支持跨域，不支持则使用 
-
-微软在 ie8 和 ie9 中提供了 [XDomainRequest](https://msdn.microsoft.com/zh-cn/library/dd573303)(XDR) 来进行解决跨域问题，虽然使用该对象可以跨域访问成功，并返回数据，但它却依然是一个功能不完整的半成品，它的使用有诸多限制：
+axios 进行数据请求时，默认使用 `XMLHttpRequest` 对象，在检测到当前请求是跨域访问时，axios 会测试浏览器是否支持 `XDomainRequest` 对象，若支持则优先使用。
+ 
+ie8 / ie9 的 `XMLHttpRequest` 对象，不支持跨域访问，该对象在 ie10 后才原生支持跨域访问。不过微软在 ie8 / ie9 中提供了 [XDomainRequest](https://msdn.microsoft.com/zh-cn/library/dd573303)(XDR) 对象来进行解决跨域问题，虽然使用该对象可以跨域访问成功，并返回数据，但它却依然是一个功能不完整的半成品，它的使用有诸多限制：
 
 - XDR 仅支持 GET 与 POST 两种请求方式
 - XDR 不支持自定义的请求头，若服务端使用 `header` 的自定义参数进行做身份验证，则不可用
