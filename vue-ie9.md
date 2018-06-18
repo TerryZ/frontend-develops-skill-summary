@@ -172,7 +172,7 @@ ie8 / ie9 的 `XMLHttpRequest` 对象，不支持跨域访问，该对象在 ie1
 
 webpack 的 `devServer.proxy` 的功能是由 [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware) 项目来实现的
 
-实现原理是将目标位置的请求代理为前端服务本地的请求，既然是代理成本地的请求，就不存在跨域的问题，axios 就会用回 `XMLHttpRequest` 对象进行数据请求，一切都恢复正常了，header、cookies、content-type、authentication 等内容都被正确传递到服务端。
+实现原理是将目标位置的请求代理为前端服务本地的请求，既然是代理成为本地的请求，就不存在跨域的问题，axios 就会用回 `XMLHttpRequest` 对象进行数据请求，一切都恢复正常了，header、cookies、content-type、authentication 等内容都被正确传递到服务端。
 
 **项目中 webpack.config.js 的配置**
 
