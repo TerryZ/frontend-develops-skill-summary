@@ -79,6 +79,7 @@
   - [kindeditor](http://kindeditor.net/demo.php)
 - 日期与时间
   - [My97DatePicker](http://www.my97.net/)
+  - [flatpickr](https://github.com/flatpickr/flatpickr)
   - [bootstrap-datetimepicker](https://github.com/smalot/bootstrap-datetimepicker)
   - [bootstrap-datepicker](https://github.com/uxsolutions/bootstrap-datepicker)
 - 文件上传
