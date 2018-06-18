@@ -166,7 +166,7 @@ ie8 / ie9 的 `XMLHttpRequest` 对象，不支持跨域访问，该对象在 ie1
 
 ### 完美解决方案：代理(proxy)
 
-虽然 axios 对 ie9 跨域已无能为力，但前端项目打包的解决方案 `webpack` 却提供了一个彻底解决问题的优雅方式：代理
+虽然 axios 对 ie9 跨域已无能为力，但前端项目打包的解决方案 `webpack` 提供了一个优雅而彻底解决问题的方式：**代理**
 
 [devServer.proxy](https://webpack.js.org/configuration/dev-server/#devserver-proxy)
 
