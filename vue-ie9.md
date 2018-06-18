@@ -201,10 +201,16 @@ devServer: {
 
 **nginx 配置**
 
+虽然 `devServer.proxy` 的功能仅能工作于开发模式，那么在生产模式下，自然也是有解决方案的；通常 Vue 的项目在编译成最终的 js 文件后，仅需要静态服务器即可，这其中又以 `nginx` 为最优选择方案，轻量、高性能、高并发、反向代理服务等均为其优点，这里需要做的数据请求代理的功能就使用到了 nginx 的 **反向代理** 功能
+
+`conf/nginx.conf` 文件配置增加以下内容
+
 ```
 location /api/ {
-    proxy_pass http://xxx:port/;
+    proxy_pass http://localhost:8081/myserver/;
 }
 ```
+
+该配置同样是将 `http://localhost:8081/myserver/` 的目标服务端位置代理为本地服务的 `/api` 路径，如此，生产环境下的数据请求问题也得以解决
 
 <br><br>
