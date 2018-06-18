@@ -152,7 +152,7 @@ Gist：[requestAnimationFrame polyfill](https://gist.github.com/paulirish/157967
 
 axios 进行数据请求时，默认使用 `XMLHttpRequest` 对象，在检测到当前请求是跨域访问时，axios 会测试浏览器是否支持 `XDomainRequest` 对象，若支持则优先使用。
  
-ie8 / ie9 的 `XMLHttpRequest` 对象，不支持跨域访问，该对象在 ie10 后才原生支持跨域访问。不过微软在 ie8 / ie9 中提供了 [XDomainRequest](https://msdn.microsoft.com/zh-cn/library/dd573303)(XDR) 对象来进行解决跨域问题，虽然使用该对象可以跨域访问成功，并返回数据，但它却依然是一个功能不完整的半成品，它的使用有诸多限制：
+ie8 / ie9 的 `XMLHttpRequest` 对象，不支持跨域访问，该对象在 ie10 后才原生支持跨域访问。微软的解决方案是在 ie8 / ie9 中提供了 [XDomainRequest](https://msdn.microsoft.com/zh-cn/library/dd573303)(XDR) 对象来进行解决跨域问题，虽然使用该对象可以跨域访问成功，并返回数据，但它却依然是一个功能不完整的半成品，它的使用有诸多限制：
 
 - XDR 仅支持 GET 与 POST 两种请求方式
 - XDR 不支持自定义的请求头，若服务端使用 `header` 的自定义参数进行做身份验证，则不可用
