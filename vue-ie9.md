@@ -170,7 +170,11 @@ ie8 / ie9 的 `XMLHttpRequest` 对象，不支持跨域访问，该对象在 ie1
 
 [devServer.proxy](https://webpack.js.org/configuration/dev-server/#devserver-proxy)
 
-**webpack.config.js 配置**
+webpack 的 `devServer.proxy` 的功能是由 [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware) 项目来实现的
+
+实现原理是将目标位置的请求代理为前端服务本地的请求，既然是代理成本地的请求，就不存在跨域的问题，axios 就会用回 `XMLHttpRequest` 对象进行数据请求，一切都恢复正常了，header、cookies、content-type、authentication 等内容都被正确传递到服务端。
+
+**项目中 webpack.config.js 的配置**
 
 ```js
 devServer: {
@@ -179,7 +183,7 @@ devServer: {
     overlay: true,
     proxy: {
         '/api': {
-            target: config.baseUrl,
+            target: 'http://localhost:8081/myserver',
             pathRewrite: {
                 '^/api': ''
             }
@@ -188,9 +192,10 @@ devServer: {
 }
 ```
 
-webpack 的 `devServer.proxy` 的功能是由 [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware) 项目来实现的
+配置中指定了将 `http://localhost:8081/myserver` 服务的位置代理为本地前端服务的 `http://localhost:8080/api`。例如需要读取用户信息的原请求是 `http://localhost:8081/myserver/user/zhangsan`，代理后，就变为 `http://localhost:8080/api/user/zhangsan`。
 
-实现原理是将目标位置的请求代理为前端服务本地的请求，既然是代理成本地的请求，就不存在跨域的问题，axios 就会用回 `XMLHttpRequest` 对象进行数据请求，一切都恢复正常了，header、cookies、content-type、authentication 等内容都被正确传递到服务端。
+即是 `/api` 的前缀代表了服务端，所以在使用 axios 时，需要对每个服务端请求都增加上 `/api` 的前缀；通常在项目开发中，需要对数据请求组件 `axios` 进行二次封装，以达到统一设置默认参数，统一数据请求入口等目的，那么此时就只需要在二次封装的文件里统一调整请求前缀即可。
+
 
 不过，webpack 的 `devServer.proxy` 仅在开发模式下可用，生产模式下无法使用。开发模式下，调试服务可以读取 `webpack.config.js` 中的配置内容进行实时代理，而项目在部署到生产环境前，需要将工程进行编译转换成静态的 js 文件，没有调试服务的支撑自然是无法进行请求代理的。
 
