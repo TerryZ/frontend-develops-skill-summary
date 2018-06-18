@@ -149,6 +149,7 @@ Gist：[requestAnimationFrame polyfill](https://gist.github.com/paulirish/157967
 - http 组件使用 axios
 - axios 设置 `withCredentials` 为 true 开启跨域访问时携带 cookie 数据
 
+> 高版本浏览器（ie10+ 或 chrome, ff）仅需要完成背景情况中的功能，即可支持跨域数据请求功能
 
 axios 进行数据请求时，默认使用 `XMLHttpRequest` 对象，在检测到当前请求是跨域访问时，axios 会测试浏览器是否支持 `XDomainRequest` 对象，若支持则优先使用。
  
@@ -160,6 +161,8 @@ ie8 / ie9 的 `XMLHttpRequest` 对象，不支持跨域访问，该对象在 ie1
 - XDR 不允许跨协议的请求，如果网页在 HTTP 协议下，就只能请求 HTTP 协议下的接口，不能访问 HTTPS 接口
 - XDR只接受HTTP/HTTPS 的请求
 - 发起请求的时候，不会携带 `authentication` 或 `cookies`
+
+微软虽然提供了解决方案，但却是不折不扣的鸡肋，根本无法胜任系统中各种场景的数据请求需求。
 
 webpack.config.js 配置
 
