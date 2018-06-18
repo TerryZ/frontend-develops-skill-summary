@@ -162,9 +162,15 @@ ie8 / ie9 的 `XMLHttpRequest` 对象，不支持跨域访问，该对象在 ie1
 - XDR只接受HTTP/HTTPS 的请求
 - 发起请求的时候，不会携带 `authentication` 或 `cookies`
 
-微软虽然提供了解决方案，但却是不折不扣的鸡肋，根本无法胜任系统中各种场景的数据请求需求。
+微软虽然提供了解决方案，但却是不折不扣的鸡肋，根本无法胜任系统中各种场景的数据请求需求，至此，axios 对 ie9 的跨域数据请求已无能为力。
 
-### 完美解决方案：**代理**
+### 完美解决方案：代理(proxy)
+
+虽然 axios 对 ie9 跨域已无能为力，但前端项目打包的解决方案 `webpack` 却提供了一个彻底解决问题的优雅方式：代理
+
+[devServer.proxy](https://webpack.js.org/configuration/dev-server/#devserver-proxy)
+
+而 webpack 的 `devServer.proxy` 的功能是由 [http-proxy-middleware](https://github.com/chimurai/http-proxy-middleware) 项目来实现的
 
 webpack.config.js 配置
 
