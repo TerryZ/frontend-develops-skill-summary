@@ -27,9 +27,7 @@ Vue 的作者尤雨溪对于 [Vue 的学习建议](https://github.com/TerryZ/js-
 
 ## ES6兼容
 
-在使用 Vue 做项目开发时，使用的 JS 规范就尽可使用新版本，而 ES6/ES2015 算是目前可以使用较新且较稳定的规范，文档比较全，国内还有 [阮一峰 《ECMAScript 6 入门》](http://es6.ruanyifeng.com/) 做了大量的文档翻译，开发环境可谓相当完善
-
-但是，在 ie9 的环境上，es6 的部分新对象、表达式，并不支持，解决方案是使用 `babel-polyfill` 组件，它可以将 es6 的代码翻译成低版本浏览器可以识别的 es5 代码
+在 ie9 的环境上，es6 的部分新对象、表达式，并不支持，解决方案是使用 `babel-polyfill` 组件，它可以将 es6 的代码翻译成低版本浏览器可以识别的 es5 代码
 
 ```bash
 npm i babel-polyfill --save-dev
