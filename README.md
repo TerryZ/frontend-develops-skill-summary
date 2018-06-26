@@ -16,7 +16,7 @@
 
 ## jQuery
 
-> jQuery仅为1.x版本的内容，未使用jquery2,3进行开发项目
+> jQuery 的内容仅限 1.x 版本，未使用 jquery2、3 进行开发项目
 
 - [Base - 基本使用](jquery-base.md)
 
