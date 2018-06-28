@@ -104,7 +104,7 @@
   - [Bootstrap](http://getbootstrap.com/) 也许是全世界最流行的UI框架了
   - [Semantic UI](https://semantic-ui.com/)
 - 工具类
-  - [clipboard.js](https://github.com/zenorocha/clipboard.js)
+  - [clipboard.js](https://github.com/zenorocha/clipboard.js) 剪贴板工具
   - [中国行政区划代码](https://github.com/mumuy/data_location)
   - [infinite-scroll](https://github.com/metafizzy/infinite-scroll) 滚动加载
   - [masonry](https://github.com/desandro/masonry) 瀑布流
