@@ -5,7 +5,9 @@
 [[javascript](#javascript)]
 
 <div align="center">
-  [ [javascript](#javascript) ]
+  
+  [ [ javascript ](#javascript) ]
+  
   [[jQuery](#jquery)]
   [[Vue](#vue)]
   [[Linux](#linux)]
