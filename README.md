@@ -2,7 +2,7 @@
 
 <div align="center">文档内容逐步更新，有任何疑问或建议，欢迎在issues中进行讨论</div>
 <div align="center">
-  [[javascript](#javascript)]
+  [ [javascript](#javascript) ]
   [[jQuery](#jquery)]
   [[Vue](#vue)]
   [[Linux](#linux)]
