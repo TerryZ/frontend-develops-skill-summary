@@ -6,14 +6,14 @@
 
 <div align="center">
   
-  [ [ javascript ](#javascript) ]
-  
+  [ [ javascript ](#javascript) ]  
   [[jQuery](#jquery)]
   [[Vue](#vue)]
   [[Linux](#linux)]
   [[插件推荐](#插件推荐)]
   [[Learning](#learning)]
   [[Interesting](#interesting)]
+  
 </div>
 
 <br><br>
