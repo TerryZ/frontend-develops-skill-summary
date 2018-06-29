@@ -32,7 +32,7 @@
 
 ## Vue
 
-> Vue 从 2.0 开始
+> 以 Vue2 为基础版本
 
 - [Base - 核心功能](vue-base.md)
 
