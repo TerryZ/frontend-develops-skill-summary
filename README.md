@@ -16,7 +16,11 @@
   
 </div>
 
-<div align="center">文档内容逐步更新，有任何疑问或建议，欢迎在 [issues](https://github.com/TerryZ/js-develop-skill-summary/issues/new) 中进行讨论</div>
+<div align="center">
+
+文档内容逐步更新，有任何疑问或建议，欢迎在 [issues](https://github.com/TerryZ/js-develop-skill-summary/issues/new) 中进行讨论
+
+</div>
 
 <br><br><br><br>
 
