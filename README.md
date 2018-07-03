@@ -32,6 +32,8 @@
 
 - [Array - 数组处理](javascript-array.md)
 
+- [Size and position - 尺寸与定位](javascript-size-and-position.md)
+
 - [ES6实用技巧](javascript-es6.md)
 
 <br><br>
