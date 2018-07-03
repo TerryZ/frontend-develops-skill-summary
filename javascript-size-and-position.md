@@ -4,7 +4,7 @@
 
 - [屏幕当前滚动条位置](#屏幕当前滚动条位置)
 - [屏幕可视区域](#屏幕可视区域)
-- [判断当前页面是否存在滚动条](#判断当前页面是否存在滚动条)
+- [全文档区域](#全文档区域)
 
 
 
@@ -63,4 +63,13 @@ function getInnerSizeWithScroll(){
 
 `document.documentElement.clientHeight` - 获得屏幕可视区域高度（不含滚动条的实际可用高度）
 `document.documentElement.clientWidth` - 获得屏幕可视区域宽度（不含滚动条的实际可用宽度）
+
+<br><br>
+
+## 全文档区域
+
+全文档区域即为网页所有内容的高度和宽度
+
+`document.body.clientWidth` - 文档内容实际宽度
+`document.body.clientHeight` - 文档内容实际高度
 
