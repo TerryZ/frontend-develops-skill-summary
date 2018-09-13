@@ -6,7 +6,7 @@
 - [测试数组中的内容是否有满足条件的内容](#数组复制)
 - [遍历数组](#遍历数组)
 - [数组转换](#数组转换)
-
+- [过滤数组](#过滤数组)
 
 
 <br><br><br><br><br><br>
@@ -71,3 +71,15 @@ let arrNew = arr.map((value, index, array) => {
 });
 console.log(arrNew);//['1A', '2B', '3C', '4D', '5E', '6F'];
 ```
+
+<br><br>
+
+## 过滤数组
+
+```js
+let arr = [1, 2, 30, 4, 15, 6];
+let arrNew = arr.filter((value, index, array)=>value<10);
+console.log(arrNew);//[1, 2, 4, 6]
+```
+
+不满足过滤条件的项目将不会被返回到新的数组中
