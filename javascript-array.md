@@ -17,6 +17,8 @@ arr.splice(2,1);//移除第三个项目,下标从 0 开始
 //[1,2,4,5]
 ```
 
+<br><br>
+
 ## 数组复制
 ```js
 var arr = [1,2,3,4,5];
@@ -27,6 +29,8 @@ console.log(newarr);//[9,2,3,4,5]
 ```
 复制后的对象修改不影响原数组对象
 
+<br><br>
+
 ## 测试数组中的内容是否有满足条件的内容
 ```js
 var arr=[3,5,77,2,10];
@@ -36,6 +40,8 @@ var result = arr.some(function(item){
 console.log(result);//true
 ```
 `some` 函数用于检查数组中是否有内容满足条件，只要有一项满足，即会返回 `true`
+
+<br><br>
 
 ## 遍历数组
 
@@ -51,4 +57,16 @@ ES6
 arr.forEach((value, index, array) => {
     console.log(value);
 });
+```
+
+<br><br>
+
+## 数组转换
+
+```js
+let arr = [1,2,3,4,5,6], arr1 = ['A', 'B', 'C', 'D', 'E', 'F'];
+let arrNew = arr.map((value, index, array) => {
+    return value + arr1[index];
+});
+console.log(arrNew);//['1A', '2B', '3C', '4D', '5E', '6F'];
 ```
