@@ -10,9 +10,9 @@
   [[ jQuery ](#jquery)]
   [[ Vue ](#vue)]
   [[ Linux ](#linux)]
-  [[ 插件推荐 ](#插件推荐)]
   [[ Learning ](#learning)]
   [[ Interesting ](#interesting)]
+  [[ 插件推荐 ](#插件推荐)]
   
 </div>
 
