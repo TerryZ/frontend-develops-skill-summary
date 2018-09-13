@@ -1,4 +1,4 @@
-# javascript - array 数组操作
+# javascript - Array 数组操作
 
 ## 目录
 - [移除指定下标项目](#移除指定下标项目)
