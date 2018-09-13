@@ -84,6 +84,21 @@
 
 <br><br>
 
+## Learning
+
+- [英语学习](https://github.com/byoungd/english-level-up-tips-for-Chinese)
+- [ECMAScript 6 入门](http://es6.ruanyifeng.com/)
+
+<br><br>
+
+## Interesting
+
+- [程序员找工作黑名单](https://github.com/shengxinjing/programmer-job-blacklist)
+- [程序员应该访问的最佳网站中文版](https://github.com/tuteng/Best-websites-a-programmer-should-visit-zh)
+- [后端架构师技术图谱](https://github.com/xingshaocheng/architect-awesome)
+
+<br><br>
+
 ## 插件推荐
 - 数据表格
   - [Datatables](https://www.datatables.net/)
@@ -134,17 +149,4 @@
   - [masonry](https://github.com/desandro/masonry) 瀑布流
   - [FullPage](https://github.com/alvarotrigo/fullPage.js) 全屏滚动效果
 
-<br><br>
 
-## Learning
-
-- [英语学习](https://github.com/byoungd/english-level-up-tips-for-Chinese)
-- [ECMAScript 6 入门](http://es6.ruanyifeng.com/)
-
-<br><br>
-
-## Interesting
-
-- [程序员找工作黑名单](https://github.com/shengxinjing/programmer-job-blacklist)
-- [程序员应该访问的最佳网站中文版](https://github.com/tuteng/Best-websites-a-programmer-should-visit-zh)
-- [后端架构师技术图谱](https://github.com/xingshaocheng/architect-awesome)
