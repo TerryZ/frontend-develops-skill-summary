@@ -18,6 +18,8 @@ document.title = 'new title';
 $(document).attr('title','new title');
 ```
 
+<br><br>
+
 ### 输入元素获得焦点及滚动
 
 输入元素获得输入焦点
