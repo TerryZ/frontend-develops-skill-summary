@@ -9,6 +9,7 @@
   [[ javascript ](#javascript) ]
   [[ jQuery ](#jquery)]
   [[ Vue ](#vue)]
+  [[ MiniProgram ](#miniprogram)]
   [[ Linux ](#linux)]
   [[ Learning ](#learning)]
   [[ Interesting ](#interesting)]
@@ -73,6 +74,10 @@
 - [ie9 - ie9版本兼容处理](vue-ie9.md)
 
 <br><br>
+
+## MiniProgram
+
+> 小程序开发
 
 ## Linux
 
