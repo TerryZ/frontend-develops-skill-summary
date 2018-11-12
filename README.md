@@ -83,7 +83,7 @@
 
 - [Caution - 特别注意](miniprogram-caution.md)
 
-- [Optimize  - 性能优化]()
+- [Optimize  - 性能优化](miniprogram-optimize.md)
 
 - [MpVue - 使用框架构建]()
 
