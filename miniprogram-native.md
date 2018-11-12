@@ -39,3 +39,7 @@ this.setData({
 ```
 
 <br><br>
+
+## wxml 中数据转换成字符串
+
+<br><br>
