@@ -2,6 +2,7 @@
 
 ## 目录
 - [setData](#setData)
+- [navigateTo与redirectTo](#navigateTo与redirectTo)
 
 
 <br><br><br><br><br><br>
