@@ -52,6 +52,7 @@ this.setData({
 - 同是在目标页面的 url 中增加与 Web Url类似的链接参数，并可在目标页面的 `onLoad(options)` 中获取
 - `wx.navigateBack` 可以返回通过 `wx.navigateTo` 进行跳转的界面，通过 `wx.redirectTo` 进行跳转的不能返回
 - 微信小程序规定 `wx.navigateTo` 只允许有五层页面路径，当已经有五层页面路径时，再进行跳转，将不会执行跳转页面功能。
+- `wx.navigateBack` 可通过 `getCurrentPages()` 函数获得页面栈，并决定需要返回的层级
 
 为了防止小程序页面跳转不了的情况常，页面切换功能应按需使用，部分操作完成后不需要保留的页面，应尽可能使用 `wx.redirectTo` 进行跳转
 
