@@ -41,10 +41,6 @@ this.setData({
 
 <br><br>
 
-## wxml 中数据转换成字符串
-
-<br><br>
-
 ## navigateTo与redirectTo
 
 `wx.navigateTo` 与 `wx.redirectTo` 以功能来说，同样是跳转到新页面的功能函数，它们之间有几点区别
