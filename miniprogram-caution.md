@@ -36,7 +36,7 @@ data:{
 }
 ```
 
-wxml 中页面使用数据进行条件渲染
+wxml 中使用数据进行条件渲染
 ```html
 <view wx:if="{{ a === String(b) }}">
 </view>
