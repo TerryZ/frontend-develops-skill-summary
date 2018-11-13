@@ -77,7 +77,7 @@
 
 ## MiniProgram
 
-> 小程序开发
+> 微信小程序开发
 
 - [Mini Program Native - 小程序原生](miniprogram-native.md)
 
