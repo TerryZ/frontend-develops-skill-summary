@@ -43,3 +43,12 @@ this.setData({
 ## wxml 中数据转换成字符串
 
 <br><br>
+
+## navigateTo与redirectTo
+
+`wx.navigateTo` 与 `wx.redirectTo` 以功能来说，同样是跳转到新页面的功能函数，它们之间有几点区别
+
+- `wx.navigateTo` 保留当前页面，而 `wx.redirectTo` 会关闭当前页面
+- 同是在目标页面的 url 中增加与 Web Url类似的链接参数，并可在目标页面的 `onLoad(options)` 中获取
+
+<br><br>
