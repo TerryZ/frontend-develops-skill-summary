@@ -5,6 +5,7 @@
 - [赋值](#赋值)
 - [Boolean值](#user-content-boolean值)
 - [switch 中容易被忽视的细节](#user-content-switch-中容易被忽视的细节)
+- [阻止页面离开](#阻止页面离开)
 
 <br><br><br><br><br><br>
 
@@ -105,3 +106,14 @@ switch(num){
 ```
 
 <br><br>
+
+## 阻止页面离开
+
+在部分数据编辑的页面里，需要控制用户在关闭前作出提示，并允许用户选择确定和取消，选择取消则保持当前页面不被关闭
+
+```js
+window.onbeforeunload=function(){
+	return confirm("Do you really want to leave?");
+};
+```
+confirm 中的主按钮点击后返回 `true`，取消按钮 返回 `false` 值
