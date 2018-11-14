@@ -113,7 +113,7 @@ switch(num){
 
 ```js
 window.onbeforeunload=function(){
-	return confirm("Do you really want to leave?");
+    return confirm("Do you really want to leave?");
 };
 ```
 confirm 中的主按钮点击后返回 `true`，取消按钮 返回 `false` 值
