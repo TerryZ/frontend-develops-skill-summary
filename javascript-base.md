@@ -117,3 +117,4 @@ window.onbeforeunload=function(){
 };
 ```
 confirm 中的主按钮点击后返回 `true`，取消按钮 返回 `false` 值
+在部分浏览器里 confirm 中指定的文本不会被显示，而显示的是浏览器固定显示的文本内容
