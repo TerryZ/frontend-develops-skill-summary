@@ -46,3 +46,7 @@ height = box.style.height;
 ```
 
 **需要注意的是，Vue 的 ref 属性提供的对象并非响应式，为保证数据的准确有效性，请在需要获得尺寸时，再获得 ref 属性的对象进行获取数据**
+
+## mixins
+
+## $attrs 和 $listeners
