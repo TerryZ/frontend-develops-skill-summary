@@ -50,3 +50,5 @@ height = box.style.height;
 ## mixins
 
 ## $attrs 和 $listeners
+
+## 依赖注入(provide/inject)
