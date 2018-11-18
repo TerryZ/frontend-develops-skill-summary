@@ -52,3 +52,5 @@ height = box.style.height;
 ## $attrs 和 $listeners
 
 ## 依赖注入(provide/inject)
+
+需要注意的是 provide/inject 并非响应式，这是有意为之
