@@ -143,6 +143,6 @@ console.log('%cThis is my log.', 'color: blue');
 console.log('This is my %clog.', 'color: blue;font-weight: bold;');
 ```
 
-`log.` 四个字符，就会使用蓝色进行打印
+`log.` 四个字符，就会使用蓝色及粗体进行打印
 
 <br><br>
