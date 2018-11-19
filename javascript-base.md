@@ -6,6 +6,7 @@
 - [Boolean值](#user-content-boolean值)
 - [switch 中容易被忽视的细节](#user-content-switch-中容易被忽视的细节)
 - [阻止页面离开](#阻止页面离开)
+- [带颜色的日志输出](#带颜色的日志输出)
 
 <br><br><br><br><br><br>
 
@@ -118,3 +119,30 @@ window.onbeforeunload=function(){
 ```
 confirm 中的主按钮点击后返回 `true`，取消按钮 返回 `false` 值  
 在部分浏览器里 confirm 中指定的文本不会被显示，而显示的是浏览器固定显示的文本内容
+
+<br><br>
+
+## 带颜色的日志输出
+
+在常规使用控制台对象 `console` 进行日志输出时，只有几种模式可以带颜色
+
+- warn - 黄色
+- error - 红色
+
+实际上控制台也可以自带义输出日志的字体颜色
+
+```js
+console.log('%cThis is my log.', 'color: blue');
+```
+
+`%c` 指定了在它之后的文本都是带颜色的，而使用的具体颜色，就是第二参数指定的颜色内容
+
+文本中部分内容使用颜色
+
+```js
+console.log('This is my %clog.', 'color: blue;font-weight: bold;');
+```
+
+`log.` 四个字符，就会使用蓝色进行打印
+
+<br><br>
