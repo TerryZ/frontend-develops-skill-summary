@@ -51,6 +51,8 @@ height = box.style.height;
 
 ## $attrs 和 $listeners
 
+在开发多层级组件时（父 => 子 => ...），对于组件指定的 Props 数据以及 v-on 的事件响应处理默认情况下，仅在组件最外层响应，子、孙组件里，无法获得传入的数据及事件响应。
+
 ## 依赖注入(provide/inject)
 
-需要注意的是 provide/inject 并非响应式，这是有意为之
+需要注意的是 provide/inject 并非响应式，这是 Vue 有意为之
