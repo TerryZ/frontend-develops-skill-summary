@@ -47,12 +47,20 @@ height = box.style.height;
 
 **需要注意的是，Vue 的 ref 属性提供的对象并非响应式，为保证数据的准确有效性，请在需要获得尺寸时，再获得 ref 属性的对象进行获取数据**
 
+<br><br>
+
 ## mixins
+
+<br><br>
 
 ## $attrs 和 $listeners
 
 在开发多层级组件时（父 => 子 => ...），对于组件指定的 Props 数据以及 v-on 的事件响应处理默认情况下，仅在组件最外层响应，子、孙组件里，无法获得传入的数据及事件响应。
 
+<br><br>
+
 ## 依赖注入(provide/inject)
 
 需要注意的是 provide/inject 并非响应式，这是 Vue 有意为之
+
+<br><br>
