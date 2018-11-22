@@ -1,11 +1,19 @@
 # mimiprogram - Native 小程序原生
 
 ## 目录
+
+- [开发环境建议](#开发环境建议)
 - [setData](#setData)
 - [navigateTo与redirectTo](#navigateTo与redirectTo)
 
 
 <br><br><br><br><br><br>
+
+## 开发环境建议
+
+vscode 安装插件 `miniapp`，让 vscode 可以识别小程序原生的的代码文件类型，支持小程序标签语法高亮
+
+工作模式为编码、管理均在 vscode 上进行，查看效果时切换到微信开发者工具上进行查看，由于微信开发者工具可以实时响应文件的修改或变更，并会重新刷新小程序的预览视图
 
 ## 微信小程序完整登录流程
 
