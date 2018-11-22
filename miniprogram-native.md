@@ -5,6 +5,8 @@
 - [开发环境建议](#开发环境建议)
 - [setData](#setData)
 - [navigateTo与redirectTo](#navigateTo与redirectTo)
+- [z-index](#z-index)
+- [dev and product](#dev-and-product)
 
 
 <br><br><br><br><br><br>
@@ -74,6 +76,14 @@ this.setData({
 - `wx.navigateBack` 可通过 `getCurrentPages()` 函数获得页面栈，并决定需要返回的层级
 
 为了防止小程序页面跳转不了的情况常，页面切换功能应按需使用，部分操作完成后不需要保留的页面，应尽可能使用 `wx.redirectTo` 进行跳转
+
+<br><br>
+
+## z-index
+
+对页面进行排版时，有时需要做上下层级控制。例如 A 和 B 都是一个 view 标签，A 需要 B 上层，在 A 和 B都设置了 `z-index` 值后，层级的效果并不会生效；此时需要关注 A 和 B 是否都指定了 `position` 样式属性，在都设置了 `position` 样式属性的情况下，层级效果才可以生效
+
+注意：在 `position:static` 设置下无效
 
 <br><br>
 
