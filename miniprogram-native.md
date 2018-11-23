@@ -7,6 +7,7 @@
 - [navigateTo与redirectTo](#navigateTo与redirectTo)
 - [z-index](#z-index)
 - [dev and product](#dev-and-product)
+- [特殊字符](#特殊字符)
 
 
 <br><br><br><br><br><br>
@@ -92,3 +93,10 @@ this.setData({
 小程序针对线上版本（正式版本）、体验/开发版本以及本地开发环境中的不同环境的服务端地址自动切换功能
 
 <br><br>
+
+## 特殊字符
+
+在网页上常用的特殊字符，在微信小程序的页面不能直接使用，需要使用时需要使用 text 或 view 标签进行包裹，并设置 `decode` 属性为真值，方可正常使用
+```html
+<text decode="{{true}}">&nbsp;</text>
+```
