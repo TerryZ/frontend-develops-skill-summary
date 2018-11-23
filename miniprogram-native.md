@@ -83,7 +83,7 @@ this.setData({
 
 对页面进行排版时，有时需要做上下层级控制。例如 A 和 B 都是一个 view 标签，A 需要 B 上层，在 A 和 B都设置了 `z-index` 值后，层级的效果并不会生效；此时需要关注 A 和 B 是否都指定了 `position` 样式属性，在都设置了 `position` 样式属性的情况下，层级效果才可以生效
 
-注意：在 `position:static` 设置下无效
+**注意**：在 `position:static` 设置下无效
 
 <br><br>
 
