@@ -4,6 +4,7 @@
 
 - [循环组件](#循环组件)
 - [获得元素的尺寸](#获得元素的尺寸)
+- [mixins 混入](#mixins-混入)
 
 <br><br><br><br><br><br>
 
@@ -49,7 +50,7 @@ height = box.style.height;
 
 <br><br>
 
-## mixins
+## mixins 混入
 
 元素抽象，可将 project, component 或 plugin 内部的公共元素进行抽象，使用通过 mixins 进入混入即可
 
