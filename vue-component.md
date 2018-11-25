@@ -76,6 +76,34 @@ export default{
 
 ## 依赖注入(provide/inject)
 
+
+```js
+//parent component
+export default {
+    data: {
+        return {
+            name: 'michael'
+        };
+    },
+    provide: {
+        return {
+            parentName: this.name
+        }
+    }
+};
+
+//children component
+export default {
+    data: {
+        name: 'sam'
+    },
+    inject: ['parentName'],
+    mounted() {
+        let fullname = `${this.name} - ${this.parentName}`;
+    }
+}
+```
+
 需要注意的是 provide/inject 并非响应式，这是 Vue 有意为之
 
 <br><br>
