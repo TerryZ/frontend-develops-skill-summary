@@ -219,7 +219,9 @@ methods:{
 ## 动画执行顺序
 
 - 进入
-    enter -> enter-active -> enter-to
+
+enter -> enter-active -> enter-to
 
 - 离开
-    leave -> leave-active -> leave-to
+
+leave -> leave-active -> leave-to
