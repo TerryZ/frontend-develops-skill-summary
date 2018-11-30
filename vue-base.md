@@ -8,6 +8,7 @@
 - [Component 数据输入和输出](#component-数据输入和输出)
 - [数据与DOM更新完成后的回调](#数据与dom更新完成后的回调)
 - [img 图片标签动态地址](#img-图片标签动态地址)
+- [动画执行顺序](#动画执行顺序)
 
 
 <br><br><br><br><br><br>
@@ -212,3 +213,13 @@ methods:{
 ```
 
 如此，则路径正常转换为 `/dist/xxx.png`
+
+<br><br>
+
+## 动画执行顺序
+
+- 进入
+    enter -> enter-active -> enter-to
+
+- 离开
+    leave -> leave-active -> leave-to
