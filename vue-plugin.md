@@ -100,7 +100,13 @@ output: {
 8. 安装库，国内环境建议使用 `cnpm` 安装速度会快些
 
 ```bash
+#可选使用 cnpm
 npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+#执行安装
+npm install
+#若安装了 cnpm 则使用该命令进行安装依赖库
+cnpm install
 ```
 
 9. 编译插件
