@@ -22,6 +22,17 @@ vue init webpack-simple
 ```
 根据导航提示，设置好项目后，基本结构生成完成
 
+> 在最新的 vue-cli 3 中，不再需要单独执行第 1 和 2 步
+
+```bash
+vue init webpack-simple dialog
+```
+以上指令即完成了创建目录，初始化 package.json 文件等步骤；在 `vue-cli` 3 里还可以使用 ui 模式来创建项目，有更友好的交互
+
+```bash
+vue ui
+```
+
 4. 删除无用内容  
 删除 `index.html` 和 `src` 目录下的所有文件  
 5. 复制插件内容到 `src` 目录中  
