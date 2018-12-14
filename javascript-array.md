@@ -1,6 +1,7 @@
 # javascript - Array 数组操作
 
 ## 目录
+- [清空数组](#清空数组)
 - [移除指定下标项目](#移除指定下标项目)
 - [数组复制](#数组复制)
 - [测试数组中的内容是否有满足条件的内容](#数组复制)
@@ -11,7 +12,32 @@
 
 <br><br><br><br><br><br>
 
+## 清空数组
+
+清空数组有 5 种方式：
+
+1. `arr = []`
+2. `arr.length = 0`
+3. `arr.splice(0, arr.length)`
+4. `while (arr.length) { arr.pop(); }`
+5. `while (arr.length) { arr.shift(); }`
+
+根据 5 种方式的 [benchmark](http://jsben.ch/hyj65) 测试得出的性能排名结论为
+
+1. length=0
+2. new init
+3. splice
+4. pop
+5. shift
+
+所以最推荐的清空数组的方式为：
+
+```js
+arr.length = 0;
+```
+
 ## 移除指定下标项目
+
 ```js
 var arr = [1,2,3,4,5];
 arr.splice(2,1);//移除第三个项目,下标从 0 开始
