@@ -237,7 +237,7 @@ leave -> leave-active -> leave-to
 
 **清空数组**
 
-清空数组数据，以达到清空列表的效果，在原生 js 中，清空数组的方式通常有 5 种，其中以 `arr.length = 0;` 方式性能最佳；但在 Vue 中使用该方式清空数组，会发现数组内容已被清空，但绑定的 dom 内容却没有发生变化，这个问题 Evan You 专门做了解答：[What is the best way to empty an array?](https://github.com/vuejs/Discussion/issues/59)，那么结论是在 Vue 中清空数组的最佳方式为 `arr = [];`
+清空数组数据，以达到清空列表的效果，在原生 js 中，清空数组的方式通常有 5 种，其中以 `arr.length = 0;` 方式性能最佳；但在 Vue 中使用该方式清空数组，会发现数组内容已被清空，但绑定的 dom 内容却没有发生变化，这个问题 Evan You 专门做了解答：[What is the best way to empty an array?](https://github.com/vuejs/Discussion/issues/59)，那么结论就是在 Vue 中清空数组的最佳方式为 `arr = [];`
 
 
 **扩展阅读**
