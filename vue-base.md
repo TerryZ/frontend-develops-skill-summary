@@ -242,6 +242,6 @@ leave -> leave-active -> leave-to
 
 **扩展阅读**
 
-- [清空数组的方式及性能评测](#https://github.com/TerryZ/frontend-develops-skill-summary/blob/master/javascript-array.md#%E6%B8%85%E7%A9%BA%E6%95%B0%E7%BB%84)
+- [清空数组的方式及性能评测](https://github.com/TerryZ/frontend-develops-skill-summary/blob/master/javascript-array.md#%E6%B8%85%E7%A9%BA%E6%95%B0%E7%BB%84)
 
 <br><br>
