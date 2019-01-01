@@ -37,6 +37,8 @@
 arr.length = 0;
 ```
 
+> 在 Vue 中使用，最好不要使用 `arr.length = 0` 来清空数组，原因请 [点击查看](https://github.com/TerryZ/frontend-develops-skill-summary/blob/master/vue-base.md#Array-%E6%93%8D%E4%BD%9C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)
+
 <br><br>
 
 ## 数组对象匹配
