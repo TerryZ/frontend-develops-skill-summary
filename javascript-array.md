@@ -71,8 +71,7 @@ arr.splice(2,1);//移除第三个项目,下标从 0 开始
 
 ## 数组复制
 ```js
-var arr = [1,2,3,4,5];
-var newarr = arr.concat();
+const arr = [1,2,3,4,5], newarr = arr.concat();
 newarr[0] = 9;
 console.log(arr);//[1,2,3,4,5]
 console.log(newarr);//[9,2,3,4,5]
