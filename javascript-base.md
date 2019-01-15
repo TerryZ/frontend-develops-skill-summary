@@ -113,7 +113,7 @@ switch(num){
 在部分数据编辑的页面里，需要控制用户在关闭前作出提示，并允许用户选择确定和取消，选择取消则保持当前页面不会被关闭
 
 ```js
-window.onbeforeunload=function(){
+window.onbeforeunload = function(){
     return confirm("Do you really want to leave?");
 };
 ```
