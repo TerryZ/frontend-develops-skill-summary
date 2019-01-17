@@ -10,7 +10,7 @@
   [ jQuery ](#jquery) | 
   [ Vue ](#vue) |
   [ MiniProgram ](#miniprogram) |
-  [ Linux ](#linux)] | 
+  [ Linux ](#linux) | 
   [ Learning ](#learning) |
   [ Interesting ](#interesting) |
   [ 插件推荐 ](#插件推荐)
