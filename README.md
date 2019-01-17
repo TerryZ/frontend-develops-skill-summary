@@ -6,14 +6,14 @@
 
 <div align="center">
   
-  [[ javascript ](#javascript) ]
-  [[ jQuery ](#jquery)]
-  [[ Vue ](#vue)]
-  [[ MiniProgram ](#miniprogram)]
-  [[ Linux ](#linux)]
-  [[ Learning ](#learning)]
-  [[ Interesting ](#interesting)]
-  [[ 插件推荐 ](#插件推荐)]
+  [ javascript ](#javascript) |
+  [ jQuery ](#jquery) | 
+  [ Vue ](#vue) |
+  [ MiniProgram ](#miniprogram) |
+  [ Linux ](#linux)] | 
+  [ Learning ](#learning) |
+  [ Interesting ](#interesting) |
+  [ 插件推荐 ](#插件推荐)
   
 </div>
 
