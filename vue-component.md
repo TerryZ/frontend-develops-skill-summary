@@ -104,6 +104,6 @@ export default {
 }
 ```
 
-需要注意的是 provide/inject 并非响应式，这是 Vue 有意为之
+需要注意的是 provide/inject 并非响应式，这是 Vue 在设计上有意为之的结果
 
 <br><br>
