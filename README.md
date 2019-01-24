@@ -29,13 +29,13 @@
 
 - [Base - 基本使用](js/javascript-base.md)
 
-- [Dom - DOM操作](javascript-dom.md)
+- [Dom - DOM操作](js/javascript-dom.md)
 
-- [Array - 数组处理](javascript-array.md)
+- [Array - 数组处理](js/javascript-array.md)
 
-- [Size and position - 尺寸与定位](javascript-size-and-position.md)
+- [Size and position - 尺寸与定位](js/javascript-size-and-position.md)
 
-- [ES6实用技巧](javascript-es6.md)
+- [ES6实用技巧](js/javascript-es6.md)
 
 <br><br>
 
