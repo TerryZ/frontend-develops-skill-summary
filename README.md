@@ -27,7 +27,7 @@
 
 ## Javascript 
 
-- [Base - 基本使用](javascript-base.md)
+- [Base - 基本使用](js/javascript-base.md)
 
 - [Dom - DOM操作](javascript-dom.md)
 
