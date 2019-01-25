@@ -43,13 +43,13 @@
 
 > jQuery 的内容仅限 1.x 版本，未使用 jquery2、3 进行开发项目
 
-- [Base - 基本使用](jquery-base.md)
+- [Base - 基本使用](jquery/jquery-base.md)
 
-- [Selector - 选择器](jquery-selector.md)
+- [Selector - 选择器](jquery/jquery-selector.md)
 
-- [Events - 事件](jquery-event.md)
+- [Events - 事件](jquery/jquery-event.md)
 
-- [Size and position - 尺寸与定位](jquery-size-and-position.md)
+- [Size and position - 尺寸与定位](jquery/jquery-size-and-position.md)
 
 - Dom handle - 元素处理
 
