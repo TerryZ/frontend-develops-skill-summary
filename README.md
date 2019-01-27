@@ -59,7 +59,7 @@
 
 > 以 Vue2 为基础版本
 
-- [Base - 核心功能](vue-base.md)
+- [Base - 核心功能](vue/vue-base.md)
 
 - [VueRouter - 路由功能](vue-router.md)
 
