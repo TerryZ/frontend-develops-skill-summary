@@ -61,7 +61,7 @@
 
 - [Base - 核心功能](vue/vue-base.md)
 
-- [VueRouter - 路由功能](vue-router.md)
+- [VueRouter - 路由功能](vue/vue-router.md)
 
 - [Vuex - 数据状态控制](vuex.md)
 
