@@ -63,7 +63,7 @@
 
 - [VueRouter - 路由功能](vue/vue-router.md)
 
-- [Vuex - 数据状态控制](vuex.md)
+- [Vuex - 数据状态控制](vue/vuex.md)
 
 - [Component - 组件开发](vue-component.md)
 
