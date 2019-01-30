@@ -65,7 +65,7 @@
 
 - [Vuex - 数据状态控制](vue/vuex.md)
 
-- [Component - 组件开发](vue-component.md)
+- [Component - 组件开发](vue/vue-component.md)
 
 - [Plugin - 插件开发](vue-plugin.md)
 
