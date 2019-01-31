@@ -67,7 +67,7 @@
 
 - [Component - 组件开发](vue/vue-component.md)
 
-- [Plugin - 插件开发](vue-plugin.md)
+- [Plugin - 插件开发](vue/vue-plugin.md)
 
 - [Http - 网络请求](vue-http.md)
 
