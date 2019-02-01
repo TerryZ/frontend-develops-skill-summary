@@ -69,7 +69,7 @@
 
 - [Plugin - 插件开发](vue/vue-plugin.md)
 
-- [Http - 网络请求](vue-http.md)
+- [Http - 网络请求](vue/vue-http.md)
 
 - [ie9 - ie9版本兼容处理](vue-ie9.md)
 
