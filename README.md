@@ -79,7 +79,7 @@
 
 > 微信小程序开发
 
-- [Mini Program Native - 小程序原生](miniprogram-native.md)
+- [Mini Program Native - 小程序原生](miniprogram/miniprogram-native.md)
 
 - [Caution - 特别注意](miniprogram-caution.md)
 
