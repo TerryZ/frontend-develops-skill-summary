@@ -81,7 +81,7 @@
 
 - [Mini Program Native - 小程序原生](miniprogram/miniprogram-native.md)
 
-- [Caution - 特别注意](miniprogram-caution.md)
+- [Caution - 特别注意](miniprogram/miniprogram-caution.md)
 
 - [Optimize  - 性能优化](miniprogram-optimize.md)
 
