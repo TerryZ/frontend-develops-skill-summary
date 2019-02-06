@@ -245,3 +245,25 @@ leave -> leave-active -> leave-to
 - [清空数组的方式及性能评测](https://github.com/TerryZ/frontend-develops-skill-summary/blob/master/javascript-array.md#%E6%B8%85%E7%A9%BA%E6%95%B0%E7%BB%84)
 
 <br><br>
+
+## Vue.set 向响应式对象添加新属性并触发视图更新
+
+```vue
+<template>
+    name: <input type="text" v-model="model.name">
+    age: <input type="text" v-model="model.age">
+    address: <input type="text" v-model="model.address">
+    
+    <button type="button" @click="">ok</button>
+</template>
+
+<script>
+export default {
+    data(){
+        return {
+            model: {}
+        };
+    }
+}
+</script>
+```
