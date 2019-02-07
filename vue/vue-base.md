@@ -1,4 +1,4 @@
-# <div align="center">Vue - base 核心功能使用</div>
+# <div align="center">Vue 核心功能</div>
 
 ## 目录
 
