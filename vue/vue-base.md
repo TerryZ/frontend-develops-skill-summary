@@ -248,13 +248,16 @@ leave -> leave-active -> leave-to
 
 ## Vue.set 向响应式对象添加新属性并触发视图更新
 
+一个普通的表单场景
+
 ```vue
 <template>
     name: <input type="text" v-model="model.name">
     age: <input type="text" v-model="model.age">
     address: <input type="text" v-model="model.address">
     
-    <button type="button" @click="">ok</button>
+    <button type="button" @click="build">build user name</button>
+    <button type="button" @click="save">save</button>
 </template>
 
 <script>
@@ -263,7 +266,17 @@ export default {
         return {
             model: {}
         };
+    },
+    methods: {
+        build(){
+            this.model.name = 'Tom';
+        },
+        save(){
+            //do some save stuff
+        }
     }
 }
 </script>
 ```
+
+使用 model 对象作为表单数据集的基础数据模型，但定义时只初始化了一个空对象
