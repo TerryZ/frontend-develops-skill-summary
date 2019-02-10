@@ -279,4 +279,4 @@ export default {
 </script>
 ```
 
-点击 `build user name` 按钮后，与 `model.name` 绑定的 input 内容并未改变，
+点击 `build user name` 按钮后，与 `model.name` 绑定的 input 内容并未改变，由于 model 对象初始化时仅为空对象，没有 name 属性，于是虽然给 `model.name` 指定值时，并没有更新已绑定的视图内容
