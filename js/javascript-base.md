@@ -146,3 +146,18 @@ console.log('This is my %clog.', 'color: blue;font-weight: bold;');
 `log.` 四个字符，就会使用蓝色及粗体进行打印
 
 <br><br>
+
+## Base64 编码解码
+
+> ie10+
+
+```js
+//binary to ascii
+window.btoa('abcdefghijklmnopqrstuvxyz');
+//result: YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnh5eg==
+
+//ascii to binary
+window.atob('YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnh5eg==');
+//result: abcdefghijklmnopqrstuvxyz
+
+```
