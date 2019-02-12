@@ -282,3 +282,13 @@ export default {
 点击 `build user name` 按钮后，与 `model.name` 绑定的 input 内容并未改变，通过 Vue Devtools 观察发现 model.name 被正确设置为 'Tom'
 
 由于 model 对象初始化时仅为空对象，没有 name 属性，于是虽然给 `model.name` 指定值时，并没有更新已绑定的视图内容
+
+```js
+build(){
+    this.$set(this.model, 'name', 'Tom');
+}
+```
+
+在 build 方法中修改为使用 Vue.set 方式设置 name 属性，则数据得到更新，同时绑定的 Dom 内容也被更新显示
+
+`this.$set()` API 是全局 Vue.set 的别名
