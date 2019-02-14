@@ -280,7 +280,7 @@ export default {
 </script>
 ```
 
-点击 `build user name` 按钮后，与 `model.name` 绑定的 input 内容并未改变，通过 Vue Devtools 观察发现 model.name 被正确设置为 'Tom'
+`build user name` 按钮的事情执行了修改属性的操作，但点击按钮后与 model.name 绑定的 input 内容并未改变；通过 Vue Devtools 观察发现 model.name 被正确设置为 'Tom'，但输入框的内容并未显示
 
 由于 model 对象初始化时仅为空对象，没有 name 属性，于是虽然给 `model.name` 指定值时，并没有更新已绑定的视图内容
 
