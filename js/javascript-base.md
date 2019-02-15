@@ -149,7 +149,7 @@ console.log('This is my %clog.', 'color: blue;font-weight: bold;');
 
 ## Base64 编码解码
 
-> ie10+
+> ie10+ 以上的浏览器原生支持
 
 ```js
 //binary to ascii
