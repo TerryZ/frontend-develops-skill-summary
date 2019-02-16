@@ -152,7 +152,7 @@ console.log('This is my %clog.', 'color: blue;font-weight: bold;');
 > ie10+ 以上的浏览器原生支持
 
 ```js
-//binary to ascii
+//binary to ascii(将字符串转进行 base64 编码)
 window.btoa('abcdefghijklmnopqrstuvxyz');
 //result: YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnh5eg==
 
