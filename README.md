@@ -73,7 +73,7 @@
 
 - [ie9 - ie9版本兼容处理](vue/vue-ie9.md)
 
-- CLI
+- [CLI](vue/vue-cli.md)
 
 <br><br>
 
