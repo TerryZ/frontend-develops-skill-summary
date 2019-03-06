@@ -21,9 +21,17 @@
 
 `.env.development`
 
+文件大致内容
 
+```
+//声明环境
+NODE_ENV=development
 
+//环境变量
+VUE_APP_API=http://localhost
+```
 
 **生产环境变量配置文件**
 
 `.env.production`
+
