@@ -21,7 +21,7 @@
 
 `.env.development`
 
-文件大致内容
+文件内容样例
 
 ```
 //声明环境
@@ -35,3 +35,13 @@ VUE_APP_API=http://localhost
 
 `.env.production`
 
+文件内容样例
+
+```
+NODE_ENV=production
+
+//server side base path
+VUE_APP_API=/api
+//file upload server path
+FILE_UPLOAD_API=/api
+```
