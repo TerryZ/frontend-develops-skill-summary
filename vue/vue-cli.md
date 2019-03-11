@@ -45,3 +45,5 @@ VUE_APP_API=/api
 //file upload server path
 FILE_UPLOAD_API=/api
 ```
+
+环境变量
