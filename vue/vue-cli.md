@@ -46,4 +46,12 @@ VUE_APP_API=/api
 FILE_UPLOAD_API=/api
 ```
 
-环境变量
+环境变量使用
+
+```js
+const API_PATH = process.env.VUE_APP_API;
+```
+
+在上述样例中，开发和生产环境的配置文件里都设置了一个 `VUE_APP_API` 的变量，根据环境不同指定了不同的 url
+
+在使用中仅需获得该变量正常使用即可，变量会根据实际环境读取相应配置文件
