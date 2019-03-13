@@ -105,6 +105,7 @@
 
 - [英语学习](https://github.com/byoungd/english-level-up-tips-for-Chinese)
 - [ECMAScript 6 入门](http://es6.ruanyifeng.com/)
+- [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 
 <br><br>
 
