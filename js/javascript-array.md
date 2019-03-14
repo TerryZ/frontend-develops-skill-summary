@@ -138,8 +138,8 @@ console.log(arrNew);//['1A', '2B', '3C', '4D', '5E', '6F'];
 ## 过滤数组
 
 ```js
-let arr = [1, 2, 30, 4, 15, 6];
-let arrNew = arr.filter((value, index, array)=>value<10);
+const arr = [1, 2, 30, 4, 15, 6];
+const arrNew = arr.filter((value, index, array) => value < 10);
 console.log(arrNew);//[1, 2, 4, 6]
 ```
 
