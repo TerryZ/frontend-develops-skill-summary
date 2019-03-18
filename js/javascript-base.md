@@ -150,6 +150,8 @@ console.log('This is my %clog.', 'color: blue;font-weight: bold;');
 
 ## Base64 编码解码
 
+将文本内容使用 base64 编码进行加密
+
 > ie10+ 以上的浏览器原生支持
 
 ```js
