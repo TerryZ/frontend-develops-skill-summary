@@ -50,6 +50,8 @@ a = 2;// Uncaught TypeError: Assignment to constant variable.
 
 在使用中，建议使用 `let` 与 `const` 完全代替 `var` 命令
 
+定义变量时，应尽可能使用 const，当需要多次赋值时，使用 let 进行定义
+
 <br><br>
 
 ## 数值扩展
