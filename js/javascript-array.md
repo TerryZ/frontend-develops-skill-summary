@@ -64,7 +64,7 @@ if(arr1.sort().join('') === arr2.sort().join('')){
 ## 移除指定下标项目
 
 ```js
-var arr = [1,2,3,4,5];
+const arr = [1,2,3,4,5];
 arr.splice(2,1);//移除第三个项目,下标从 0 开始
 //[1,2,4,5]
 
