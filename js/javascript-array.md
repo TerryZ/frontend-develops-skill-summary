@@ -98,8 +98,8 @@ console.log(result);//true
 ## 测试数组中所有项目是否均满足条件
 
 ```js
-var arr=[3,5,77,2,10];
-var result = arr.every(function(item){
+const arr=[3,5,77,2,10];
+const result = arr.every(function(item){
     return item > 0;
 });
 console.log(result);//true
