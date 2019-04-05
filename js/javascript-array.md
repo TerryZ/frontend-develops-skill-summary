@@ -127,7 +127,7 @@ arr.forEach((value, index, array) => {
 ## 数组转换
 
 ```js
-let arr = [1,2,3,4,5,6], arr1 = ['A', 'B', 'C', 'D', 'E', 'F'];
+const arr = [1,2,3,4,5,6], arr1 = ['A', 'B', 'C', 'D', 'E', 'F'];
 let arrNew = arr.map((value, index, array) => {
     return value + arr1[index];
 });
