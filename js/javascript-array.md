@@ -128,9 +128,7 @@ arr.forEach((value, index, array) => {
 
 ```js
 const arr = [1,2,3,4,5,6], arr1 = ['A', 'B', 'C', 'D', 'E', 'F'];
-const arrNew = arr.map((value, index, array) => {
-    return value + arr1[index];
-});
+const arrNew = arr.map((value, index, array) => value + arr1[index]);
 console.log(arrNew);//['1A', '2B', '3C', '4D', '5E', '6F'];
 ```
 
