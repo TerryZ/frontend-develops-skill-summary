@@ -68,8 +68,8 @@ if(arr1.sort().join('') === arr2.sort().join('')){
 ## 移除指定下标项目
 
 ```js
-const arr = [1,2,3,4,5];
-arr.splice(2,1);//移除第三个项目,下标从 0 开始
+const arr = [1, 2, 3, 4, 5];
+arr.splice(2, 1);//移除第三个项目,下标从 0 开始
 //[1,2,4,5]
 
 // 使用 filter 也可以达到同样的效果
@@ -80,7 +80,7 @@ const new_arr = arr.filter((val,index) => index !== 2);
 
 ## 数组复制
 ```js
-const arr = [1,2,3,4,5], newarr = arr.concat();
+const arr = [1, 2, 3, 4, 5], newarr = arr.concat();
 newarr[0] = 9;
 console.log(arr);//[1,2,3,4,5]
 console.log(newarr);//[9,2,3,4,5]
