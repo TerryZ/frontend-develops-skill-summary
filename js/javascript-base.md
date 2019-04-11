@@ -19,11 +19,11 @@
 
 ```js
 function(p){
-    var param = p || {a:1};
+    const param = p || {a:1};
 }
 //等效于
 function(p){
-    var param;
+    let param;
     if(!p) param = {a:1};
 }
 ```
