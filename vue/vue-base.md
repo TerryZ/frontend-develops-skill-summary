@@ -98,7 +98,7 @@ export default {
         this.query = newVal;
         this.doRequest();
       },
-      deep: true//深度监听，监听对象最重要就是要打开它
+      deep: true//深度监听，监听对象类型最重要就是要打开它
     }
   }
   methods: {
@@ -210,7 +210,7 @@ methods:{
 }
 ```
 
-并将 HTML 修改为
+并将 HTML 内容修改为
 
 ```vue
 <img :src="getImg(img.name)" v-for="img in list" >
