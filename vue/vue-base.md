@@ -164,17 +164,14 @@ export default {
 
 Dom 更新回调
 
-*html*
 
-```html
+```vue
 <template>
     <ul>
         <li v-for="item in list">{{item}}</li>
     </ul>
 </template>
-```
-*script*
-```js
+<script>
 export default {
     data(){
         list: []
@@ -186,6 +183,7 @@ export default {
         });
     }
 };
+</script>
 ```
 
 <br><br>
