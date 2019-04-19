@@ -28,3 +28,8 @@
 ## 跨域请求
 
 [跨域数据请求的整体解决方案](https://github.com/TerryZ/js-develop-skill-summary/blob/master/vue-ie9.md#http%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82%E8%B7%A8%E5%9F%9F)
+
+<br><br>
+
+## nginx反向代理
+
