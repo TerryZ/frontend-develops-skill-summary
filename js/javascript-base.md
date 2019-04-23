@@ -34,7 +34,7 @@ function(p){
 
 ```js
 function(p){
-    var param = p && {a:1};
+    const param = p && {a:1};
 }
 //等效于
 function(p){
