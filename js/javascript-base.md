@@ -60,7 +60,7 @@ function(p){
 通常我们使用条件判断是使用 `if` ，但如果需要判断的情况较多，或是对每一个枚举的值都需要做不同处理，就会用到 `switch` 语句，不同条件执行不同代码块，首先来看一段代码
 
 ```js
-var num = '5';
+const num = '5';
 switch(num){
     case 5:
         console.log('result is ' + num);
