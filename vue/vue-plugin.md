@@ -145,7 +145,8 @@ npm publish
 npm i url-loader --save-dev
 ```
 
-`webpack` 配置修改(`webpack-simple` 模板)
+`webpack` 配置修改
+
 ```js
 module.exports = {
   ...
