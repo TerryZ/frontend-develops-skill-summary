@@ -10,9 +10,8 @@
 
 ## 循环组件
 
-```html
-<user v-for="user, index in users"      
-      :key="'user-' + user.id" >
+```vue
+<user v-for="(user, index) in users" :key="`user-${user.id}`" >
 ```
 在使用自定义组件，并需要生成多个时，有个很重要的属性需要关注：`key`
 
