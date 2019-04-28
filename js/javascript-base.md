@@ -38,7 +38,7 @@ function(p){
 }
 //等效于
 function(p){
-    var param;
+    let param;
     if(p) param = {a:1};
 }
 ```
