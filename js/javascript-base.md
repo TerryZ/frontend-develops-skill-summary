@@ -74,7 +74,7 @@ switch(num){
 执行的代码块好像和期待的结果不一样，代码走到了 `default` 分支。使用 `if` 语句来试试
 
 ```js
-var num = '5';
+const num = '5';
 if(num == 5)
     console.log('match');
 else
