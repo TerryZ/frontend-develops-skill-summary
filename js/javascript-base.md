@@ -85,7 +85,7 @@ else
 使用 `if` 判断结果是正确的！那么，使用严格比较
 
 ```js
-var num = '5';
+const num = '5';
 if(num === 5)
     console.log('match');
 else
