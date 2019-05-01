@@ -96,7 +96,7 @@ else
 这里的结果就和 `switch` 的结果一致了，说明 `switch` 中对于判断是使用的严格判断，那么修改 `switch` 中的判断条件，结果就满足期望了
 
 ```js
-var num = '5';
+const num = '5';
 switch(num){
     case '5':
         console.log('result is ' + num);
