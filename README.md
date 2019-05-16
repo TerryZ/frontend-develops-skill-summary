@@ -91,8 +91,6 @@
 
 ## Linux
 
-> Linux 操作、安装经验
-
 - [Base - 常用命令](linux/linux-base.md)
 
 - [Install - 软件安装](linux/linux-install.md)
