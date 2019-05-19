@@ -51,6 +51,11 @@ arr = []
 
 ## 数组查找项目
 
+```js
+const arr = [1,2,3,4,5];
+const expect = arr.find(val => val === 3);//3
+```
+
 <br><br>
 
 ## 数组查找项目下标
