@@ -60,6 +60,11 @@ const expect = arr.find(val => val === 3);//3
 
 ## 数组查找项目下标
 
+```js
+const arr = ['a','b','c','d','e'];
+const index = arr.findIndex(val => val === 'b');//1
+```
+
 <br><br>
 
 ## 数组是否包含某个值
