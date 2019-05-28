@@ -69,6 +69,11 @@ const index = arr.findIndex(val => val === 'b');//1
 
 ## 数组是否包含某个值
 
+```js
+const arr = [1,2,3,4,5];
+const exist = arr.some(val => val === 3);//true
+```
+
 <br><br>
 
 ## 数组对象匹配
