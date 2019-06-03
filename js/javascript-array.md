@@ -78,6 +78,8 @@ const arr = [1,2,3,4,5];
 const exist = arr.some(val => val === 3);//true
 ```
 
+测试数组中是否有满足条件的项目，只要有任意一个项目匹配成功，即为返回 `true`
+
 <br><br>
 
 ## 数组对象匹配
