@@ -21,7 +21,7 @@
 
 清空数组有 5 种方式：
 
-1. `arr = []`
+1. arr = []
 2. `arr.length = 0`
 3. `arr.splice(0, arr.length)`
 4. `while (arr.length) { arr.pop(); }`
