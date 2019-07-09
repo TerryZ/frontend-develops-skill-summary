@@ -5,6 +5,7 @@
 - [循环组件](#循环组件)
 - [获得元素的尺寸](#获得元素的尺寸)
 - [mixins 混入](#mixins-混入)
+- [render 渲染函数](#render-渲染函数)
 
 <br><br><br><br><br><br>
 
@@ -103,5 +104,10 @@ export default {
 ```
 
 需要注意的是 provide/inject 并非响应式，这是 Vue 在设计上有意为之的结果
+
+<br><br>
+
+## render 渲染函数
+
 
 <br><br>
