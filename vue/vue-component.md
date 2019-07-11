@@ -109,5 +109,13 @@ export default {
 
 ## render 渲染函数
 
+**v-show**
+
+**v-model**
+
+**.sync**
+
+**slot**
+
 
 <br><br>
