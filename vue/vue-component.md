@@ -111,6 +111,37 @@ export default {
 
 **v-show**
 
+假设在 data 中已定义 user 的字符串变量
+
+- 表单元素
+
+```js
+h('input', {
+    attrs:{
+        type: 'input'
+    },
+    domProps:{
+        value: this.user
+    },
+    on: {
+        input: val => this.user = val
+    }
+})
+```
+
+- 自定义组件
+
+```js
+h('custom-component', {
+    attrs:{
+        value: this.user
+    },
+    on: {
+        input: val => this.user = val
+    }
+})
+```
+
 **v-model**
 
 **.sync**
