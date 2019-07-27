@@ -111,6 +111,8 @@ export default {
 
 **v-show**
 
+**v-model**
+
 假设在 data 中已定义 user 的字符串变量
 
 - 表单元素
@@ -141,8 +143,6 @@ h('custom-component', {
     }
 })
 ```
-
-**v-model**
 
 **.sync**
 
