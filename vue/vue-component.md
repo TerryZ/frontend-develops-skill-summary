@@ -146,6 +146,17 @@ h('custom-component', {
 
 **.sync**
 
+```js
+h('custom-component', {
+    attrs:{
+        value: this.user
+    },
+    on: {
+        'update:user': val => this.user = val
+    }
+})
+```
+
 **slot**
 
 
