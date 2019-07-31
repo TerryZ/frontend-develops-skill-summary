@@ -118,9 +118,10 @@ export default {
 - 表单元素
 
 ```js
+// same as <input type="text" v-model="user"></input>
 h('input', {
     attrs:{
-        type: 'input'
+        type: 'text'
     },
     domProps:{
         value: this.user
