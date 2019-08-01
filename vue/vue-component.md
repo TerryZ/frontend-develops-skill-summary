@@ -135,6 +135,7 @@ h('input', {
 - 自定义组件
 
 ```js
+// same as <custom-component v-model="user"></custom-component>
 h('custom-component', {
     attrs:{
         value: this.user
