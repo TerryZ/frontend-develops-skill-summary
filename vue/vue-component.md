@@ -149,9 +149,10 @@ h('custom-component', {
 **.sync**
 
 ```js
+// same as <custom-component :user.sync="user"></custom-component>
 h('custom-component', {
     attrs:{
-        value: this.user
+        user: this.user
     },
     on: {
         'update:user': val => this.user = val
