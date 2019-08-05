@@ -117,8 +117,15 @@ export default {
 
 - 表单元素
 
+模板
+
+```vue
+<input type="text" v-model="user"></input>
+```
+
+render
+
 ```js
-// same as <input type="text" v-model="user"></input>
 h('input', {
     attrs:{
         type: 'text'
