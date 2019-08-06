@@ -141,8 +141,15 @@ h('input', {
 
 - 自定义组件
 
+模板
+
+```vue
+<custom-component v-model="user"></custom-component>
+```
+
+render
+
 ```js
-// same as <custom-component v-model="user"></custom-component>
 h('custom-component', {
     attrs:{
         value: this.user
