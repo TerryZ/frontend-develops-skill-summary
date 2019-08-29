@@ -6,6 +6,7 @@
 - [获得元素的尺寸](#获得元素的尺寸)
 - [mixins 混入](#mixins-混入)
 - [render 渲染函数](#render-渲染函数)
+- [单选与复选](#单选与复选)
 
 <br><br><br><br><br><br>
 
@@ -113,7 +114,7 @@ export default {
 
 ### v-model
 
-假设在 data 中已定义 user 的字符串变量
+假设在 data 中已定义名为 user 的字符串变量
 
 - 表单元素
 
@@ -174,7 +175,138 @@ h('custom-component', {
 })
 ```
 
-**slot**
+### slot
 
 
 <br><br>
+
+## 单选与复选
+
+通常在表单中设置单选或复选框如下（仅举例单选框）
+
+```vue
+<template>
+  <div>
+    <input type="radio" name="options" value="A" v-model="picked"> A
+    <input type="radio" name="options" value="B" v-model="picked"> B
+    <input type="radio" name="options" value="C" v-model="picked"> C
+  </div>
+</template>
+<script>
+export default {
+  data(){
+    return {
+      picked: ''
+    }
+  }
+}
+</script>
+```
+
+但有时我们需要根据不同使用需求来决定选择类型，于是代码修改如下
+
+```vue
+<template>
+  <div>
+    <input :type="inputType" name="options" value="A" v-model="picked"> A
+    <input :type="inputType" name="options" value="B" v-model="picked"> B
+    <input :type="inputType" name="options" value="C" v-model="picked"> C
+  </div>
+</template>
+<script>
+export default {
+  data(){
+    return {
+      type: 1
+      picked: ''
+    }
+  },
+  computed: {
+    inputType(){
+      return this.type ? 'checkbox' : 'radio'
+    }
+  }
+}
+</script>
+```
+
+可以看到 input 类型会根据变量值的变化而改变，这种处理模式本也常见，在开发环境一切相安无事，将功能通过产品模式发布到生产环境后，发现该功能在 ie 浏览器下功能不正常，并有相应的错误信息
+
+> duplicate data property in object literal not allowed in strict mode
+
+根据调试跟踪，最终发现是因为在 `strict` 严格模式下，对象的属性不允许被重复定义，出现错误的代码为 template 被编译为 render 函数后的内容，具体代码如下
+
+```js
+h('input', {
+...
+domProps: {
+  "value": _vm.otherValue,
+  "value": (_vm.picked)
+}
+...
+})
+
+```
+
+此处为 render 渲染函数中提供的 `createElement` 对 radio 的构建代码，其中 domProps 出现了两个 value 属性，导致了 ie 浏览器的报错。在现代浏览器中，会自动兼容这种重复属性的问题，不会出现错误提示，而在 ie 浏览器或是较低版本的浏览器中会出现该错误提示，而这样的问题会带来的后果就是在 ie 浏览器或是较旧手机的 webview 中显示该页面会出现白屏的情况，较难被排查出来
+
+该问题在 vue 项目中也有相关 issues：[domProps has twice the "value" key #6917](https://github.com/vuejs/vue/issues/6917)，根据 Evan You 的描述，问题的原因在于 input 的 type 属性是动态生成的，若是静态指定的模式不会出现该问题，比如
+
+```vue
+<template>
+  <div>
+    <input type="checkbox" name="options" value="A" v-model="picked" v-if="type"> A
+    <input type="radio" name="options" value="A" v-model="picked" v-else> A
+  </div>
+</template>
+```
+
+这样或能解决问题，但代码写起来太过冗余，我个人的处理方案是将之独立提取为一个 component，大致代码如下
+
+```vue
+export default {
+  name: 'Input-El',
+  model: {
+    prop: 'checked',
+    event: 'change'
+  },
+  props: {
+    ...
+    type: Number,
+    checked: [Array, String]
+  },
+  render (h) {
+    return h('input', {
+      class: 'custom-control-input',
+      attrs: {
+        ...
+        type: this.type ? 'checkbox' : 'radio', // 根据类型设置 type 属性
+        value: this.optionId,// 静态生成 value 属性，不再跟 v-model 争夺 value 属性
+        name: 'vote-options'
+      },
+      on: {
+        // 在 change 事件中触发 change 事件回调
+        change: e => {
+          this.$emit('change', this.optionId)
+        }
+      }
+    })
+  }
+}
+```
+
+> 关于 model 参数的配置详情请参考官网： [model option in component](https://cn.vuejs.org/v2/api/#model)
+
+如此改造后，界面上即可正常使用参数传递，而不用书写冗长的代码，以下是最终的使用情况
+
+```vue
+<template>
+  <div>
+    <!-- before -->
+    <input type="checkbox" name="options" value="A" v-model="picked" v-if="type"> A
+    <input type="radio" name="options" value="A" v-model="picked" v-else> A
+    <!-- after -->
+    <input-el :type="type" v-model="picked" :option-id="option.id">
+  </div>
+</template>
+```
