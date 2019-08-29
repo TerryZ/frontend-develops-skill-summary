@@ -109,9 +109,9 @@ export default {
 
 ## render 渲染函数
 
-**v-show**
+### v-show
 
-**v-model**
+### v-model
 
 假设在 data 中已定义 user 的字符串变量
 
@@ -160,7 +160,7 @@ h('custom-component', {
 })
 ```
 
-**.sync**
+### .sync
 
 ```js
 // same as <custom-component :user.sync="user"></custom-component>
