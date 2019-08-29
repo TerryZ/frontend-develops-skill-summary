@@ -238,12 +238,12 @@ export default {
 
 ```js
 h('input', {
-...
-domProps: {
-  "value": _vm.otherValue,
-  "value": (_vm.picked)
-}
-...
+  ...
+  domProps: {
+    "value": _vm.otherValue,
+    "value": (_vm.picked)
+  }
+  ...
 })
 
 ```
@@ -263,7 +263,7 @@ domProps: {
 
 这样或能解决问题，但代码写起来太过冗余，我个人的处理方案是将之独立提取为一个 component，大致代码如下
 
-```vue
+```js
 export default {
   name: 'Input-El',
   model: {
