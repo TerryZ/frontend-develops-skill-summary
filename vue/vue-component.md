@@ -306,7 +306,7 @@ export default {
     <input type="checkbox" name="options" value="A" v-model="picked" v-if="type"> A
     <input type="radio" name="options" value="A" v-model="picked" v-else> A
     <!-- after -->
-    <input-el :type="type" v-model="picked" :option-id="option.id">
+    <input-el :type="type" v-model="picked" :option-id="option.id"> A
   </div>
 </template>
 ```
