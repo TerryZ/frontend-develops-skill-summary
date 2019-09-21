@@ -21,8 +21,6 @@
 
 期望的结果是移除最后一个组件，并新增一个新的组件；此时，被移除的组件下标是0，新增的组件下标也是0，Vue 会认为现有的组件内容需要更新，而不是去新增一个新的组件，这样常常会出现莫明其妙的问题
 
-<br><br>
-
 ## 获得元素的尺寸
 
 以获得元素的高度（height）为例
@@ -48,8 +46,6 @@ height = box.style.height;
 
 **需要注意的是，Vue 的 ref 属性提供的对象并非响应式，为保证数据的准确有效性，请在需要获得尺寸时，再获得 ref 属性的对象进行获取数据**
 
-<br><br>
-
 ## mixins 混入
 
 元素抽象，可将 project, component 或 plugin 内部的公共元素进行抽象，使用通过 mixins 进入混入即可
@@ -66,13 +62,9 @@ export default{
 
 **注意**：在执行混入操作的元素合并时，若目标元素与本地元素名称重合，则以本地元素优先使用
 
-<br><br>
-
 ## $attrs 和 $listeners
 
 在开发多层级组件时（父 => 子 => ...），对于组件指定的 Props 数据以及 v-on 的事件响应处理默认情况下，仅在组件最外层响应，子、孙组件里，无法获得传入的数据及事件响应。
-
-<br><br>
 
 ## 依赖注入(provide/inject)
 
@@ -80,37 +72,48 @@ export default{
 ```js
 //parent component
 export default {
-    data: {
-        return {
-            name: 'michael'
-        };
-    },
-    provide: {
-        return {
-            parentName: this.name
-        }
+  data: {
+    return {
+      name: 'michael'
     }
-};
+  },
+  provide: {
+    return {
+      parentName: this.name
+    }
+  }
+}
 
 //children component
 export default {
-    data: {
-        name: 'sam'
-    },
-    inject: ['parentName'],
-    mounted() {
-        let fullname = `${this.name} - ${this.parentName}`;
-    }
+  data: {
+    name: 'sam'
+  },
+  inject: ['parentName'],
+  mounted() {
+    let fullname = `${this.name} - ${this.parentName}`
+  }
 }
 ```
 
 需要注意的是 provide/inject 并非响应式，这是 Vue 在设计上有意为之的结果
 
-<br><br>
-
 ## render 渲染函数
 
+Vuejs 官网上针对 `template` 和 `render` 两种方式的使用建议是绝多数情况使用 `template`，因为它具备更高的可读性。但在一些时间，我们需要使用完整的 javascript 能力支撑，或是 `Vuejs` 自动模板转换不能满足需求，尤其是在开发部分功能组件时，建议使用 `render` 方式来自行实现内容渲染
+
 ### v-show
+
+```js
+h('div', {
+  directives: [{
+    name: 'show',
+    value: this.show
+  }]
+})
+```
+
+需要注意的是 `v-model` 不能使用 `directive` 的方式
 
 ### v-model
 
