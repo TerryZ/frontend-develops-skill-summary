@@ -131,15 +131,15 @@ render
 
 ```js
 h('input', {
-    attrs:{
-        type: 'text'
-    },
-    domProps:{
-        value: this.user
-    },
-    on: {
-        input: val => this.user = val
-    }
+  attrs:{
+    type: 'text'
+  },
+  domProps:{
+    value: this.user
+  },
+  on: {
+    input: val => this.user = val
+  }
 })
 ```
 
@@ -155,12 +155,12 @@ render
 
 ```js
 h('custom-component', {
-    attrs:{
-        value: this.user
-    },
-    on: {
-        input: val => this.user = val
-    }
+  attrs:{
+    value: this.user
+  },
+  on: {
+    input: val => this.user = val
+  }
 })
 ```
 
@@ -169,19 +169,18 @@ h('custom-component', {
 ```js
 // same as <custom-component :user.sync="user"></custom-component>
 h('custom-component', {
-    attrs:{
-        user: this.user
-    },
-    on: {
-        'update:user': val => this.user = val
-    }
+  attrs:{
+    user: this.user
+  },
+  on: {
+    'update:user': val => this.user = val
+  }
 })
 ```
 
 ### slot
 
-
-<br><br>
+默认插槽、具名插槽、作用域插槽
 
 ## 单选与复选
 
