@@ -32,16 +32,17 @@
 获得尺寸的几种方式
 
 ```js
-let box = this.$refs.box, height = 0;
+const box = this.$refs.box
+let height = 0
 
 //100(number)
-height = box.offsetHeight;
+height = box.offsetHeight
 //100(number)
-height = box.getBoundingClientRect().height;
+height = box.getBoundingClientRect().height
 //'100px'(string) - 获得样式值
-height = window.getComputedStyle(box).height;
+height = window.getComputedStyle(box).height
 //'100px'(string) - 使用此法，往往获得不到内容
-height = box.style.height;
+height = box.style.height
 ```
 
 **需要注意的是，Vue 的 ref 属性提供的对象并非响应式，为保证数据的准确有效性，请在需要获得尺寸时，再获得 ref 属性的对象进行获取数据**
@@ -55,9 +56,9 @@ import mixins from './mixins';
 
 
 export default{
-    mixins: [mixins],
-    ...
-};
+  mixins: [mixins],
+  ...
+}
 ```
 
 **注意**：在执行混入操作的元素合并时，若目标元素与本地元素名称重合，则以本地元素优先使用
@@ -181,6 +182,18 @@ h('custom-component', {
 ### slot
 
 默认插槽、具名插槽、作用域插槽
+
+#### $slots 与 $scpoedSlots
+
+#### named slot
+
+```js
+if ('user' in this.$scopedSlots){
+  return h('div', this.$scopedSlots.user())
+}
+```
+
+#### scpoed slot
 
 ## 单选与复选
 
