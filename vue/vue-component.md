@@ -185,6 +185,18 @@ h('custom-component', {
 
 #### $slots 与 $scpoedSlots
 
+```js
+if ('default' in this.$slots) {
+  return h('div', this.$slots.default)
+}
+```
+
+```js
+if ('default' in this.$scopedSlots){
+  return h('div', this.$scopedSlots.default())
+}
+```
+
 #### named slot
 
 ```js
