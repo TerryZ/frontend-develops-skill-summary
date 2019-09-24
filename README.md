@@ -37,8 +37,6 @@
 
 - [ES6实用技巧](js/javascript-es6.md)
 
-<br><br>
-
 ## jQuery
 
 > jQuery 的内容仅限 1.x 版本，未使用 jquery2、3 进行开发工作
@@ -52,8 +50,6 @@
 - [Size and position - 尺寸与定位](jquery/jquery-size-and-position.md)
 
 - Dom handle - 元素处理
-
-<br><br>
 
 ## Vue
 
@@ -75,8 +71,6 @@
 
 - [CLI - 脚手架](vue/vue-cli.md)
 
-<br><br>
-
 ## MiniProgram
 
 > 微信小程序开发
@@ -87,15 +81,11 @@
 
 - [Optimize  - 性能优化](miniprogram/miniprogram-optimize.md)
 
-<br><br>
-
 ## Linux
 
 - [Base - 常用命令](linux/linux-base.md)
 
 - [Install - 软件安装](linux/linux-install.md)
-
-<br><br>
 
 ## Learning
 
@@ -103,15 +93,11 @@
 - [ECMAScript 6 入门](http://es6.ruanyifeng.com/)
 - [Clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
 
-<br><br>
-
 ## Interesting
 
 - [程序员找工作黑名单](https://github.com/shengxinjing/programmer-job-blacklist)
 - [程序员应该访问的最佳网站中文版](https://github.com/tuteng/Best-websites-a-programmer-should-visit-zh)
 - [后端架构师技术图谱](https://github.com/xingshaocheng/architect-awesome)
-
-<br><br>
 
 ## 插件推荐
 - 数据表格
