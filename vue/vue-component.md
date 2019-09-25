@@ -191,6 +191,8 @@ if ('default' in this.$slots) {
 }
 ```
 
+建议使用
+
 ```js
 if ('default' in this.$scopedSlots){
   return h('div', this.$scopedSlots.default())
