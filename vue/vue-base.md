@@ -251,29 +251,29 @@ leave -> leave-active -> leave-to
 
 ```vue
 <template>
-    name: <input type="text" v-model="model.name">
-    age: <input type="text" v-model="model.age">
-    address: <input type="text" v-model="model.address">
-    
-    <button type="button" @click="build">build user name</button>
-    <button type="button" @click="save">save</button>
+  name: <input type="text" v-model="model.name">
+  age: <input type="text" v-model="model.age">
+  address: <input type="text" v-model="model.address">
+
+  <button type="button" @click="build">build user name</button>
+  <button type="button" @click="save">save</button>
 </template>
 
 <script>
 export default {
-    data(){
-        return {
-            model: {}
-        };
-    },
-    methods: {
-        build(){
-            this.model.name = 'Tom';
-        },
-        save(){
-            //do some save stuff
-        }
+  data(){
+    return {
+      model: {}
     }
+  },
+  methods: {
+    build(){
+      this.model.name = 'Tom'
+    },
+    save(){
+      //do some save stuff
+    }
+  }
 }
 </script>
 ```
@@ -284,7 +284,7 @@ export default {
 
 ```js
 build(){
-    this.$set(this.model, 'name', 'Tom');
+  this.$set(this.model, 'name', 'Tom')
 }
 ```
 
