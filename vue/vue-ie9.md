@@ -29,8 +29,8 @@ Vue 的作者尤雨溪对于 [Vue 的学习建议](https://github.com/TerryZ/js-
 
 在 ie9 的环境上，es6 的部分新对象、表达式，并不支持，解决方案是使用 `babel-polyfill` 组件，它可以将 es6 的代码翻译成低版本浏览器可以识别的 es5 代码
 
-```bash
-npm i babel-polyfill --save-dev
+```
+npm i -D babel-polyfill
 ```
 
 安装完成后，在项目的主入口文件 `main.js` 的首行就可以直接引用
@@ -79,8 +79,8 @@ es6 将全局方法 `parseInt()` 和 `parseFloat()` ，移植到 `Number` 对象
 解决这个问题不需要引入包来解决，同样在项目主入口文件 `main.js` 加入以下代码（代码尽可能靠前，最好是在引用 `babel-polyfill` 之后 ）
 
 ```js
-if (Number.parseInt === undefined) Number.parseInt = window.parseInt;
-if (Number.parseFloat === undefined) Number.parseFloat = window.parseFloat;
+if (Number.parseInt === undefined) Number.parseInt = window.parseInt
+if (Number.parseFloat === undefined) Number.parseFloat = window.parseFloat
 ```
 
 <br><br>
