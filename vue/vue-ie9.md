@@ -175,17 +175,17 @@ webpack 的 `devServer.proxy` 的功能是由 [http-proxy-middleware](https://gi
 
 ```js
 devServer: {
-    historyApiFallback: true,
-    noInfo: true,
-    overlay: true,
-    proxy: {
-        '/api': {
-            target: 'http://localhost:8081/myserver',
-            pathRewrite: {
-                '^/api': ''
-            }
-        }
+  historyApiFallback: true,
+  noInfo: true,
+  overlay: true,
+  proxy: {
+    '/api': {
+      target: 'http://localhost:8081/myserver',
+      pathRewrite: {
+        '^/api': ''
+      }
     }
+  }
 }
 ```
 
@@ -210,7 +210,7 @@ devServer: {
 
 ```
 location /api/ {
-    proxy_pass http://localhost:8081/myserver/;
+  proxy_pass http://localhost:8081/myserver/;
 }
 ```
 
