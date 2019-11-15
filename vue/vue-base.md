@@ -93,8 +93,8 @@ export default {
     'setting.params':{
       //监听到新的参数变化时，触发表格数据查询
       handler(newVal, oldVal){
-        this.query = newVal;
-        this.doRequest();
+        this.query = newVal
+        this.doRequest()
       },
       deep: true//深度监听，监听对象类型最重要就是要打开它
     }
@@ -129,7 +129,7 @@ export default {
   }
   methods: {
     callback(){
-      this.$emit('data-change', 1); //触发外层监听的 data-change 事件，并传递数据 1
+      this.$emit('data-change', 1) //触发外层监听的 data-change 事件，并传递数据 1
     }
   }
 };
