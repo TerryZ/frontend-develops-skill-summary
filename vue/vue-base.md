@@ -132,7 +132,7 @@ export default {
       this.$emit('data-change', 1) //触发外层监听的 data-change 事件，并传递数据 1
     }
   }
-};
+}
 ```
 
 外层标签：
@@ -148,16 +148,16 @@ export default {
 数据更新回调
 ```js
 export default {
-    data(){
-        list: []
-    },
-    mounted(){
-        this.list = [1,2,3];
-        this.nextTick(()=>{
-            console.log('数据更新完成');
-        });
-    }
-};
+  data () {
+    list: []
+  },
+  mounted () {
+    this.list = [1,2,3]
+    this.nextTick(() => {
+      console.log('数据更新完成')
+    })
+  }
+}
 ```
 
 Dom 更新回调
@@ -165,21 +165,21 @@ Dom 更新回调
 
 ```vue
 <template>
-    <ul>
-        <li v-for="item in list">{{item}}</li>
-    </ul>
+  <ul>
+    <li v-for="item in list">{{item}}</li>
+  </ul>
 </template>
 <script>
 export default {
-    data(){
-        list: []
-    },
-    mounted(){
-        this.list = [1,2,3];
-        this.$nextTick(()=>{
-            console.log('dom 更新完成');
-        });
-    }
+  data () {
+    list: []
+  },
+  mounted () {
+    this.list = [1,2,3]
+    this.$nextTick(() => {
+      console.log('dom 更新完成')
+    })
+  }
 };
 </script>
 ```
