@@ -199,10 +199,10 @@ export default {
 为了解决路径问题，我们需要使用到 `require` 函数，那么定义一个 `method`
 
 ```js
-methods:{
-    getImg(name){
-        return require('../../assets/' + name + '.png');
-    }
+methods: {
+  getImg (name) {
+    return require('../../assets/' + name + '.png')
+  }
 }
 ```
 
