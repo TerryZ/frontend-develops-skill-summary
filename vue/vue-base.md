@@ -175,7 +175,7 @@ export default {
     list: []
   },
   mounted () {
-    this.list = [1,2,3]
+    this.list = [1, 2, 3]
     this.$nextTick(() => {
       console.log('dom 更新完成')
     })
