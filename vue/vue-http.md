@@ -12,10 +12,11 @@
 
 在 `vue1.x` 时，网络类的请求官方建议使用 `vue-resourse` 来处理，到 `vue2.x` 时，官方推荐使用的 `http` 请求的插件就变成了 [axios](https://github.com/axios/axios)
 
-```html
-<user v-for="user, index in users"      
-      :key="'user-' + user.id"
-      >
+```vue
+<user
+  v-for="(user, index) in users"      
+  :key="user.id"
+>
 ```
 在使用自定义组件，并需要生成多个时，有个很重要的属性需要关注：`key`
 
