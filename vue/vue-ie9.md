@@ -195,7 +195,7 @@ devServer: {
 
 代理后变为
 
-`http://localhost:8080/api/user/zhangsan`。
+`http://localhost:8080/api/user/zhangsan`
 
 即是 `/api` 的前缀代表了服务端，所以在使用 axios 时，需要对每个服务端请求都增加上 `/api` 的前缀；通常在项目开发中，需要对数据请求组件 `axios` 进行二次封装，以达到统一设置默认参数，统一数据请求入口等目的，那么此时就只需要在二次封装的文件里统一调整请求前缀即可。
 
