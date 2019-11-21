@@ -52,8 +52,7 @@ height = box.style.height
 元素抽象，可将 project, component 或 plugin 内部的公共元素进行抽象，使用通过 mixins 进入混入即可
 
 ```js
-import mixins from './mixins';
-
+import mixins from './mixins'
 
 export default{
   mixins: [mixins],
