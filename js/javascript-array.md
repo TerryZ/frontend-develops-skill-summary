@@ -25,8 +25,8 @@
 1. arr = []
 2. `arr.length = 0`
 3. `arr.splice(0, arr.length)`
-4. `while (arr.length) { arr.pop(); }`
-5. `while (arr.length) { arr.shift(); }`
+4. `while (arr.length) { arr.pop() }`
+5. `while (arr.length) { arr.shift() }`
 
 根据 5 种方式的 [benchmark](http://jsben.ch/hyj65) 测试得出的性能排名结论为
 
@@ -39,7 +39,7 @@
 所以最推荐的清空数组的方式为：
 
 ```js
-arr.length = 0;
+arr.length = 0
 ```
 
 > 在 Vue 中使用，请不要使用 `arr.length = 0` 来清空数组，原因请看 [这里](https://github.com/TerryZ/frontend-develops-skill-summary/blob/master/vue/vue-base.md#Array-%E6%93%8D%E4%BD%9C%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9)。所以在 Vue 中清空数据，直接赋值为空数组即可
@@ -53,8 +53,8 @@ arr = []
 ## 数组查找项目
 
 ```js
-const arr = [1,2,3,4,5];
-const expect = arr.find(val => val === 3);//3
+const arr = [1,2,3,4,5]
+const expect = arr.find(val => val === 3) //3
 ```
 
 `find` 在查找到第一个匹配的项目后，函数会立刻返回相应内容，不会再继续查找
@@ -64,8 +64,8 @@ const expect = arr.find(val => val === 3);//3
 ## 数组查找项目下标
 
 ```js
-const arr = ['a','b','c','d','e'];
-const index = arr.findIndex(val => val === 'b');//1
+const arr = ['a','b','c','d','e']
+const index = arr.findIndex(val => val === 'b') //1
 ```
 
 `findIndex` 在查找到第一个匹配的项目后，函数会立刻返回相应内容的下标，不会再继续查找
@@ -75,8 +75,8 @@ const index = arr.findIndex(val => val === 'b');//1
 ## 数组是否包含某个值
 
 ```js
-const arr = [1,2,3,4,5];
-const exist = arr.some(val => val === 3);//true
+const arr = [1,2,3,4,5]
+const exist = arr.some(val => val === 3) //true
 ```
 
 测试数组中是否有满足条件的项目，只要有任意一个项目匹配成功，即为返回 `true`
@@ -94,7 +94,7 @@ const exist = arr.some(val => val === 3);//true
 ```js
 const arr1 = [1,2,3], arr2 = [1,2,3];
 if(arr1.sort().join('') === arr2.sort().join('')){
-    //do something...
+  //do something...
 }
 ```
 
