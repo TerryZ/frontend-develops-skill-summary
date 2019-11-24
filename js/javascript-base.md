@@ -34,12 +34,12 @@ function(p){
 
 ```js
 function(p){
-    const param = p && {a:1};
+  const param = p && {a:1}
 }
 //等效于
 function(p){
-    let param;
-    if(p) param = {a:1};
+  let param
+  if(p) param = {a:1}
 }
 ```
 
