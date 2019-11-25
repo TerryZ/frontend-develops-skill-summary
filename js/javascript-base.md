@@ -18,13 +18,13 @@
 > 表达式左边的值，若是空或是 `undefined` 等情况，则使用右边的内容进行赋值
 
 ```js
-function(p){
-  const param = p || {a:1}
+function (p) {
+  const param = p || { a: 1 }
 }
 //等效于
-function(p){
+function (p) {
   let param
-  if(!p) param = {a:1}
+  if(!p) param = { a: 1 }
 }
 ```
 
