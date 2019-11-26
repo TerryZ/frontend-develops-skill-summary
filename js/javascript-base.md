@@ -24,7 +24,7 @@ function (p) {
 //等效于
 function (p) {
   let param
-  if(!p) param = { a: 1 }
+  if (!p) param = { a: 1 }
 }
 ```
 
@@ -33,13 +33,13 @@ function (p) {
 > 表达式左边的值非空时，使用右边的值进行赋值
 
 ```js
-function(p){
-  const param = p && {a:1}
+function (p) {
+  const param = p && { a: 1 }
 }
 //等效于
-function(p){
+function (p) {
   let param
-  if(p) param = {a:1}
+  if (p) param = { a: 1 }
 }
 ```
 
