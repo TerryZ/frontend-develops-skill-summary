@@ -62,11 +62,11 @@ function (p) {
 ```js
 const num = '5'
 switch (num) {
-    case 5:
-        console.log('result is ' + num)
-        break
-    default:
-        console.log('this is default branch')
+  case 5:
+    console.log('result is ' + num)
+    break
+  default:
+    console.log('this is default branch')
 }
 // this is default branch
 ```
