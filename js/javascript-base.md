@@ -80,18 +80,18 @@ if (num == 5) {
 } else {
   console.log('no match')
 }
-//match
+// match
 ```
 
 使用 `if` 判断结果是正确的！那么，使用严格比较
 
 ```js
-const num = '5';
-if(num === 5)
-    console.log('match');
+const num = '5'
+if (num === 5)
+  console.log('match')
 else
-    console.log('no match');
-//no match
+  console.log('no match')
+// no match
 ```
 
 这样结果就和 `switch` 一致了，说明 `switch` 中对于判断是使用的严格判断，那么修改 `switch` 中的判断条件，结果就满足期望了
