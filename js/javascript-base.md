@@ -97,15 +97,15 @@ else
 这样结果就和 `switch` 一致了，说明 `switch` 中对于判断是使用的严格判断，那么修改 `switch` 中的判断条件，结果就满足期望了
 
 ```js
-const num = '5';
-switch(num){
-    case '5':
-        console.log('result is ' + num);
-        break;
-    default:
-        console.log('this is default branch');
+const num = '5'
+switch (num) {
+  case '5':
+    console.log('result is ' + num)
+    break
+  default:
+    console.log('this is default branch')
 }
-//result is 5
+// result is 5
 ```
 
 <br><br>
