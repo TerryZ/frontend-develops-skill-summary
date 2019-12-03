@@ -87,10 +87,11 @@ if (num == 5) {
 
 ```js
 const num = '5'
-if (num === 5)
+if (num === 5) {
   console.log('match')
-else
+} else {
   console.log('no match')
+}
 // no match
 ```
 
