@@ -135,7 +135,7 @@ confirm 中的主按钮点击后返回 `true`，取消按钮 返回 `false` 值
 实际上控制台也可以自带义输出日志的字体颜色
 
 ```js
-console.log('%cThis is my log.', 'color: blue');
+console.log('%cThis is my log.', 'color: blue')
 ```
 
 `%c` 指定了在它之后的文本都是带颜色的，而使用的具体颜色，就是第二参数指定的颜色内容
