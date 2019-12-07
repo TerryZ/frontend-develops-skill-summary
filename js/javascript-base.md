@@ -143,7 +143,7 @@ console.log('%cThis is my log.', 'color: blue')
 文本中部分内容使用颜色
 
 ```js
-console.log('This is my %clog.', 'color: blue;font-weight: bold;');
+console.log('This is my %clog.', 'color: blue;font-weight: bold;')
 ```
 
 `log.` 四个字符，就会使用蓝色及粗体进行打印
