@@ -158,11 +158,11 @@ console.log('This is my %clog.', 'color: blue;font-weight: bold;')
 
 ```js
 //binary to ascii(将字符串转进行 base64 编码)
-window.btoa('abcdefghijklmnopqrstuvxyz');
+window.btoa('abcdefghijklmnopqrstuvxyz')
 //result: YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnh5eg==
 
 //ascii to binary(将加密串解密为原字符串内容)
-window.atob('YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnh5eg==');
+window.atob('YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnh5eg==')
 //result: abcdefghijklmnopqrstuvxyz
 
 ```
