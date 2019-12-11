@@ -24,7 +24,7 @@ $(document).attr('title','new title')
 
 输入元素获得输入焦点
 ```js
-document.getElemeentById('myinput').focus();
+document.getElemeentById('myinput').focus()
 ```
 
 通过观察发现，元素如果是在屏幕可视范围之外，使用以上的代码获得焦点后，当前页面的滚动条会立即滚动到目标元素的位置，这在表单输入及控制时，能带来一定的便利性。
@@ -33,15 +33,17 @@ document.getElemeentById('myinput').focus();
 
 实际上 `focus` 方法是可以带有设置参数的（ie9+兼容）
 ```js
-element.focus(focusOption); // Object 类型的参数
+element.focus(focusOption) // Object 类型的参数
 ```
 设置参数内容
+
 preventScroll `Boolean`
+
 - `false` (默认) - 会将屏幕滚动到元素的位置
 - `true` - 保持当前屏幕位置不动
 
 ```js
-document.getElemeentById('myinput').focus({preventScroll:true});
+document.getElemeentById('myinput').focus({preventScroll:true})
 ```
 
 使用以上方式后，元素获得了输入焦点，但不会使得屏幕位置发生变化
