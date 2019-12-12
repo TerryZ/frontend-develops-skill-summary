@@ -43,7 +43,7 @@ preventScroll `Boolean`
 - `true` - 保持当前屏幕位置不动
 
 ```js
-document.getElemeentById('myinput').focus({preventScroll:true})
+document.getElemeentById('myinput').focus({ preventScroll: true })
 ```
 
 使用以上方式后，元素获得了输入焦点，但不会使得屏幕位置发生变化
