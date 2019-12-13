@@ -15,7 +15,7 @@ document.title = 'new title'
 ```
 若要使用jquery的方式也很简单
 ```js
-$(document).attr('title','new title')
+$(document).attr('title', 'new title')
 ```
 
 <br><br>
