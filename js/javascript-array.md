@@ -30,7 +30,7 @@
 
 根据 5 种方式的 [benchmark](http://jsben.ch/hyj65) 测试得出的性能排名结论为
 
-1. length=0
+1. length = 0
 2. new init
 3. splice
 4. pop
