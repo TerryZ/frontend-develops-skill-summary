@@ -48,8 +48,6 @@ arr.length = 0
 arr = []
 ```
 
-<br><br>
-
 ## 数组查找项目
 
 ```js
