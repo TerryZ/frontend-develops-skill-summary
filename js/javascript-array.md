@@ -51,8 +51,8 @@ arr = []
 ## 数组查找项目
 
 ```js
-const arr = [1,2,3,4,5]
-const expect = arr.find(val => val === 3) //3
+const arr = [1, 2, 3, 4, 5]
+const expect = arr.find(val => val === 3) // 3
 ```
 
 `find` 在查找到第一个匹配的项目后，函数会立刻返回相应内容，不会再继续查找
