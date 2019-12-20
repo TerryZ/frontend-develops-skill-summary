@@ -61,12 +61,10 @@ const expect = arr.find(val => val === 3) // 3
 
 ```js
 const arr = ['a', 'b', 'c', 'd', 'e']
-const index = arr.findIndex(val => val === 'b') //1
+const index = arr.findIndex(val => val === 'b') // 1
 ```
 
 `findIndex` 在查找到第一个匹配的项目后，函数会立刻返回相应内容的下标，不会再继续查找
-
-<br><br>
 
 ## 数组是否包含某个值
 
