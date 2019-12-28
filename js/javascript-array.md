@@ -103,8 +103,6 @@ arr.splice(2, 1) // 移除第三个项目,下标从 0 开始
 const new_arr = arr.filter((val, index) => index !== 2)
 ```
 
-<br><br>
-
 ## 数组复制
 ```js
 const arr = [1, 2, 3, 4, 5], newarr = arr.concat();
