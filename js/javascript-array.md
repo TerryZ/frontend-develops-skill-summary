@@ -105,11 +105,12 @@ const new_arr = arr.filter((val, index) => index !== 2)
 
 ## 数组复制
 ```js
-const arr = [1, 2, 3, 4, 5], newarr = arr.concat();
-newarr[0] = 9;
-console.log(arr);//[1,2,3,4,5]
-console.log(newarr);//[9,2,3,4,5]
+const arr = [1, 2, 3, 4, 5], newarr = arr.concat()
+newarr[0] = 9
+console.log(arr) // [1, 2, 3, 4, 5]
+console.log(newarr) // [9, 2, 3, 4, 5]
 ```
+
 复制后的对象修改不影响原数组对象，但需要注意的是使用 `concat` 和 `slice` 复制的数组仅为浅拷贝，若数组中的项目为对象，则依然是引用的方式
 
 <br><br>
