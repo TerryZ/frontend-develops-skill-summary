@@ -115,9 +115,9 @@ console.log(newarr) // [9, 2, 3, 4, 5]
 
 ## 测试数组中的内容是否有满足条件的内容
 ```js
-const arr=[3, 5, 77, 2, 10];
-const result = arr.some(item => item > 10);
-console.log(result);//true
+const arr = [3, 5, 77, 2, 10]
+const result = arr.some(item => item > 10)
+console.log(result) // true
 ```
 `some` 函数用于检查数组中是否有内容满足条件，只要有一项满足，即会返回 `true`
 
