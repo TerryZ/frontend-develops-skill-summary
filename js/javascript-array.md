@@ -85,8 +85,8 @@ const exist = arr.some(val => val === 3) // true
 
 ```js
 const arr1 = [1, 2, 3], arr2 = [1, 2, 3]
-if(arr1.sort().join('') === arr2.sort().join('')){
-  //do something...
+if (arr1.sort().join('') === arr2.sort().join('')) {
+  // do something...
 }
 ```
 
