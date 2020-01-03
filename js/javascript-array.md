@@ -124,9 +124,9 @@ console.log(result) // true
 ## 测试数组中所有项目是否均满足条件
 
 ```js
-const arr = [3,5,77,2,10];
-const result = arr.every(item => item > 0);
-console.log(result);//true
+const arr = [3, 5, 77, 2, 10]
+const result = arr.every(item => item > 0)
+console.log(result) // true
 ```
 `every` 函数用于检查数组中是否所有内容满足条件，只要有一项不满足，即会返回 `false`，当全部满足条件时，返回 `true` 值
 
