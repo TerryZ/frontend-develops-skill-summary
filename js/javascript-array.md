@@ -130,8 +130,6 @@ console.log(result) // true
 ```
 `every` 函数用于检查数组中是否所有内容满足条件，只要有一项不满足，即会返回 `false`，当全部满足条件时，返回 `true` 值
 
-<br><br>
-
 ## 遍历数组
 
 ES5
