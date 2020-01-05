@@ -133,16 +133,19 @@ console.log(result) // true
 ## 遍历数组
 
 ES5
+
 ```js
-const arr = [1,2,3,4,5,6,7];
-for(var i=0;i<arr.length;i++){
-    console.log(arr[i]);
+const arr = [1, 2, 3, 4, 5, 6, 7]
+for(var i = 0; i < arr.length; i++){
+  console.log(arr[i])
 }
 ```
+
 ES6
+
 ```js
 arr.forEach((value, index, array) => {
-    console.log(value);
+    console.log(value)
 });
 ```
 
