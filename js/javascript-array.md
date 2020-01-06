@@ -145,8 +145,8 @@ ES6
 
 ```js
 arr.forEach((value, index, array) => {
-    console.log(value)
-});
+  console.log(value)
+})
 ```
 
 <br><br>
