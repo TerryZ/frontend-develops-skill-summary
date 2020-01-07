@@ -149,8 +149,6 @@ arr.forEach((value, index, array) => {
 })
 ```
 
-<br><br>
-
 ## 数组转换
 
 ```js
