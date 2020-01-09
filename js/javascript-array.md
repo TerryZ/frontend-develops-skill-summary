@@ -158,8 +158,6 @@ const arrNew = arr.map((value, index, array) => value + arr1[index])
 console.log(arrNew) // ['1A', '2B', '3C', '4D', '5E', '6F']
 ```
 
-<br><br>
-
 ## 过滤数组
 
 ```js
