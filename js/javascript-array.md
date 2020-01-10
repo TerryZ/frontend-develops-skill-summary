@@ -161,9 +161,9 @@ console.log(arrNew) // ['1A', '2B', '3C', '4D', '5E', '6F']
 ## 过滤数组
 
 ```js
-const arr = [1, 2, 30, 4, 15, 6];
-const arrNew = arr.filter((value, index, array) => value < 10);
-console.log(arrNew);//[1, 2, 4, 6]
+const arr = [1, 2, 30, 4, 15, 6]
+const arrNew = arr.filter((value, index, array) => value < 10)
+console.log(arrNew) // [1, 2, 4, 6]
 ```
 
 不满足过滤条件的项目将不会被返回到新的数组中
