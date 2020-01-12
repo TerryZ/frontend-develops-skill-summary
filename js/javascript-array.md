@@ -171,11 +171,11 @@ console.log(arrNew) // [1, 2, 4, 6]
 ## 数组内容排序
 
 ```js
-const arr = [4, 2, 5, 3, 1, 6];
-const sorted = arr.sort((a, b)=>{
-    return a-b;
-});
-console.log(sorted);//[1,2,3,4,5,6]
+const arr = [4, 2, 5, 3, 1, 6]
+const sorted = arr.sort((a, b) => {
+  return a-b
+})
+console.log(sorted) // [1, 2, 3, 4, 5, 6]
 ```
 
 `array.sort()` 接受一个 function 型的入参(compareFunction)，该函数也有两个入参，即为在数组执行排序时，每次拿出来进行对比排序的两个元素
