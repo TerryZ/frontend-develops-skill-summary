@@ -178,11 +178,12 @@ const sorted = arr.sort((a, b) => {
 console.log(sorted) // [1, 2, 3, 4, 5, 6]
 ```
 
-`array.sort()` 接受一个 function 型的入参(compareFunction)，该函数也有两个入参，即为在数组执行排序时，每次拿出来进行对比排序的两个元素
+`array.sort()` 接受一个 function 型的入参 (compareFunction)，该函数也有两个入参，即为在数组执行排序时，每次拿出来进行对比排序的两个元素
 
 ```js
-arrar.sort((a,b)=>{
-});
+arrar.sort((a, b) => {
+  ...
+})
 ```
 
 排序函数最重要的内容在于返回值：
