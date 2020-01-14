@@ -19,13 +19,13 @@
 
 为了跨浏览器兼容性，如果你使用了 `window.scrollX` 与 `window.scrollY`，请使用 `window.pageXOffset` 与 `window.pageYOffset` 代替 。另外，旧版本的 IE（<9）两个属性都不支持，必须通过其他的非标准属性来解决此问题。完整的兼容性代码如下
 
-```javascript
-var x = (window.pageXOffset !== undefined) ? 
-        window.pageXOffset : 
-        (document.documentElement || document.body.parentNode || document.body).scrollLeft;
-var y = (window.pageYOffset !== undefined) ? 
-        window.pageYOffset : 
-        (document.documentElement || document.body.parentNode || document.body).scrollTop;
+```js
+var x = (window.pageXOffset !== undefined)
+        ? window.pageXOffset
+        : (document.documentElement || document.body.parentNode || document.body).scrollLeft
+var y = (window.pageYOffset !== undefined)
+        ? window.pageYOffset
+        : (document.documentElement || document.body.parentNode || document.body).scrollTop
 ```
 <br><br>
 
