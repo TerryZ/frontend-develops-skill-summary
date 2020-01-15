@@ -27,7 +27,6 @@ var y = (window.pageYOffset !== undefined)
         ? window.pageYOffset
         : (document.documentElement || document.body.parentNode || document.body).scrollTop
 ```
-<br><br>
 
 ## 屏幕可视区域
 
