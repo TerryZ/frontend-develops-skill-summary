@@ -32,29 +32,29 @@ var y = (window.pageYOffset !== undefined)
 
 **包含滚动条**
 
-`window.innerHeight` - 获得屏幕可视区域高度
-`window.innerWidth` - 获得屏幕可视区域宽度
+- `window.innerHeight` 获得屏幕可视区域高度
+- `window.innerWidth` 获得屏幕可视区域宽度
 
 `window.innerHeight` 与 `window.innerWidth` 的 ie 版本兼容为 9+，那么完整的兼容代码为
 
 ```js
-function getInnerSizeWithScroll(){
-    if(window.innerWidth){
-        return {
-            width : window.innerWidth,
-            height: window.innerHeight
-        }
-    }else if(document.documentElement.offsetWidth == document.documentElement.clientWidth){
-        return {
-            width : document.documentElement.offsetWidth,
-            height: document.documentElement.offsetHeight
-        }
-    }else{
-        return {
-            width : document.documentElement.clientWidth + getScrollWith(),
-            height: document.documentElement.clientHeight + getScrollWith()
-        }
+function getInnerSizeWithScroll () {
+  if (window.innerWidth) {
+    return {
+      width : window.innerWidth,
+      height: window.innerHeight
     }
+  } else if (document.documentElement.offsetWidth == document.documentElement.clientWidth) {
+    return {
+      width : document.documentElement.offsetWidth,
+      height: document.documentElement.offsetHeight
+    }
+  } else {
+    return {
+      width : document.documentElement.clientWidth + getScrollWith(),
+      height: document.documentElement.clientHeight + getScrollWith()
+    }
+  }
 }
 ```
 
