@@ -60,10 +60,8 @@ function getInnerSizeWithScroll () {
 
 **不包含滚动条**
 
-`document.documentElement.clientHeight` - 获得屏幕可视区域高度（不含滚动条的实际可用高度）
-`document.documentElement.clientWidth` - 获得屏幕可视区域宽度（不含滚动条的实际可用宽度）
-
-<br><br>
+- `document.documentElement.clientHeight` 获得屏幕可视区域高度（不含滚动条的实际可用高度）
+- `document.documentElement.clientWidth` 获得屏幕可视区域宽度（不含滚动条的实际可用宽度）
 
 ## 全文档区域
 
