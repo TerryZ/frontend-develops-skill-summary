@@ -67,6 +67,6 @@ function getInnerSizeWithScroll () {
 
 全文档区域即为网页所有内容的高度和宽度
 
-`document.body.clientWidth` - 文档内容实际宽度
-`document.body.clientHeight` - 文档内容实际高度
+- `document.body.clientWidth` 文档内容实际宽度
+- `document.body.clientHeight` 文档内容实际高度
 
