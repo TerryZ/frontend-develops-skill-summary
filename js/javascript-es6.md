@@ -24,24 +24,26 @@ ES6 中新增加了 `let` 和 `const` 两个命令，`let` 用于定义变量，
 
 ```js
 //es5
-if(1==1){
-  var b = 'foo';
+if (1==1) {
+  var b = 'foo'
 }
-console.log(b);//foo
+console.log(b) // foo
 
 //es6
-if(1==1){
-  let b = 'foo';
+if (1==1) {
+  let b = 'foo'
 }
-console.log(b);//undefined
+console.log(b) // undefined
 ```
 
 **定义常量对象**
+
 ```js
-const a = {a:1,b:2};
-a.b = 3;
-console.log(a);//{a:1,b:3}
+const a = { a: 1, b: 2 }
+a.b = 3
+console.log(a) // { a: 1, b: 3 }
 ```
+
 上例中，常量 a 中的内容在定义后，再进行修改依然有效，原因是对于对象类型的使用是指针式引用，常量只是指向了对象的指针，对象本身的内容却依然可以被修改，注意，数组(`Array`) 也是对象；
 那么如果在定义常量时使用基础数据类型：`string`, `number`, `boolean` 等
 
