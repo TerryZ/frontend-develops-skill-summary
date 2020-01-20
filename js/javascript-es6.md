@@ -48,38 +48,33 @@ console.log(a) // { a: 1, b: 3 }
 那么如果在定义常量时使用基础数据类型：`string`, `number`, `boolean` 等
 
 ```js
-const a = 1;
-a = 2;// Uncaught TypeError: Assignment to constant variable.
+const a = 1
+a = 2 // Uncaught TypeError: Assignment to constant variable.
 ```
 
 在使用中，建议使用 `let` 与 `const` 完全代替 `var` 命令
 
 定义变量时，应尽可能使用 const，当需要多次赋值时，使用 let 进行定义
 
-<br><br>
-
 ## 数值扩展
 
 **转换**
-`Number.parseInt` - 将字符串或数字转换为整数
-`Number.parseFloat` - 将字符串或数字转换为浮点数
+- `Number.parseInt` 将字符串或数字转换为整数
+- `Number.parseFloat` 将字符串或数字转换为浮点数
 
 `Number.parseInt`, `Number.parseFloat` 与 `parseInt`, `parseFloat` 功能一致，在ES6中，推荐使用 `Number.` 的方式进行调用，这么做的目的是为了让代码的使用方式尽可能减少全局性方法，使用得语言逐步模块化
 
 **测试函数**
+
 ```js
 //测试是否整数
-Number.isInteger(21)//true
-Number.isInteger(1.11)//false
+Number.isInteger(21) // true
+Number.isInteger(1.11) // false
 
 //测试是否NaN
-Number.isNaN(Nan)//true
-Number.isNaN(1)//false
+Number.isNaN(Nan) // true
+Number.isNaN(1) // false
 ```
-
-
-
-<br><br>
 
 ## 字符串扩展
 
