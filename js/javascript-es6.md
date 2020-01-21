@@ -81,10 +81,10 @@ Number.isNaN(1) // false
 **字符串内容测试**
 
 ```js
-'abcdef'.includes('c');//true
-'abcdef'.includes('ye');//false
-'abcdef'.startsWith('a');//true
-'abcdef'.endsWitch('f');//true
+'abcdef'.includes('c') // true
+'abcdef'.includes('ye') // false
+'abcdef'.startsWith('a') // true
+'abcdef'.endsWitch('f') // true
 
 //includes(), startsWith(), endsWith() 都支持第二个参数，
 //类型为数字类型，意为从第 n 个字符开始，endsWith()的第二个参数有点不一样
