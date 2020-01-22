@@ -59,10 +59,11 @@ a = 2 // Uncaught TypeError: Assignment to constant variable.
 ## 数值扩展
 
 **转换**
+
 - `Number.parseInt` 将字符串或数字转换为整数
 - `Number.parseFloat` 将字符串或数字转换为浮点数
 
-`Number.parseInt`, `Number.parseFloat` 与 `parseInt`, `parseFloat` 功能一致，在ES6中，推荐使用 `Number.` 的方式进行调用，这么做的目的是为了让代码的使用方式尽可能减少全局性方法，使用得语言逐步模块化
+`Number.parseInt`, `Number.parseFloat` 与 `parseInt`, `parseFloat` 功能一致，在 ES6 中，推荐使用 `Number.` 的方式进行调用，这么做的目的是为了让代码的使用方式尽可能减少全局性方法，使用得语言逐步模块化
 
 **测试函数**
 
@@ -86,16 +87,16 @@ Number.isNaN(1) // false
 'abcdef'.startsWith('a') // true
 'abcdef'.endsWitch('f') // true
 
-//includes(), startsWith(), endsWith() 都支持第二个参数，
-//类型为数字类型，意为从第 n 个字符开始，endsWith()的第二个参数有点不一样
-'abcdef'.includes('c', 4);//false 从第5个字符开始查找是否有 'c' 这个字符
-'abcdef'.startsWith('d', 3);//true 从第4个字符开始查找是否是以 'd' 字符为开头
-'abcdef'.endsWith('d', 4);//true 前面的4个字符里，是否以 'd' 字符为结尾
+// includes(), startsWith(), endsWith() 都支持第二个参数，
+// 类型为数字类型，意为从第 n 个字符开始，endsWith()的第二个参数有点不一样
+'abcdef'.includes('c', 4) // false 从第5个字符开始查找是否有 'c' 这个字符
+'abcdef'.startsWith('d', 3) // true 从第4个字符开始查找是否是以 'd' 字符为开头
+'abcdef'.endsWith('d', 4) // true 前面的4个字符里，是否以 'd' 字符为结尾
 ```
 
 **字符串内容重复输出**
 ```js
-'a'.repeat(5);//aaaaa 重复输出5遍
+'a'.repeat(5) // aaaaa 重复输出5遍
 ```
 
 **原生支持模板语言**
