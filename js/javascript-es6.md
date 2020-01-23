@@ -101,32 +101,35 @@ Number.isNaN(1) // false
 
 **原生支持模板语言**
 ```js
-//es5
+// es5
 $('#result').append(
   'There are <b>' + basket.count + '</b> ' +
   'items in your basket, ' +
   '<em>' + basket.onSale +
   '</em> are on sale!'
-);
-//es6
-//在es6中，内容模板，可以定义在 `` 包起来的字符串中，其中的内容会保持原有格式
-//另外可以在字符串中直接使用模板语言进行变量填充，优雅而简洁
+)
+
+// es6
+// 在es6中，内容模板，可以定义在 `` 包起来的字符串中，其中的内容会保持原有格式
+// 另外可以在字符串中直接使用模板语言进行变量填充，优雅而简洁
 $('#result').append(`
   There are <b>${basket.count}</b> items
-   in your basket, <em>${basket.onSale}</em>
+  in your basket, <em>${basket.onSale}</em>
   are on sale!
-`);
+`)
 ```
 
 **字符串遍历输出**
 ```js
-//for ...of 格式为 es6 中的 Iterator 迭代器的输出方式
-for(let c of 'abc'){
-  console.log(c);
+// for ...of 格式为 es6 中的 Iterator 迭代器的输出方式
+for(const c of 'abc'){
+  console.log(c)
 }
-//a
-//b
-//c
+
+// output:
+// a
+// b
+// c
 ```
 
 **字符串补全**
