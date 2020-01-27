@@ -161,32 +161,32 @@ Array.of(3, 4, 5) // [3,4,5]
 **数组内容测试**
 
 ```js
-//判断对象是否为数组
-if(Array.isArray(obj)){...}
+// 判断对象是否为数组
+if (Array.isArray(obj)) { ... }
 
-[1,2,3].includes(5);//false，检索数据中是否有5
+[1, 2, 3].includes(5) // false，检索数据中是否有 5
 
-//找出第一个匹配表达式的结果，注意是只要匹配到一项，函数即会返回
+// 找出第一个匹配表达式的结果，注意是只要匹配到一项，函数即会返回
 let a = [1, 3, -4, 10].find(function(value, index, arr){
-  return value < 0;
-});
-console.log(a);//-4
+  return value < 0
+})
+console.log(a) // -4
 
-//找出第一个匹配表达式的结果下标
+// 找出第一个匹配表达式的结果下标
 let a = [1, 3, -4, 10].findIndex(function(value, index, arr){
-  return value < 0;
-});
-console.log(a);//2
+  return value < 0
+})
+console.log(a) // 2
 ```
 
 **内容过滤**
 
 ```js
-//排除负数内容
+// 排除负数内容
 let a = [1, 3, -4, 10].filter(function(item){
-  return item > 0;
-});
-console.log(a);//[1, 3, 10]
+  return item > 0
+})
+console.log(a) // [1, 3, 10]
 ```
 
 **内容实例**
