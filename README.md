@@ -35,7 +35,7 @@
 
 - [Size and position - 尺寸与定位](js/javascript-size-and-position.md)
 
-- [ES6实用技巧](js/javascript-es6.md)
+- [ES6 实用技巧](js/javascript-es6.md)
 
 ## jQuery
 
