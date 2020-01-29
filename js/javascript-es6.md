@@ -198,28 +198,25 @@ console.log(a) // [1, 3, 10]
 `.entries()` - 获得数组中所有数据的键名和数据
 
 ```js
-for (let index of ['a', 'b'].keys()) {
-  console.log(index);
+for (const index of ['a', 'b'].keys()) {
+  console.log(index)
 }
 // 0
 // 1
 
-for (let elem of ['a', 'b'].values()) {
+for (const elem of ['a', 'b'].values()) {
   console.log(elem);
 }
 // 'a'
 // 'b'
 
-for (let [index, elem] of ['a', 'b'].entries()) {
+for (const [index, elem] of ['a', 'b'].entries()) {
   console.log(index, elem);
 }
 // 0 "a"
 // 1 "b"
 ```
 `.entries()`, `.keys()`, `.values()` 功能与 `Object` 中的几个同名函数功能类似，实际使用中实用性不高，对于数组的操作，直接进行遍历即可
-
-
-<br><br>
 
 ## 对象扩展
 
