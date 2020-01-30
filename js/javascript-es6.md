@@ -223,13 +223,13 @@ for (const [index, elem] of ['a', 'b'].entries()) {
 **属性的简洁表示**
 
 ```js
-//直接使用变量/常量的名称个为对象属性的名称
-let a = 'abc';
-let b = {a};//{a: 'abc'}
+// 直接使用变量/常量的名称个为对象属性的名称
+const a = 'abc'
+const b = { a } // { a: 'abc' }
 
-function f(x, y){ return {x, y};}
-//等效于
-function f(x, y){ return {x: x, y: y}}
+function f(x, y){ return { x, y } }
+// 等效于
+function f(x, y){ return { x: x, y: y } }
 
 let o = {
   f(){ return 1; }
