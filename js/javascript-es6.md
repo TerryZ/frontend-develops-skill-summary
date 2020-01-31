@@ -231,12 +231,12 @@ function f(x, y){ return { x, y } }
 // 等效于
 function f(x, y){ return { x: x, y: y } }
 
-let o = {
-  f(){ return 1; }
+const o = {
+  f() { return 1 }
 }
 //等效于
-let o = {
-  f: function(){ return 1; }
+const o = {
+  f: function() { return 1; }
 }
 ```
 
