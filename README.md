@@ -6,7 +6,7 @@
 
 <div align="center">
   
-  [ javascript ](#javascript) |
+  [ Javascript ](#javascript) |
   [ jQuery ](#jquery) | 
   [ Vue ](#vue) |
   [ MiniProgram ](#miniprogram) |
