@@ -236,24 +236,28 @@ const o = {
 }
 //等效于
 const o = {
-  f: function() { return 1; }
+  f: function() { return 1 }
 }
 ```
 
 **对象内容合并**
 
 ```js
-let a = {a:1,b:2}, b = {b:3}, c = {b:4,c:5};
-let d = Object.assign(a, b, c);
-console.log(d);//{a:1,b:4,c:5}
-console.log(a);//{a:1,b:4,c:5}
-//上面的合并方式会同时更新 a 对象的内容，a 的属性如果有多次合并会被更新数据，
-//参数列中的对象只会影响第一个，后面的参数对象不会被修改数据
+const a = { a: 1, b: 2 }
+const b = { b: 3 }
+const c = { b: 4, c: 5 }
+const d = Object.assign(a, b, c)
+console.log(d) // { a: 1, b: 4, c: 5 }
+console.log(a) // { a: 1, b: 4, c: 5 }
+// 上面的合并方式会同时更新 a 对象的内容，a 的属性如果有多次合并会被更新数据，
+// 参数列中的对象只会影响第一个，后面的参数对象不会被修改数据
 
-//推荐使用这种方式进行对象数据合并
-let a = {a:1,b:2}, b = {b:3}, c = {b:4,c:5};
-let d = Object.assign({}, a, b, c);//第一个参数增加一个空对象，在合并时让它被更新，不影响实际的对象变量内容
-console.log(d);//{a:1,b:4,c:5}//与上面的方式合并结果一致，使用这种方式, a 对象的内容就不会被影响了
+// 推荐使用这种方式进行对象数据合并
+const a = { a: 1, b: 2 }
+const b = { b: 3 }
+const c = { b: 4, c: 5 }
+const d = Object.assign({}, a, b, c) // 第一个参数增加一个空对象，在合并时让它被更新，不影响实际的对象变量内容
+console.log(d) // { a: 1, b: 4, c: 5 } // 与上面的方式合并结果一致，使用这种方式, a 对象的内容就不会被影响了
 ```
 对象内容合并的方向是从参数顺序的后向前合并
 
