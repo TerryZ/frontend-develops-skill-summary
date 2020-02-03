@@ -266,12 +266,12 @@ console.log(d) // { a: 1, b: 4, c: 5 } // 与上面的方式合并结果一致�
 对于一个对象的复制，同样可以使用 `Object.assign` 来进行
 
 ```js
-let a = {a: 1, b: 2};
-let b = Object.assign({}, a);
+const a = { a: 1, b: 2 }
+const b = Object.assign({}, a)
 
-b.b = 3;
-console.log(a);//{a: 1, b: 2}
-console.log(b);//{a: 1, b: 3}
+b.b = 3
+console.log(a) // { a: 1, b: 2 }
+console.log(b) // { a: 1, b: 3 }
 ```
 但需要注意的是，`Object.assign` 仅为 `浅拷贝`！即源对象的所有属性均为可枚举类型（基础数据类型：`string`, `number`, `boolean` 等），若源对象的属性中存在 `object` 型的数据类型(`{..}`或数组)，将依然只是将对象的指针复制给目标对象，无论是源对象还是目标对象对他们的子对象做出修改，会同时响应在两个对象中
 
