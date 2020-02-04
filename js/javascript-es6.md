@@ -205,13 +205,13 @@ for (const index of ['a', 'b'].keys()) {
 // 1
 
 for (const elem of ['a', 'b'].values()) {
-  console.log(elem);
+  console.log(elem)
 }
 // 'a'
 // 'b'
 
 for (const [index, elem] of ['a', 'b'].entries()) {
-  console.log(index, elem);
+  console.log(index, elem)
 }
 // 0 "a"
 // 1 "b"
@@ -278,12 +278,12 @@ console.log(b) // { a: 1, b: 3 }
 那么需要使用到 `深拷贝` (Deep Clone)时，可以试试使用 `JSON` 对象来解决
 
 ```js
-let a = {a: 1, b: 2, c:{c:1}};
-let b = JSON.parse(JSON.stringify(a));
+const a = { a: 1, b: 2, c: { c: 1 } }
+const b = JSON.parse(JSON.stringify(a))
 
-a.c.c = 3;
-console.log(a);//{a: 1, b: 2, c:{c:3}}
-console.log(b);//{a: 1, b: 2, c:{c:1}}
+a.c.c = 3
+console.log(a) // { a: 1, b: 2, c: { c: 3 } }
+console.log(b) // { a: 1, b: 2, c: { c: 1 } }
 ```
 
 **对象内容集合**
