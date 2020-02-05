@@ -290,20 +290,20 @@ console.log(b) // { a: 1, b: 2, c: { c: 1 } }
 
 `Object.keys()` - 获得对象中所有的键名，以数组的形式返回
 ```js
-var obj = { a:1,b:2 };
-var names = Object.keys(obj);//['a', 'b']
+var obj = { a: 1, b: 2 }
+var names = Object.keys(obj) // ['a', 'b']
 ```
 
 `Object.values()` - 获得对象中所有的值内容，以数组的形式返回
 ```js
-var obj = { a:1,b:2 };
-var values = Object.values(obj);//[1, 2]
+var obj = { a: 1, b: 2 }
+var values = Object.values(obj) // [1, 2]
 ```
 
 `Object.entries()` - 获得对象中所有的成员数据，以数组的形式返回，成员的内容也是数组形式
 ```js
-var obj = { a:1,b:2 };
-var values = Object.entries(obj);//[['a',1], ['b',2]]
+var obj = { a: 1, b: 2 }
+var values = Object.entries(obj) // [['a', 1], ['b', 2]]
 ```
 
 其实观察可发现，`Object.keys()`, `Object.values()`, `Object.entries()`，与 `Java` 的 `MAP` 中的方法是一致的，不论是方法名还是具体的用法，这也可以帮忙理解这些功能 API
