@@ -312,12 +312,10 @@ var values = Object.entries(obj) // [['a', 1], ['b', 2]]
 
 ```js
 //判断对象是否为数组对象
-if(Object.isArray(someobj)){}
+if (Object.isArray(someobj)) {}
 //判断目标对象是否为空对象
-if(someobj && Object.keys(someobj).length)
+if (someobj && Object.keys(someobj).length)
 ```
-
-<br><br>
 
 ## 解构赋值
 
