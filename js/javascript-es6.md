@@ -320,10 +320,10 @@ if (someobj && Object.keys(someobj).length)
 ## 解构赋值
 
 ```js
-let [a, b, c] = [1, 2, 3];
+const [a, b, c] = [1, 2, 3]
 //定义了三个变量，并对应赋了值；如果值的个数与变量名个数不匹配，没有对应上的变量值为 undefined
 
-let [a, b, c='default'] = [1, 2];
+const [a, b, c = 'default'] = [1, 2]
 //指定默认值，在定义变量时就指定了默认值，如果赋值时，没有给定内容，则会取默认值
 
 let [a, …b] = [1,2,3];
