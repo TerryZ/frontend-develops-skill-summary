@@ -326,18 +326,18 @@ const [a, b, c] = [1, 2, 3]
 const [a, b, c = 'default'] = [1, 2]
 //指定默认值，在定义变量时就指定了默认值，如果赋值时，没有给定内容，则会取默认值
 
-let [a, …b] = [1,2,3];
+const [a, …b] = [1,2,3]
 //这里 b 的值为[2，3]，这样可以快速使用剩余的数据赋值给变量，
 //但实际使用中为了避免代码阅读的歧义，不推荐这么使用，仅作了解即可
 
-let [a,b,c] = 'yes';
-console.log(a);//y
-console.log(b);//e
-console.log(c);//s
+const [a, b, c] = 'yes'
+console.log(a) // y
+console.log(b) // e
+console.log(c) // s
 字符串的解构赋值会以单个字符的方式进行赋值
 
-let {length}='yes';
-console.log(length);//3
+const { length } = 'yes'
+console.log(length) // 3
 以对象赋值的方式，如果名称是字符串的自带属性，则会获得属性值
 
 let arr = [1,2];
