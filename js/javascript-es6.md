@@ -340,13 +340,13 @@ const { length } = 'yes'
 console.log(length) // 3
 以对象赋值的方式，如果名称是字符串的自带属性，则会获得属性值
 
-let arr = [1,2];
-let obj = {a:1,b:2};
-function test ({a = 10, b}){
-    console.log('a:',a);
-    console.log('b:',b);
+const arr = [1, 2]
+const obj = { a: 1, b: 2 }
+function test ({ a = 10, b }) {
+  console.log('a:', a)
+  console.log('b:', b)
 }
-test(obj);
+test(obj)
 解构赋值的使用实例，作为函数传参，并使用默认值
 ```
 
