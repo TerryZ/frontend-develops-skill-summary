@@ -353,8 +353,8 @@ test(obj)
 **对象结构解构**
 
 ```js
-let obj = {a: 1, b: 2};
-let {a, b} = obj;//a=1,b=2
+const obj = { a: 1, b: 2 }
+const { a, b } = obj // a = 1, b = 2
 使用变量的方式进行结构赋值，需要严格匹配名称，数组的模式是严格匹配下标
 
 let obj = {a: 1, b: 2};
