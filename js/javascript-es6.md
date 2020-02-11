@@ -357,12 +357,14 @@ const obj = { a: 1, b: 2 }
 const { a, b } = obj // a = 1, b = 2
 使用变量的方式进行结构赋值，需要严格匹配名称，数组的模式是严格匹配下标
 
-let obj = {a: 1, b: 2};
-let {a=0, b=5} = obj;
+const obj = {a: 1, b: 2}
+const { a = 0, b = 5} = obj
+
 赋值并给定默认值
 
-let obj = {a: 1, b: 2};
-let {a:A, b} = obj;//A=1,b=2,a报错，变量未定义
+const obj = { a: 1, b: 2 }
+const { a: A, b } = obj // A = 1, b = 2, a 报错，变量未定义
+
 获得内容后，将变量进行改名
 
 let obj = {a: 1, b: 2};
