@@ -367,9 +367,10 @@ const { a: A, b } = obj // A = 1, b = 2, a 报错，变量未定义
 
 获得内容后，将变量进行改名
 
-let obj = {a: 1, b: 2};
-let a = 0;
-({a, b} = obj);
+const obj = { a: 1, b: 2 }
+const a = 0
+({a, b} = obj)
+
 对已存在的 a 进行修改值，并生成新的变量 b
 
 let obj = {
