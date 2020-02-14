@@ -373,17 +373,14 @@ const a = 0
 
 对已存在的 a 进行修改值，并生成新的变量 b
 
-let obj = {
-    arr: ['aaa',{a:1}]
-};
-let {arr:[b, {a}]} = obj;//这里的arr互相映射
-console.log(b);
-console.log(a);
+const obj = {
+  arr: ['aaa', { a: 1 }]
+}
+const { arr: [b, { a }] } = obj // 这里的 arr 互相映射
+console.log(b)
+console.log(a)
 获得对象的子数据，并映射到相应的变量，这里需要注意的是结构要对应
 ```
-
-
-<br><br>
 
 ## 模块化
 
