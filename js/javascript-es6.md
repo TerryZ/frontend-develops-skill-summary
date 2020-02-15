@@ -386,18 +386,18 @@ console.log(a)
 
 **最简单实例的使用场景**
 ```js
-//a.js
-let a = {a:1,b:2,c:3};
-export default a;
+// a.js
+export default {
+  a: 1,
+  b: 2,
+  c: 3
+}
 
-//b.js
-import a from 'a.js';//假设 a.js 与 b.js 同在一个目录中
-console.log(a.a);//1
+// b.js
+import a from './a.js' // 假设 a.js 与 b.js 同在一个目录中
+console.log(a.a) // 1
 ```
 以上简单的实例就两个脚本文件举例说明了两个文件在实际使用，可以进行互相引用，并获得目标文件中的数据；我们可以认为一个脚本文件就是一个 `模块`，那么在实际开发过程中，可以将业务处理内容，或是数据处理过程 `抽象` 在一个文件中，在需要使用时，由其它模块引入并使用其中的数据
-
-<br><br>
-
 
 ## 箭头函数
 
