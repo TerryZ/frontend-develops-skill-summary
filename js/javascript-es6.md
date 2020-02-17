@@ -419,12 +419,12 @@ console.log(a.a) // 1
 
 看一个简单的例子
 ```js
-let count = function(num){
-    return num + 1;
-};
+const count = function (num) {
+  return num + 1
+}
 
-//使用箭头函数重构
-let count = num => num + 1;
+// 使用箭头函数重构
+const count = num => num + 1
 ```
 
 上面的例子在重构后，给人最直观的感受就是 `function` 关键字 `{}`、`()` 和 `return` 等关键字不再需要书写，对于简单的函数体，可简化不少代码
