@@ -430,11 +430,11 @@ const count = num => num + 1
 上面的例子在重构后，给人最直观的感受就是 `function` 关键字 `{}`、`()` 和 `return` 等关键字不再需要书写，对于简单的函数体，可简化不少代码
 
 ```js
-let count = num => {
-    let base = 50;
-    let step = 10;
-    return base + step + 1;
-};
+const count = num => {
+  const base = 50
+  const step = 10
+  return base + step + 1
+}
 ```
 
 在函数体一行代码不能完成时，就不能省略 `{}` 和 `return` 关键字
