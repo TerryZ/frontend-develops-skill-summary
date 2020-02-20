@@ -440,10 +440,10 @@ const count = num => {
 在函数体一行代码不能完成时，就不能省略 `{}` 和 `return` 关键字
 
 ```js
-//多个入参
-let count = (num, step) => num + step + 1;
-//没有入参
-let count = () => 3.1415926;
+// 多个入参
+const count = (num, step) => num + step + 1
+// 没有入参
+const count = () => 3.1415926
 ```
 
 当入参不止一个或是没有入参时，需使用小括号包裹
