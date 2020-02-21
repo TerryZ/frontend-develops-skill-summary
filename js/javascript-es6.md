@@ -451,10 +451,10 @@ const count = () => 3.1415926
 **返回一个对象**
 
 ```js
-//错误，会报 SyntaxError
-let count = num => { base: 50, total: num + 100 };
-//正常返回对象
-let count = num => ({ base: 50, total: num + 100 });
+// 错误，会报 SyntaxError
+cons count = num => { base: 50, total: num + 100 }
+// 正常返回对象
+const count = num => ({ base: 50, total: num + 100 })
 ```
 
 **封闭上下文的 `this`**
