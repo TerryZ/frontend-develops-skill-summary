@@ -459,7 +459,7 @@ const count = num => ({ base: 50, total: num + 100 })
 
 **封闭上下文的 `this`**
 
-通过上面的例子可以看得出，箭头函数很像匿名函数（`(function(args){...}(val))`），但又不完全一样，主要的区别在于 `this` 的使用结果
+通过上面的例子可以看得出，箭头函数很像匿名函数（`(function (args) { ... } (val))`），但又不完全一样，主要的区别在于 `this` 的使用结果
 
 ```js
 let goods = {
