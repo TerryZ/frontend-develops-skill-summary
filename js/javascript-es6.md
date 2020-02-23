@@ -462,17 +462,17 @@ const count = num => ({ base: 50, total: num + 100 })
 通过上面的例子可以看得出，箭头函数很像匿名函数（`(function (args) { ... } (val))`），但又不完全一样，主要的区别在于 `this` 的使用结果
 
 ```js
-let goods = {
-    price: 5,
-    total: function(quantity){
-        console.log(this.price);//5 - this 指向了 goods 对象
-        let calc = function(){
-            return quantity * this.price;//这里的 this 指向了window
-        }
-        return calc();
-    }
-};
-console.log(goods.total(5));//Nan
+const goods = {
+  price: 5,
+  total: function(quantity) {
+    console.log(this.price) // 5 - this 指向了 goods 对象
+    const calc = function() {
+      return quantity * this.price // 这里的 this 指向了window
+    }
+    return calc()
+  }
+}
+console.log(goods.total(5)) // Nan
 ```
 上面的例子当然可以使用传参或在函数外定义一个变量 that 来接收外部的 this(即函数内第一句)，并在函数内部使用 that 来解决问题，但这不在当前话题的讨论范围内
 
