@@ -474,6 +474,7 @@ const goods = {
 }
 console.log(goods.total(5)) // Nan
 ```
+
 上面的例子当然可以使用传参或在函数外定义一个变量 that 来接收外部的 this(即函数内第一句)，并在函数内部使用 that 来解决问题，但这不在当前话题的讨论范围内
 
 ```js
@@ -481,7 +482,7 @@ const goods = {
   price: 5,
   total: function (quantity) {
     console.log(this.price) // 5 - this 指向了 goods 对象
-    const calc = () => quantity * this.price // 这里的 this 同样指向了goods对象
+    const calc = () => quantity * this.price // 这里的 this 同样指向了 goods 对象
     return calc()
   }
 }
