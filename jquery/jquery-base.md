@@ -13,16 +13,15 @@
 ## 判断元素是显示还是隐藏
 
 ```js
-//判断元素是否为隐藏状态
-if($(obj).is(':hidden')){
-    //do something
+// 判断元素是否为隐藏状态
+if ($(obj).is(':hidden')) {
+  //do something
 }
-//判断元素是否为显示状态
-if($(obj).is(':visible')){
-    //do something
+// 判断元素是否为显示状态
+if ($(obj).is(':visible')) {
+  //do something
 }
 ```
-<br><br>
 
 ## Json数据的相关操作
 
