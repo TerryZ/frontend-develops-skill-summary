@@ -157,12 +157,12 @@ console.log('This is my %clog.', 'color: blue;font-weight: bold;')
 > ie10+ 以上的浏览器原生支持
 
 ```js
-//binary to ascii(将字符串转进行 base64 编码)
+// binary to ascii(将字符串转进行 base64 编码)
 window.btoa('abcdefghijklmnopqrstuvxyz')
-//result: YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnh5eg==
+// result: YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnh5eg==
 
-//ascii to binary(将加密串解密为原字符串内容)
+// ascii to binary(将加密串解密为原字符串内容)
 window.atob('YWJjZGVmZ2hpamtsbW5vcHFyc3R1dnh5eg==')
-//result: abcdefghijklmnopqrstuvxyz
+// result: abcdefghijklmnopqrstuvxyz
 
 ```
