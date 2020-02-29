@@ -15,11 +15,11 @@
 ```js
 // 判断元素是否为隐藏状态
 if ($(obj).is(':hidden')) {
-  //do something
+  // do something
 }
 // 判断元素是否为显示状态
 if ($(obj).is(':visible')) {
-  //do something
+  // do something
 }
 ```
 
