@@ -91,11 +91,11 @@ console.log(newarr.toString())
 基本类型变量的复制，内容修改后，不会对另一变量产生影响
 
 ```js
-var a = 1;
-var b =a;
-a = 2;
-console.log(a);//2
-console.log(b);//1
+var a = 1
+var b = a
+a = 2
+console.log(a) // 2
+console.log(b) // 1
 ```
 
 引用类型变量若将A对象内容赋值给B对象，则B对象只是A对象的引用，此时若修改了B的内容，A的内容也会随之变化
