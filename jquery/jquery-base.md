@@ -113,17 +113,15 @@ console.log(b) // { a: 1, b: 3 }
 但在某些情况下，出于对功能上的要求，必须要求变量在获得另一个对象的复制后，各自修改内容，不会互相影响；使用 Javascript 原生可参照以下方式：
 
 ```js
-var arr = {"a":"1","b":"2"};
-var arr1 = arr;
-arr = {};
-arr["a"] = 2;
-console.log(arr);//{"a":2}
-console.log(arr1);//{"a":"1","b":"2"}
+var arr = { a: '1', b: '2' }
+var arr1 = arr
+arr = {}
+arr['a'] = 2
+console.log(arr) // { a: 2 }
+console.log(arr1) // { a: '1',b: '2'}
 ```
 
 原理是A变量是B对象变量的引用时，将A置空，再为A设置内容，就不会再是B的引用
-
-
 
 还可以利用 `JSON.stringify` 方法和jQuery的 `$.parseJSON` 方法进行处理（略麻烦）
 
