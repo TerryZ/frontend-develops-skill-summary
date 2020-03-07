@@ -126,13 +126,13 @@ console.log(arr1) // { a: '1',b: '2'}
 还可以利用 `JSON.stringify` 方法和jQuery的 `$.parseJSON` 方法进行处理（略麻烦）
 
 ```js
-var data = {a:1,b:2,c:3,d:[0,1,2,3]};
-var str = JSON.stringify(data);
-var data1 = $.parseJSON(str);
-data1["e"] = 5;
-data1["d"][0] = 22;
-console.log(data);//{a: 1, b: 2, c: 3, d: [0,1,2,3]}
-console.log(data1);//{a: 1, b: 2, c: 3, d: [22,1,2,3], e: 5}
+var data = { a: 1, b: 2, c: 3, d: [0, 1, 2, 3] }
+var str = JSON.stringify(data)
+var data1 = $.parseJSON(str)
+data1['e'] = 5
+data1['d'][0] = 22
+console.log(data) // { a: 1, b: 2, c: 3, d: [0, 1, 2, 3] }
+console.log(data1) // { a: 1, b: 2, c: 3, d: [22, 1, 2, 3], e: 5 }
 ```
 
 这种转换的过程实际就是重新生成对象了
