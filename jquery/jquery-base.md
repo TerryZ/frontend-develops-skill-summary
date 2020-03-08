@@ -141,11 +141,11 @@ console.log(data1) // { a: 1, b: 2, c: 3, d: [22, 1, 2, 3], e: 5 }
 使用jQuery的 `$.extend()` 方法来扩展、复制对象
 
 ```js
-var a = {a:1,b:2};
-var b = $.extend({},a);
-b.b = 3;
-console.log(a);//{a:1,b:2}
-console.log(b);//{a:1,b:3}
+var a = { a: 1, b: 2 }
+var b = $.extend({}, a)
+b.b = 3
+console.log(a) // { a: 1, b: 2 }
+console.log(b) // { a: 1, b: 3 }
 ```
 
 以上的方式，若A变量的属性里还有子对象，例如：
