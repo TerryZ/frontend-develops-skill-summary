@@ -162,14 +162,13 @@ console.log(b) // { a: 1, b: 3 }
 在进行复制时，子对象的内容依然是引用的方式，会互相影响
 
 ```js
-var a = {a:1,b:2,c:{aa:11,bb:22}};
-var b = $.extend({},a);
-b.b = 3;
-b.c.aa = 33;
-console.log(a);//{a:1,b:2,c:{aa:33,bb:22}}
-console.log(b);//{a:1,b:3,c:{aa:33,bb:22}}
+var a = { a: 1, b: 2, c: { aa: 11, bb: 22 } }
+var b = $.extend({}, a)
+b.b = 3
+b.c.aa = 33
+console.log(a) // { a: 1, b: 2, c: { aa: 33, bb: 22 } }
+console.log(b) // { a: 1, b: 3, c: { aa: 33, bb: 22 } }
 ```
-
 
 使用 `$.extend()` 方法的深度复制方式，即可杜绝以上问题，使用深度复制，即使母对象中子对象有再多层级，依然会进行完整复制，并不会进行对象引用
 
