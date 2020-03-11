@@ -21,11 +21,11 @@
     ```js
     <!-- html -->
     <div id="myDiv">
-        <input type="text" class="inputBox">
+      <input type="text" class="inputBox">
     </div>
-    //js
-    var parent = $('#myDiv');
-    var input = $('.inputBox',parent);
+    // js
+    var parent = $('#myDiv')
+    var input = $('.inputBox', parent)
     ```
 
 ### 优先使用子集查找
