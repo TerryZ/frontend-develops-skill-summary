@@ -28,29 +28,27 @@
     var input = $('.inputBox',parent);
     ```
 
-
-
 ### 优先使用子集查找
 
 在开发页面元素较多，或是页面上需要进行动态增加 / 删除dom元素的情况下，建议先获得需要操作的目标区域对象，后续的操作都在该对象的范围内进行操作、处理
 ```html
 <div>
-    <ul id="list">
-        <li>aaa</li>
-        <li>bbb</li>
-        <li>ccc</li>
-    </ul>
+  <ul id="list">
+    <li>aaa</li>
+    <li>bbb</li>
+    <li>ccc</li>
+  </ul>
 </div>
 ```
 
 jquery代码
 
 ```js
-var box = $('#list');
+var box = $('#list')
 $('add-button').click(function(){
-    box.append($('<li>ddd</li>'));
-});
-$('del-button').click(function(){
-    box.remove($('li:last',box));
-});
+  box.append($('<li>ddd</li>'))
+})
+$('del-button').click(function () {
+  box.remove($('li:last', box))
+})
 ```
