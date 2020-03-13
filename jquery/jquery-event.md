@@ -49,25 +49,23 @@ $('#myUl').on('click', 'li', function () {
 
 在 `html` 的代码中可以看到 `ul` 并没有任何 `li` 的子节点，仅是一个空的结构，在后续操作为其中动态生成了 `li` 元素后，所有 `ul` 里的 `li` 元素都会响应点击事件
 
-<br><br>
-
 ## 鼠标移入移出
 
 ```js
-$(div).mouseenter(function(){
-  //mouse move in
-}).mouseleave(function(){
-  //mouse move out
-});
+$(div).mouseenter(function () {
+  // mouse move in
+}).mouseleave(function () {
+  // mouse move out
+})
 ```
 `mouseenter` 和 `mouseleave` 两个配套的事件，解决了鼠标移入目标元素和移出目标元素的事件，而实际上我们可以使用 `hover` 来更简单的替换这一套事件
 
 ```js
-$(div).hover(function(){
-  //mouse move in
-},function(){
-  //mouse move out
-});
+$(div).hover(function () {
+  // mouse move in
+},function () {
+  // mouse move out
+})
 ```
 
 `mouseover` 对比 `mouseenter` 、 `mouseout` 对比 `mouseleave` 的本质区别就是 `mouseover` 、 `mouseout` 会被子元素的 `mouseover` 、 `mouseout` 冒泡而触发，而 `mouseenter` 和 `mouseleave` 不被子元素事件冒泡而触发
