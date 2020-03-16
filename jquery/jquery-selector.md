@@ -45,7 +45,7 @@ jquery代码
 
 ```js
 var box = $('#list')
-$('add-button').click(function(){
+$('add-button').click(function () {
   box.append($('<li>ddd</li>'))
 })
 $('del-button').click(function () {
