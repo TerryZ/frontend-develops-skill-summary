@@ -16,19 +16,19 @@
 
 页面完整高度、宽度，即文档高度和宽度
 ```js
-$(document).width();
-$(document).height();
+$(document).width()
+$(document).height()
 ```
 
 当前浏览器可视区域宽度、高度
 ```js
-$(window).width();
-$(window).height();
+$(window).width()
+$(window).height()
 ```
 
 屏幕当前位置距离文档顶端的距离
 ```js
-$(window).scrollTop();
+$(window).scrollTop()
 ```
 
 <br><br>
