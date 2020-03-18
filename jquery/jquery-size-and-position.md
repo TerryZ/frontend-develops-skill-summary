@@ -31,31 +31,23 @@ $(window).height()
 $(window).scrollTop()
 ```
 
-<br><br>
-
 ## 对于宽、高度的获取，及精准数值的获取方式（含小数点）
 
 jQuery对于宽度、高度的结果是同一套规则，这里仅以宽度为主进行讲解 
 
 对于宽度的获取，jQuery API中提供了 `width` 、`innerWidth` 、`outerWidth` 三个函数进行获取
- 
 
 - `$.fn.width()`
 
 ![width](https://terryz.github.io/image/document/width.png)
 
-
 `width()` 获得的宽度，仅为元素自身的宽度，不包含内边距（padding），边框（border），外边距（margin）
-
- 
 
 - `$.fn.innerWidth()`
 
 ![inner-width](https://terryz.github.io/image/document/inner-width.png)
 
-
 `innerWidth()` 获得的宽度，是在 `width()` 的基础上，再加上内边距（padding）的宽度
-
 
 - `$.fn.outerWidth([includeMargin])`
 
