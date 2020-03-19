@@ -63,8 +63,7 @@ jQuery对于宽度、高度的结果是同一套规则，这里仅以宽度为�
 
 通常情况下，使用以上的方式就可以获得目标元素的实际宽度，但有时需要对于宽度、高度、坐标等具体的数值，需要获得非常精准的数据（包含小数），例如在开发插件，开发复杂功能等情况；而上文中描述的方式，获得的数值都是整数，实际上对于数据中的小数，javascript、jquery所返回的数值中，是进行了四舍五入，但有时候所获得的数值和实际在浏览器中调试的数值进行四舍五入的值不一致，看样子是直接取整，既然如此，我们需要有办法可以获得详细的数据，自行在程序中进行结果的精准控制
 
-在javascript中，对象的函数里有一个getBoundingClientRect()的API函数，返回值是一个 DOMRect 对象，这个对象是由该元素的 getClientRects() 方法返回的一组矩形的集合, 即：是与该元素相关的CSS 边框集合 。
-
+在 javascript 中，对象的函数里有一个 getBoundingClientRect() 的API函数，返回值是一个 DOMRect 对象，这个对象是由该元素的 getClientRects() 方法返回的一组矩形的集合, 即：是与该元素相关的CSS 边框集合。
 
 如图所示，函数返回的内容，包含如下8个属性：
 
@@ -92,7 +91,6 @@ $('selector')[0].getBoundingClientRect().width
 ```
 the image come from [jquery.com](jquery.com)
 
-<br><br>
 
 ## 判断当前页面是否存在滚动条
 ```js
@@ -100,4 +98,3 @@ if($(document).height() > $(window).height()){
   //do something
 }
 ```
-<br><br>
