@@ -69,8 +69,6 @@ vuejs 作者尤雨溪对于 `Vue2` 的学习顺序建议
 
 ![Vue2.x生命周期](https://cn.vuejs.org/images/lifecycle.png)
 
-<br><br>
-
 ## 数据对象监听
 
 在开发组件（component）时，通常需要接收到调用者传入的参数数据，且需要对数据的修改作出及时的响应；典型应用场景就是自定义的表格组件（TableGrid）需要实时监听表格查询参数的变化，当参数的内容发生变化时，使用新的参数进行服务端数据查询，以达到查询数据表格数据的效果
@@ -78,7 +76,7 @@ vuejs 作者尤雨溪对于 `Vue2` 的学习顺序建议
 ```js
 <script>
 export default {
-  props: ['setting']//总的入参对象
+  props: ['setting'] // 总的入参对象
   data(){
     return {
       query: {},
@@ -86,21 +84,21 @@ export default {
     }
   },
   watch: {
-    //基础数据类型的监听
-    pageNumber(newVal, oldVal){
-      //do something...
+    // 基础数据类型的监听
+    pageNumber (newVal, oldVal) {
+      // do something...
     },
     'setting.params':{
-      //监听到新的参数变化时，触发表格数据查询
-      handler(newVal, oldVal){
+      // 监听到新的参数变化时，触发表格数据查询
+      handler (newVal, oldVal) {
         this.query = newVal
         this.doRequest()
       },
-      deep: true//深度监听，监听对象类型最重要就是要打开它
+      deep: true // 深度监听，监听对象类型最重要就是要打开它
     }
   }
   methods: {
-    doRequest(){
+    doRequest () {
       ...
     }
   }
@@ -109,8 +107,6 @@ export default {
 ```
 
 根据 vuejs 官网的文档说明，监听数组不需要设置 deep，使用方式与普通数据的方式一致
-
-<br><br>
 
 ## Component 数据输入和输出
 
