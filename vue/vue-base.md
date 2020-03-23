@@ -120,12 +120,12 @@ export default {
   props: ['setting'],
   data(){
     return{
-      config: this.setting //将 props 中接收到的 setting 参数落地到本地的变量
+      config: this.setting // 将 props 中接收到的 setting 参数落地到本地的变量
     }
   }
   methods: {
     callback(){
-      this.$emit('data-change', 1) //触发外层监听的 data-change 事件，并传递数据 1
+      this.$emit('data-change', 1) // 触发外层监听的 data-change 事件，并传递数据 1
     }
   }
 }
@@ -134,10 +134,8 @@ export default {
 外层标签：
 ```html
 <!-- 使用 v-bind 绑定数据到 setting 属性上，并监听 data-change 事件 -->
-<xxx :setting="{a:1,b:2}" @data-change="doSomething">
+<xxx :setting="{ a: 1, b: 2 }" @data-change="doSomething">
 ```
-
-<br><br>
 
 ## 数据与DOM更新完成后的回调
 
