@@ -146,7 +146,7 @@ export default {
     list: []
   },
   mounted () {
-    this.list = [1,2,3]
+    this.list = [1, 2, 3]
     this.nextTick(() => {
       console.log('数据更新完成')
     })
@@ -156,11 +156,10 @@ export default {
 
 Dom 更新回调
 
-
 ```vue
 <template>
   <ul>
-    <li v-for="item in list">{{item}}</li>
+    <li v-for="item in list">{{ item }}</li>
   </ul>
 </template>
 <script>
@@ -177,8 +176,6 @@ export default {
 };
 </script>
 ```
-
-<br><br>
 
 ## img 图片标签动态地址
 
