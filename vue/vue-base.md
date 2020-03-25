@@ -132,7 +132,8 @@ export default {
 ```
 
 外层标签：
-```html
+
+```vue
 <!-- 使用 v-bind 绑定数据到 setting 属性上，并监听 data-change 事件 -->
 <xxx :setting="{ a: 1, b: 2 }" @data-change="doSomething">
 ```
@@ -260,7 +261,7 @@ export default {
       this.model.name = 'Tom'
     },
     save(){
-      //do some save stuff
+      // do some save stuff
     }
   }
 }
