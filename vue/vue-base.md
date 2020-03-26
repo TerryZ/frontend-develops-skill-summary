@@ -206,8 +206,6 @@ methods: {
 
 如此，则路径正常转换为 `/dist/xxx.png`
 
-<br><br>
-
 ## 动画执行顺序
 
 使用 `<transition>` 标签对希望出现动画效果的元素进行包裹，在元素的 `v-if` 或 `v-show` 的真假值切换时，即会出现指定的动画效果
@@ -219,8 +217,6 @@ enter -> enter-active -> enter-to
 - 离开
 
 leave -> leave-active -> leave-to
-
-<br><br>
 
 ## Array 操作注意事项
 
