@@ -247,16 +247,16 @@ leave -> leave-active -> leave-to
 
 <script>
 export default {
-  data(){
+  data () {
     return {
       model: {}
     }
   },
   methods: {
-    build(){
+    build () {
       this.model.name = 'Tom'
     },
-    save(){
+    save () {
       // do some save stuff
     }
   }
@@ -269,7 +269,7 @@ export default {
 由于 model 对象初始化时仅为空对象，没有 name 属性，于是虽然给 `model.name` 指定值时，并没有更新已绑定的视图内容
 
 ```js
-build(){
+build () {
   this.$set(this.model, 'name', 'Tom')
 }
 ```
