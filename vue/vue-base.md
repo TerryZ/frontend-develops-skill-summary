@@ -77,7 +77,7 @@ vuejs 作者尤雨溪对于 `Vue2` 的学习顺序建议
 <script>
 export default {
   props: ['setting'] // 总的入参对象
-  data(){
+  data () {
     return {
       query: {},
       pageNumber: 1
@@ -88,7 +88,7 @@ export default {
     pageNumber (newVal, oldVal) {
       // do something...
     },
-    'setting.params':{
+    'setting.params': {
       // 监听到新的参数变化时，触发表格数据查询
       handler (newVal, oldVal) {
         this.query = newVal
