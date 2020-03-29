@@ -35,13 +35,13 @@
 const box = this.$refs.box
 let height = 0
 
-//100(number)
+// 100(number)
 height = box.offsetHeight
-//100(number)
+// 100(number)
 height = box.getBoundingClientRect().height
-//'100px'(string) - 获得样式值
+// '100px'(string) - 获得样式值
 height = window.getComputedStyle(box).height
-//'100px'(string) - 使用此法，往往获得不到内容
+// '100px'(string) - 使用此法，往往获得不到内容
 height = box.style.height
 ```
 
@@ -54,7 +54,7 @@ height = box.style.height
 ```js
 import mixins from './mixins'
 
-export default{
+export default {
   mixins: [mixins],
   ...
 }
