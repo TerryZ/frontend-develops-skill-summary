@@ -70,7 +70,7 @@ export default {
 
 
 ```js
-//parent component
+// parent component
 export default {
   data: {
     return {
@@ -84,14 +84,14 @@ export default {
   }
 }
 
-//children component
+// children component
 export default {
   data: {
     name: 'sam'
   },
   inject: ['parentName'],
   mounted() {
-    let fullname = `${this.name} - ${this.parentName}`
+    const fullname = `${this.name} - ${this.parentName}`
   }
 }
 ```
