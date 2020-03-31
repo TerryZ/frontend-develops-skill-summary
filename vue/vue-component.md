@@ -90,7 +90,7 @@ export default {
     name: 'sam'
   },
   inject: ['parentName'],
-  mounted() {
+  mounted () {
     const fullname = `${this.name} - ${this.parentName}`
   }
 }
@@ -131,10 +131,10 @@ render
 
 ```js
 h('input', {
-  attrs:{
+  attrs: {
     type: 'text'
   },
-  domProps:{
+  domProps: {
     value: this.user
   },
   on: {
@@ -155,7 +155,7 @@ render
 
 ```js
 h('custom-component', {
-  attrs:{
+  attrs: {
     value: this.user
   },
   on: {
@@ -169,7 +169,7 @@ h('custom-component', {
 ```js
 // same as <custom-component :user.sync="user"></custom-component>
 h('custom-component', {
-  attrs:{
+  attrs: {
     user: this.user
   },
   on: {
