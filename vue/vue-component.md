@@ -193,7 +193,7 @@ if ('default' in this.$slots) {
 建议使用
 
 ```js
-if ('default' in this.$scopedSlots){
+if ('default' in this.$scopedSlots) {
   return h('div', this.$scopedSlots.default())
 }
 ```
@@ -201,7 +201,7 @@ if ('default' in this.$scopedSlots){
 #### named slot
 
 ```js
-if ('user' in this.$scopedSlots){
+if ('user' in this.$scopedSlots) {
   return h('div', this.$scopedSlots.user())
 }
 ```
@@ -222,7 +222,7 @@ if ('user' in this.$scopedSlots){
 </template>
 <script>
 export default {
-  data(){
+  data () {
     return {
       picked: ''
     }
@@ -243,14 +243,14 @@ export default {
 </template>
 <script>
 export default {
-  data(){
+  data () {
     return {
       type: 1
       picked: ''
     }
   },
   computed: {
-    inputType(){
+    inputType () {
       return this.type ? 'checkbox' : 'radio'
     }
   }
@@ -309,7 +309,7 @@ export default {
       attrs: {
         ...
         type: this.type ? 'checkbox' : 'radio', // 根据类型设置 type 属性
-        value: this.optionId,// 静态生成 value 属性，不再跟 v-model 争夺 value 属性
+        value: this.optionId, // 静态生成 value 属性，不再跟 v-model 争夺 value 属性
         name: 'vote-options'
       },
       on: {
