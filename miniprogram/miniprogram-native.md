@@ -18,8 +18,6 @@ vscode 安装插件 `miniapp`，让 vscode 可以识别小程序原生的的代�
 
 工作模式为编码、管理均在 vscode 上进行，查看效果时切换到微信开发者工具上进行查看，由于微信开发者工具可以实时响应文件的修改或变更，并会重新刷新小程序的预览视图
 
-<br><br>
-
 ## 微信小程序完整登录流程
 
 **Check storage**
@@ -28,22 +26,18 @@ getStorage(sessionKey) -> checkSession -> fail to login
 **Login**
 wx.login -> receive code and request to server side ->  receive openId, sessionKey and unionId
 
-<br><br>
-
 ## setData
 
 setData 是一个将 data 中定义的数据进行修改并刷新到视图的函数。但需要注意的是，它是一个异步函数，如果刷新的数据内容较多，需要注意后续的东西要在 setData 的回调中进行处理，否则会有数据不准确的问题
 
 ```js
 this.setData({
-    a: this.data.a,
-    b: this.data.b
-},()=>{
-    //do your stuff
-});
+  a: this.data.a,
+  b: this.data.b
+}, () => {
+  // do your stuff
+})
 ```
-
-<br><br>
 
 **性能优化**
 
