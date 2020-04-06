@@ -45,20 +45,18 @@ this.setData({
 
 ```js
 this.setData({
-    'list[1].name': 'zhangsan'
-});
+  'list[1].name': 'zhangsan'
+})
 ```
 
 路径变量
 
 ```js
-let path = 'list[' + i+ '].name'; 
+const path = 'list[' + i+ '].name'
 this.setData({
-    [path]: 'zhangsan'
-});
+  [path]: 'zhangsan'
+})
 ```
-
-<br><br>
 
 ## navigateTo与redirectTo
 
