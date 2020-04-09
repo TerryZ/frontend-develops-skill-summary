@@ -22,22 +22,21 @@ this.setData({
 const path = 'list[' + i+ '].name'
 this.setData({
   [path]: 'zhangsan'
-});
+})
 ```
 
 合并多次设置，执行一次 setData 就会进行视图刷新，在一次功能任务中若执行了多次 setData 就会多次刷新视图，造成性能浪费
 
 ```js
 // bad
-this.setData({a:1});
-this.setData({b:2});
-this.setData({c:3});
-//good
-this.setData({
-    a: 1,
-    b: 2,
-    c: 3
-});
-```
+this.setData({a:1})
+this.setData({b:2})
+this.setData({c:3})
 
-<br><br>
+// good
+this.setData({
+  a: 1,
+  b: 2,
+  c: 3
+})
+```
