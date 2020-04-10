@@ -118,13 +118,13 @@ export default {
 ```js
 export default {
   props: ['setting'],
-  data(){
-    return{
+  data () {
+    return {
       config: this.setting // 将 props 中接收到的 setting 参数落地到本地的变量
     }
   }
   methods: {
-    callback(){
+    callback () {
       this.$emit('data-change', 1) // 触发外层监听的 data-change 事件，并传递数据 1
     }
   }
