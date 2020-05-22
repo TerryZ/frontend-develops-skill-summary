@@ -52,7 +52,7 @@ this.setData({
 路径变量
 
 ```js
-const path = 'list[' + i+ '].name'
+const path = 'list[' + i + '].name'
 this.setData({
   [path]: 'zhangsan'
 })
