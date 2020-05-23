@@ -21,9 +21,11 @@ vscode 安装插件 `miniapp`，让 vscode 可以识别小程序原生的的代�
 ## 微信小程序完整登录流程
 
 **Check storage**
+
 getStorage(sessionKey) -> checkSession -> fail to login
 
 **Login**
+
 wx.login -> receive code and request to server side ->  receive openId, sessionKey and unionId
 
 ## setData
