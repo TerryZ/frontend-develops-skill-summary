@@ -80,8 +80,6 @@ this.setData({
 
 **注意**：在 `position:static` 设置下无效
 
-<br><br>
-
 ## dev and product
 
 小程序针对线上版本（正式版本）、体验/开发版本以及本地开发环境中的不同环境的服务端地址自动切换功能
