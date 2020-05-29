@@ -32,7 +32,7 @@ wx.login -> receive code and request to server side ->  receive openId, sessionK
 
 ## setData
 
-setData 是一个将 data 中定义的数据进行修改并刷新到视图的函数。但需要注意的是，它是一个异步函数，如果刷新的数据内容较多，需要注意后续的东西要在 setData 的回调中进行处理，否则会有数据不准确的问题
+setData 是一个将 data 中定义的数据进行修改并刷新到视图的函数。但需要注意的是，它是**异步**的，如果刷新的数据内容较多，需要注意后续的东西要在 setData 的回调中进行处理，否则会有数据不准确的问题
 
 ```js
 this.setData({
