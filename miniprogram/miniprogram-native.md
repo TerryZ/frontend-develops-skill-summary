@@ -104,6 +104,7 @@ this.setData({
 ## 特殊字符
 
 在网页上常用的特殊字符，在微信小程序的页面不能直接使用，需要使用时需要使用 text 或 view 标签进行包裹，并设置 `decode` 属性为真值，方可正常使用
+
 ```html
 <text decode="{{true}}">&nbsp;</text>
 ```
