@@ -6,7 +6,7 @@
 - [setData](#setData)
 - [navigateTo与redirectTo](#navigateTo与redirectTo)
 - [z-index](#z-index)
-- [dev and product](#dev-and-product)
+- [dev and production](#dev-and-production)
 - [特殊字符](#特殊字符)
 
 
