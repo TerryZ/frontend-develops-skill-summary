@@ -29,7 +29,7 @@ this.setData({
 
 ```js
 // bad
-this.setData({a:1})
+this.setData({ a: 1 })
 this.setData({b:2})
 this.setData({c:3})
 
