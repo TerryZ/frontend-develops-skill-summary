@@ -24,7 +24,9 @@ vscode 安装插件 `miniapp`，让 vscode 可以识别小程序原生的的代�
 
 **Check storage**
 
-getStorage(sessionKey) -> checkSession -> fail to login
+1. getStorage(sessionKey)
+1. checkSession
+1. fail to login
 
 **Login**
 
