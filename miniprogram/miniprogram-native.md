@@ -30,7 +30,9 @@ vscode 安装插件 `miniapp`，让 vscode 可以识别小程序原生的的代�
 
 **Login**
 
-wx.login -> receive code and request to server side ->  receive openId, sessionKey and unionId
+1. wx.login
+1. receive code and request to server side
+1. receive openId, sessionKey and unionId
 
 ## setData
 
