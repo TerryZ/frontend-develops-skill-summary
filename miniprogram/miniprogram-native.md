@@ -3,6 +3,7 @@
 ## 目录
 
 - [开发环境建议](#开发环境建议)
+- [微信小程序完整登录流程](#微信小程序完整登录流程)
 - [setData](#setData)
 - [navigateTo与redirectTo](#navigateTo与redirectTo)
 - [z-index](#z-index)
