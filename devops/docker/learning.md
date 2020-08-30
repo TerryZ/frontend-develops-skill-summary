@@ -69,7 +69,7 @@ docker update --restart=always
 
 ### 启动容器详解
 
-```shell
+```bash
 docker run -d --name my-mysql -it -p 13306:3306 -v /data/mysql:/var/lib/mysql
 
 # 指定容器名称
