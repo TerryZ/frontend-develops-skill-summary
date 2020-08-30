@@ -67,6 +67,23 @@ docker run --restart=always
 docker update --restart=always
 ```
 
+### 启动容器详解
+
+```bash
+docker run -d -it -p 13306:3306 -v /data/mysql:/var/lib/mysql
+
+# 在后台运行
+-d
+# 进入命令交互模式
+-it
+# 端口映射，指定宿主机与容器内部的端口映射关系
+# -p <宿主端口>:<容器内部端口>
+-p 13306:3306
+# 数据卷，指定宿主机与容器内容数据目录的镜像关系，且互为同步
+# -v <宿主目录位置>:<容器内容目录>
+-v /data/mysql:/var/lib/mysql
+```
+
 ### 查看正在运行中的容器资源占用情况
 
 `docker stats`
