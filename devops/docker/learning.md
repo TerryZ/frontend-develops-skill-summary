@@ -67,10 +67,10 @@ docker run --restart=always
 docker update --restart=always
 ```
 
-### 启动容器详解
+### 启动容器常用参数
 
 ```bash
-docker run -d --name my-mysql -it -p 13306:3306 -v /data/mysql:/var/lib/mysql
+docker run -d --name my-mysql -it -p 13306:3306
 
 # 指定容器名称
 --name my-mysql
@@ -81,6 +81,14 @@ docker run -d --name my-mysql -it -p 13306:3306 -v /data/mysql:/var/lib/mysql
 # 端口映射，指定宿主机与容器内部的端口映射关系
 # -p <宿主端口>:<容器内部端口>
 -p 13306:3306
+# 有需要对同个参数设置多处的，指定多次即可，例如：-p 1080:80 -p 13306:3306
+```
+
+### 启动容器并使用数据卷
+
+```bash
+docker run -d --name my-mysql -it -p 13306:3306 -v /data/mysql:/var/lib/mysql
+
 # 数据卷，指定宿主机与容器内容数据目录的镜像关系，且互为同步
 # -v <宿主目录位置>:<容器内部目录>
 # 需要注意的是，映射双方，至少要在目录结构上保持一致，否则启动失败
@@ -93,7 +101,6 @@ docker run -d --name my-mysql -it -p 13306:3306 -v /data/mysql:/var/lib/mysql
 # -v <宿主目录位置>:<容器内部目录>:ro 只能在宿主机目录中修改内容，容器内部只读，更推荐使用
 # -v <宿主目录位置>:<容器内部目录>:rw 在宿主机和容器内部均可读写，为权限的默认形式
 -v /data/mysql:/var/lib/mysql
-# 有需要对同个参数设置多处的，指定多次即可，例如：-p 1080:80 -p 13306:3306
 ```
 
 ### 查看正在运行中的容器资源占用情况
