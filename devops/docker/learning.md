@@ -16,24 +16,34 @@
 **关闭服务开机启动**
 `systemctl disable docker.service`
 
-查询镜像
-docker search <image-name>
+### 查询镜像
 
-本地已下载镜像查询
+`docker search <image-name>`
+
+### 本地已下载镜像查询
+
+```bash
 docker image ls
 docker images
+```
 
-查询当前正在运行的镜像
-docker ps
+### 查询当前正在运行的镜像
 
-运行一个镜像
-docker run <image-name>
+`docker ps`
+
+### 运行一个镜像
+
+`docker run <image-name>`
+
 后台运行一个镜像，但注意需要后续的指定端口等参数，否则会运行不成功
-docker run -d <image-name>
 
-退出容器
+`docker run -d <image-name>`
+
+### 退出容器
+```
 exit              # 退出且终止运行
 ctrl + p + q # 退出容器且保留容器运行
+```
 
 启动和停止容器
 docker start <container-id>     # 启动容器
