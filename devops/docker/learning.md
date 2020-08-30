@@ -40,7 +40,7 @@ docker images
 `docker run -d <image-name>`
 
 ### 退出容器
-```
+```bash
 exit              # 退出且终止运行
 ctrl + p + q # 退出容器且保留容器运行
 ```
