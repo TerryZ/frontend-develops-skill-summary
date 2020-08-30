@@ -117,7 +117,7 @@ docker cp <container-id>/some-folder/some-file /target-path
 1. 将容器的内容提交为一个新的镜像
 
 ```bash
-`docker commit -a="author-name" -m="commit-message" <container-id> new-image-name:tag`
+docker commit -a="author-name" -m="commit-message" <container-id> new-image-name:tag
 
 -a 指定提交的作者名称
 -m 指定提交的描述信息
