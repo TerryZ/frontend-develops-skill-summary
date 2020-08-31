@@ -128,9 +128,9 @@ docker run --name cv1 -it centos-with-volume /bin/bash
 # 一个新容器，并使用数据共享命令来对已生成容器中的数据卷的内容进行同步共享
 
 docker run --name cv2 --volumes-from cv1 -it centos-with-volume /bin/bash
-
-# 此时，cv1 与 cv2 两个容器中的 volume-test 目录中的数据是完全同步的，可通过对两个容器内的文件进行修改来测试效果
 ```
+
+此时，**cv1** 与 **cv2** 两个容器中的 `volume-test` 目录中的数据是完全同步的，可通过对两个容器内的文件进行修改来测试效果
 
 ### 查看正在运行中的容器资源占用情况
 
