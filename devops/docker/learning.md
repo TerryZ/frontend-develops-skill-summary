@@ -105,7 +105,7 @@ docker run -d --name my-mysql -it -p 13306:3306 -v /data/mysql:/var/lib/mysql
 
 ### 通过 DockerFile 定义并生成镜像并应用数据卷同步
 
-编写一个 dockerfile 文件并命名为 `dockerfile1` 如下
+编写一个 `dockerfile` 文件并命名为 **dockerfile1** 如下
 
 ```dockerfile
 FROM centos
@@ -115,20 +115,21 @@ VOLUME ["volume-test"]
 CMD /bin/bash
 ```
 
-通过 `docker build` 编译成一个镜像（这里的 `.` 指定了当前的路径）
+通过 **docker build** 编译成一个镜像（这里的 `.` 指定了当前的路径）
 
-`docker build -f dockerfile1 -t centos-with-volume .`
+```sh
+docker build -f dockerfile1 -t centos-with-volume .
 
-如此则生成了一个名为 `centos-with-volume` 的镜像，再通过运行镜像并生成一个新容器
+# 如此则生成了一个名为 centos-with-volume 的镜像，再通过运行镜像并生成一个新容器
 
-`docker run --name cv1 -it centos-with-volume /bin/bash`
+docker run --name cv1 -it centos-with-volume /bin/bash
 
-运行成功后，可在目录列表中看到除 centos 的基本目录之外，还多了一个 `volume-test` 的目录。此时通过命令再运行镜像生成一个新容器，并使用数据共享命令来对已生成容器中的数据卷的内容进行同步共享
+# 运行成功后，可在目录列表中看到除 centos 的基本目录之外，还多了一个 volume-test 的目录。此时通过命令再运行镜像生成一个新容器，并使用数据共享命令来对已生成容器中的数据卷的内容进行同步共享
 
-`docker run --name cv2 --volumes-from cv1 -it centos-with-volume /bin/bash`
+docker run --name cv2 --volumes-from cv1 -it centos-with-volume /bin/bash
 
-此时，`cv1` 与 `cv2` 两个容器中的 `volume-test` 目录中的数据是完全同步的，可通过对两个容器内的文件进行修改来测试效果
-
+# 此时，cv1 与 cv2 两个容器中的 volume-test 目录中的数据是完全同步的，可通过对两个容器内的文件进行修改来测试效果
+```
 
 ### 查看正在运行中的容器资源占用情况
 
