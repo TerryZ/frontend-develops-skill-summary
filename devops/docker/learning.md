@@ -124,7 +124,8 @@ docker build -f dockerfile1 -t centos-with-volume .
 
 docker run --name cv1 -it centos-with-volume /bin/bash
 
-# 运行成功后，可在目录列表中看到除 centos 的基本目录之外，还多了一个 volume-test 的目录。此时通过命令再运行镜像生成一个新容器，并使用数据共享命令来对已生成容器中的数据卷的内容进行同步共享
+# 运行成功后，可在目录列表中看到除 centos 的基本目录之外，还多了一个 volume-test 的目录。此时通过命令再运行镜像生成
+# 一个新容器，并使用数据共享命令来对已生成容器中的数据卷的内容进行同步共享
 
 docker run --name cv2 --volumes-from cv1 -it centos-with-volume /bin/bash
 
